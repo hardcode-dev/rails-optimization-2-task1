@@ -1,0 +1,2000 @@
+user,0,Hazel,Margarete,19
+session,0,0,Internet Explorer 50,81,2018-02-01
+session,0,1,Safari 27,88,2017-10-28
+session,0,2,Firefox 13,92,2016-11-02
+session,0,3,Internet Explorer 40,37,2017-05-31
+session,0,4,Internet Explorer 16,37,2017-11-21
+session,0,5,Safari 19,22,2017-11-30
+session,0,6,Chrome 31,74,2016-08-22
+session,0,7,Firefox 46,76,2019-02-04
+user,1,Wilfredo,Louetta,40
+session,1,0,Firefox 38,68,2018-04-24
+session,1,1,Internet Explorer 41,27,2016-09-06
+session,1,2,Internet Explorer 1,74,2017-01-05
+session,1,3,Firefox 47,28,2017-06-09
+session,1,4,Internet Explorer 22,98,2016-11-03
+user,2,Cecil,Rosalba,44
+session,2,0,Safari 26,96,2018-08-20
+session,2,1,Internet Explorer 10,3,2019-01-03
+session,2,2,Internet Explorer 47,52,2016-07-31
+session,2,3,Safari 34,37,2017-09-14
+session,2,4,Internet Explorer 17,22,2016-07-10
+session,2,5,Firefox 26,76,2017-02-06
+session,2,6,Chrome 14,88,2017-02-19
+session,2,7,Safari 31,113,2018-04-12
+session,2,8,Chrome 20,72,2016-09-04
+session,2,9,Safari 13,14,2017-07-26
+user,3,Kieth,Noble,20
+session,3,0,Safari 23,1,2018-02-19
+session,3,1,Internet Explorer 24,92,2018-05-15
+session,3,2,Chrome 6,91,2017-01-06
+session,3,3,Internet Explorer 47,7,2016-09-01
+session,3,4,Firefox 4,20,2017-03-22
+session,3,5,Internet Explorer 23,17,2016-12-02
+session,3,6,Internet Explorer 5,91,2017-12-29
+session,3,7,Internet Explorer 23,2,2017-03-17
+user,4,Corie,Erika,32
+session,4,0,Chrome 11,49,2019-02-05
+session,4,1,Safari 44,18,2017-09-01
+session,4,2,Firefox 32,88,2017-06-01
+session,4,3,Chrome 28,82,2018-03-18
+session,4,4,Firefox 38,36,2018-06-11
+session,4,5,Safari 14,11,2017-04-06
+session,4,6,Safari 27,116,2017-05-30
+session,4,7,Safari 24,36,2018-06-12
+session,4,8,Firefox 3,28,2018-01-05
+user,5,Lou,Lean,39
+session,5,0,Internet Explorer 42,74,2017-08-20
+session,5,1,Internet Explorer 1,80,2018-11-22
+session,5,2,Chrome 18,105,2018-01-17
+user,6,Deedra,Minta,44
+session,6,0,Firefox 32,27,2017-07-07
+session,6,1,Firefox 45,48,2017-07-22
+session,6,2,Safari 33,55,2018-07-09
+session,6,3,Safari 1,14,2016-11-08
+session,6,4,Firefox 39,18,2017-02-06
+session,6,5,Safari 12,52,2016-07-18
+session,6,6,Firefox 18,84,2016-08-16
+session,6,7,Chrome 2,114,2016-10-18
+user,7,Loria,Vernetta,68
+session,7,0,Safari 14,51,2019-01-25
+session,7,1,Internet Explorer 29,88,2016-10-12
+session,7,2,Firefox 32,55,2016-11-15
+session,7,3,Safari 4,20,2016-11-19
+session,7,4,Chrome 42,95,2018-02-10
+session,7,5,Safari 36,88,2018-03-30
+session,7,6,Safari 7,74,2017-05-27
+session,7,7,Safari 18,67,2017-02-22
+session,7,8,Chrome 24,26,2018-11-01
+user,8,Abdul,Venessa,55
+session,8,0,Internet Explorer 1,60,2018-12-02
+session,8,1,Chrome 3,63,2016-10-02
+session,8,2,Safari 41,99,2017-01-12
+session,8,3,Firefox 13,69,2017-04-17
+session,8,4,Safari 31,115,2018-04-08
+session,8,5,Chrome 30,77,2019-01-28
+session,8,6,Safari 43,56,2017-05-07
+user,9,Brooks,Janae,6
+session,9,0,Internet Explorer 36,11,2018-08-11
+user,10,Rey,Coy,95
+session,10,0,Internet Explorer 27,115,2017-08-05
+session,10,1,Internet Explorer 21,119,2018-11-15
+session,10,2,Internet Explorer 2,0,2016-06-10
+session,10,3,Safari 13,44,2018-04-07
+session,10,4,Firefox 37,26,2018-05-04
+user,11,Cyrus,Danyel,41
+session,11,0,Firefox 34,118,2016-10-14
+session,11,1,Internet Explorer 34,45,2017-10-10
+session,11,2,Internet Explorer 38,70,2017-07-10
+user,12,Valentin,Emilio,21
+session,12,0,Chrome 13,28,2018-04-23
+session,12,1,Firefox 35,17,2018-11-29
+session,12,2,Firefox 19,68,2018-05-03
+session,12,3,Internet Explorer 14,2,2016-09-18
+session,12,4,Firefox 15,97,2018-04-15
+session,12,5,Safari 26,40,2016-06-13
+user,13,Mitchell,Hobert,78
+session,13,0,Internet Explorer 32,89,2019-02-07
+session,13,1,Firefox 17,0,2017-11-05
+session,13,2,Chrome 17,117,2018-12-12
+session,13,3,Firefox 28,3,2016-12-01
+session,13,4,Firefox 9,26,2018-08-05
+session,13,5,Safari 27,113,2017-09-02
+session,13,6,Internet Explorer 20,92,2018-08-17
+session,13,7,Safari 11,103,2016-11-11
+session,13,8,Safari 36,26,2018-06-18
+session,13,9,Internet Explorer 22,33,2018-07-15
+user,14,Yuonne,Nicholle,52
+session,14,0,Safari 45,112,2018-01-23
+session,14,1,Firefox 50,54,2017-08-13
+session,14,2,Chrome 21,53,2018-10-08
+session,14,3,Firefox 24,30,2018-12-25
+session,14,4,Chrome 26,117,2017-09-09
+session,14,5,Chrome 16,38,2019-01-29
+session,14,6,Chrome 48,72,2016-08-12
+session,14,7,Safari 23,36,2016-10-05
+session,14,8,Firefox 12,45,2018-05-17
+user,15,Marlene,Ling,76
+session,15,0,Chrome 50,60,2018-06-29
+user,16,Salina,Eddie,27
+session,16,0,Internet Explorer 26,10,2018-01-10
+session,16,1,Chrome 23,13,2017-01-04
+user,17,Ernestine,Clifton,6
+session,17,0,Chrome 13,28,2016-12-05
+session,17,1,Chrome 10,97,2017-11-13
+session,17,2,Safari 34,39,2017-08-24
+session,17,3,Safari 48,27,2018-03-27
+session,17,4,Internet Explorer 32,76,2016-10-22
+session,17,5,Firefox 42,106,2016-12-23
+session,17,6,Chrome 13,72,2018-01-08
+session,17,7,Chrome 24,37,2017-12-21
+user,18,Homer,Odelia,62
+session,18,0,Safari 10,3,2018-01-19
+session,18,1,Internet Explorer 25,81,2017-11-21
+session,18,2,Firefox 4,110,2017-05-17
+session,18,3,Firefox 12,92,2018-01-15
+session,18,4,Safari 43,88,2017-02-04
+session,18,5,Internet Explorer 42,19,2018-06-30
+session,18,6,Firefox 17,47,2016-09-10
+user,19,Jean,Gregg,96
+session,19,0,Internet Explorer 49,12,2016-10-19
+session,19,1,Firefox 36,56,2018-04-20
+session,19,2,Internet Explorer 32,3,2018-01-02
+session,19,3,Internet Explorer 20,85,2018-03-12
+session,19,4,Internet Explorer 21,21,2017-01-10
+session,19,5,Firefox 46,99,2017-08-19
+user,20,Jacinta,Erinn,34
+session,20,0,Chrome 44,49,2018-01-29
+session,20,1,Internet Explorer 33,90,2017-11-02
+session,20,2,Safari 22,44,2018-10-14
+session,20,3,Firefox 39,32,2019-01-07
+user,21,Melita,Mika,45
+session,21,0,Firefox 30,1,2016-08-03
+session,21,1,Safari 48,64,2017-05-10
+session,21,2,Chrome 40,61,2018-10-07
+session,21,3,Safari 37,0,2018-05-09
+session,21,4,Chrome 12,98,2017-02-24
+user,22,Matthew,Lucretia,23
+session,22,0,Internet Explorer 23,86,2017-08-02
+user,23,Maurice,Paz,38
+session,23,0,Internet Explorer 2,51,2017-09-28
+session,23,1,Internet Explorer 11,60,2016-08-02
+session,23,2,Firefox 31,32,2017-04-30
+user,24,Jessica,Brandi,8
+session,24,0,Chrome 12,111,2017-09-18
+user,25,Marget,Ming,58
+session,25,0,Chrome 31,51,2018-05-18
+session,25,1,Safari 9,63,2016-12-20
+session,25,2,Firefox 48,75,2018-03-26
+session,25,3,Firefox 16,51,2017-09-02
+user,26,Audria,Roselyn,85
+session,26,0,Firefox 22,84,2018-02-13
+session,26,1,Safari 14,52,2017-03-17
+session,26,2,Firefox 36,96,2016-11-12
+session,26,3,Firefox 6,16,2017-12-08
+user,27,Leilani,Ines,86
+session,27,0,Firefox 29,91,2016-10-03
+session,27,1,Chrome 44,66,2016-05-27
+session,27,2,Safari 9,90,2017-08-28
+user,28,Philip,Daysi,2
+session,28,0,Internet Explorer 23,27,2018-09-21
+session,28,1,Safari 4,116,2018-09-19
+user,29,Delmar,Otilia,44
+session,29,0,Safari 17,0,2016-08-02
+session,29,1,Internet Explorer 39,101,2017-04-21
+session,29,2,Internet Explorer 8,0,2016-10-19
+session,29,3,Internet Explorer 20,36,2017-02-05
+session,29,4,Internet Explorer 25,73,2018-07-31
+session,29,5,Chrome 18,49,2017-12-14
+session,29,6,Firefox 24,81,2018-09-06
+user,30,Newton,Brianna,34
+session,30,0,Chrome 38,110,2016-11-21
+session,30,1,Firefox 34,47,2017-08-27
+session,30,2,Internet Explorer 27,74,2017-07-13
+session,30,3,Internet Explorer 29,118,2018-03-14
+session,30,4,Chrome 16,24,2017-02-11
+session,30,5,Firefox 37,85,2019-01-26
+session,30,6,Firefox 34,22,2016-10-19
+session,30,7,Firefox 14,14,2018-04-11
+session,30,8,Firefox 27,33,2017-12-07
+user,31,Sherman,Pearly,65
+session,31,0,Firefox 5,113,2016-05-22
+session,31,1,Safari 1,50,2018-08-06
+session,31,2,Internet Explorer 6,29,2016-06-13
+session,31,3,Internet Explorer 48,103,2017-12-15
+session,31,4,Firefox 32,106,2018-07-26
+session,31,5,Safari 27,105,2016-12-08
+session,31,6,Safari 5,44,2016-09-19
+session,31,7,Safari 41,21,2017-02-19
+session,31,8,Firefox 22,66,2017-11-17
+user,32,Steve,Esmeralda,73
+session,32,0,Chrome 41,64,2018-07-13
+session,32,1,Firefox 11,50,2016-12-18
+session,32,2,Firefox 38,90,2018-12-26
+session,32,3,Firefox 41,114,2018-04-01
+session,32,4,Safari 49,22,2018-05-28
+session,32,5,Firefox 12,72,2017-09-12
+user,33,Young,Todd,59
+session,33,0,Chrome 10,59,2016-12-28
+session,33,1,Internet Explorer 28,92,2018-06-14
+session,33,2,Chrome 28,29,2017-04-28
+session,33,3,Firefox 1,52,2018-04-25
+session,33,4,Safari 46,25,2017-09-20
+session,33,5,Safari 32,57,2016-10-07
+user,34,Wen,Sherill,39
+session,34,0,Internet Explorer 18,92,2016-09-05
+session,34,1,Firefox 16,95,2017-08-27
+user,35,Margarita,Aileen,78
+session,35,0,Chrome 9,72,2018-02-27
+session,35,1,Firefox 27,18,2018-05-23
+session,35,2,Firefox 42,113,2016-07-22
+session,35,3,Safari 5,27,2018-09-14
+session,35,4,Chrome 49,17,2018-10-24
+session,35,5,Internet Explorer 17,75,2017-08-27
+session,35,6,Internet Explorer 46,49,2016-09-12
+user,36,Rich,Maddie,58
+session,36,0,Chrome 37,36,2016-08-22
+session,36,1,Chrome 21,81,2016-05-31
+session,36,2,Safari 38,71,2018-10-04
+user,37,Marcie,Modesto,76
+session,37,0,Internet Explorer 37,45,2017-01-06
+session,37,1,Chrome 27,58,2018-04-14
+session,37,2,Safari 43,108,2018-04-05
+session,37,3,Firefox 29,67,2016-12-09
+session,37,4,Firefox 43,90,2016-10-24
+session,37,5,Firefox 24,90,2017-04-30
+session,37,6,Chrome 3,104,2016-12-20
+session,37,7,Firefox 47,106,2017-06-15
+user,38,Amparo,Elvis,71
+session,38,0,Safari 9,74,2017-12-08
+session,38,1,Chrome 50,103,2016-05-30
+session,38,2,Internet Explorer 23,84,2018-06-21
+session,38,3,Chrome 6,67,2018-04-15
+session,38,4,Chrome 26,99,2017-10-19
+session,38,5,Chrome 36,73,2016-11-20
+session,38,6,Chrome 28,1,2018-01-26
+session,38,7,Chrome 38,21,2017-02-26
+user,39,Bailey,Brittanie,58
+session,39,0,Firefox 31,52,2018-12-19
+session,39,1,Safari 12,15,2017-10-16
+session,39,2,Safari 28,14,2016-11-08
+session,39,3,Chrome 50,60,2017-07-02
+user,40,Tawanda,Georgeann,70
+session,40,0,Safari 21,51,2018-05-02
+session,40,1,Firefox 34,85,2017-11-25
+session,40,2,Firefox 31,0,2017-08-11
+session,40,3,Internet Explorer 31,88,2018-01-06
+user,41,Jonnie,Louise,57
+session,41,0,Internet Explorer 16,7,2018-12-07
+session,41,1,Chrome 41,74,2019-02-03
+session,41,2,Safari 11,98,2018-11-28
+session,41,3,Firefox 16,7,2018-03-17
+session,41,4,Chrome 49,99,2018-10-10
+session,41,5,Firefox 46,18,2018-01-04
+session,41,6,Safari 6,54,2017-03-02
+session,41,7,Chrome 2,113,2016-08-18
+session,41,8,Safari 6,54,2019-02-11
+session,41,9,Firefox 46,40,2016-05-22
+user,42,Jamar,Annita,17
+session,42,0,Safari 8,82,2018-04-28
+session,42,1,Chrome 41,82,2016-05-28
+session,42,2,Firefox 47,35,2018-08-09
+user,43,Kurt,Camie,33
+session,43,0,Internet Explorer 16,90,2018-07-22
+session,43,1,Firefox 46,16,2017-07-23
+session,43,2,Safari 47,19,2016-09-26
+user,44,Gail,Morgan,79
+session,44,0,Safari 46,101,2018-10-31
+session,44,1,Firefox 49,42,2017-05-31
+session,44,2,Safari 50,61,2018-10-24
+session,44,3,Chrome 23,89,2016-07-29
+user,45,Trenton,Carlee,6
+session,45,0,Internet Explorer 27,70,2017-06-05
+session,45,1,Chrome 1,36,2017-05-04
+session,45,2,Firefox 5,29,2018-08-30
+session,45,3,Internet Explorer 38,81,2018-08-27
+session,45,4,Chrome 50,21,2017-01-21
+session,45,5,Internet Explorer 5,29,2017-12-14
+session,45,6,Firefox 42,102,2017-05-16
+session,45,7,Chrome 44,101,2017-12-31
+session,45,8,Internet Explorer 45,17,2019-02-08
+user,46,Ailene,Melba,3
+session,46,0,Chrome 8,73,2019-01-27
+session,46,1,Safari 43,6,2016-10-21
+session,46,2,Firefox 35,22,2018-09-01
+session,46,3,Firefox 29,19,2016-09-26
+session,46,4,Firefox 45,118,2017-01-11
+session,46,5,Chrome 38,47,2017-04-18
+session,46,6,Safari 40,100,2016-10-28
+user,47,Mohamed,Lorina,58
+session,47,0,Safari 48,75,2016-08-03
+session,47,1,Internet Explorer 27,18,2018-12-10
+session,47,2,Internet Explorer 39,117,2017-01-30
+session,47,3,Internet Explorer 42,90,2017-02-21
+session,47,4,Safari 47,15,2016-12-24
+session,47,5,Internet Explorer 38,59,2018-09-27
+session,47,6,Safari 6,4,2016-10-13
+user,48,Abbie,Young,83
+session,48,0,Safari 1,46,2017-08-17
+session,48,1,Firefox 8,4,2017-01-15
+session,48,2,Firefox 15,1,2018-09-06
+session,48,3,Chrome 4,46,2018-11-27
+session,48,4,Firefox 11,36,2016-11-29
+session,48,5,Chrome 34,67,2018-08-28
+session,48,6,Internet Explorer 50,27,2016-09-23
+user,49,Coleman,Mardell,78
+session,49,0,Chrome 32,46,2018-08-03
+session,49,1,Firefox 15,73,2018-10-24
+session,49,2,Safari 34,67,2016-07-16
+session,49,3,Safari 39,6,2019-02-04
+session,49,4,Firefox 37,31,2018-08-28
+session,49,5,Firefox 33,103,2016-09-25
+session,49,6,Chrome 12,68,2016-06-15
+user,50,Edwin,Joseph,20
+session,50,0,Safari 37,55,2017-10-04
+session,50,1,Safari 21,111,2018-04-27
+user,51,Sonya,Gay,42
+session,51,0,Chrome 34,107,2017-05-31
+session,51,1,Internet Explorer 32,1,2016-11-07
+session,51,2,Chrome 38,109,2018-07-02
+session,51,3,Internet Explorer 41,86,2017-08-08
+session,51,4,Internet Explorer 32,26,2016-09-17
+session,51,5,Firefox 10,52,2016-05-24
+session,51,6,Safari 5,9,2018-03-19
+session,51,7,Chrome 28,44,2017-01-28
+user,52,Aaron,Debbra,66
+session,52,0,Firefox 10,35,2016-10-24
+session,52,1,Safari 29,16,2016-09-17
+session,52,2,Chrome 27,66,2016-12-27
+session,52,3,Firefox 36,1,2018-06-20
+session,52,4,Internet Explorer 9,25,2017-05-07
+session,52,5,Internet Explorer 31,62,2016-06-19
+session,52,6,Firefox 44,63,2018-06-29
+session,52,7,Safari 11,56,2017-07-25
+user,53,Markus,Shyla,36
+session,53,0,Chrome 48,94,2018-05-24
+session,53,1,Chrome 6,72,2017-07-10
+session,53,2,Safari 1,21,2017-03-20
+session,53,3,Safari 6,107,2017-08-28
+session,53,4,Internet Explorer 17,67,2017-09-28
+session,53,5,Chrome 43,117,2017-10-15
+user,54,Velia,Corrine,63
+session,54,0,Firefox 27,92,2018-03-16
+user,55,Percy,Tarra,30
+session,55,0,Safari 27,14,2017-04-27
+session,55,1,Safari 45,15,2017-02-03
+session,55,2,Chrome 1,40,2016-06-26
+session,55,3,Internet Explorer 27,3,2017-09-12
+session,55,4,Internet Explorer 45,18,2017-09-27
+user,56,Laure,Lee,53
+session,56,0,Chrome 18,89,2018-04-30
+session,56,1,Firefox 23,97,2018-02-28
+session,56,2,Firefox 49,95,2018-05-03
+session,56,3,Firefox 42,84,2017-06-18
+user,57,Claude,Lauren,57
+session,57,0,Internet Explorer 31,20,2018-06-25
+session,57,1,Internet Explorer 29,37,2017-05-04
+session,57,2,Firefox 6,81,2018-06-10
+session,57,3,Internet Explorer 23,53,2018-10-14
+session,57,4,Firefox 15,54,2016-05-24
+session,57,5,Chrome 22,51,2017-02-07
+session,57,6,Chrome 44,0,2018-08-02
+session,57,7,Firefox 17,58,2016-10-02
+session,57,8,Internet Explorer 40,119,2018-07-24
+user,58,Timmy,Monica,41
+session,58,0,Internet Explorer 7,5,2017-05-07
+session,58,1,Firefox 16,82,2018-09-10
+session,58,2,Safari 26,99,2016-08-27
+session,58,3,Firefox 6,119,2018-10-31
+session,58,4,Firefox 29,42,2018-06-13
+session,58,5,Firefox 19,92,2016-08-25
+user,59,Mark,Shasta,95
+session,59,0,Chrome 50,102,2017-05-25
+session,59,1,Safari 39,25,2017-05-31
+session,59,2,Firefox 33,60,2016-06-25
+session,59,3,Safari 12,54,2018-05-09
+session,59,4,Internet Explorer 16,84,2018-10-13
+session,59,5,Chrome 39,27,2018-10-31
+session,59,6,Chrome 38,113,2018-07-05
+session,59,7,Firefox 45,109,2017-06-12
+user,60,Rhona,Alline,14
+session,60,0,Internet Explorer 2,35,2017-10-21
+session,60,1,Chrome 11,61,2016-09-01
+session,60,2,Firefox 13,42,2019-02-11
+session,60,3,Chrome 5,48,2017-02-11
+session,60,4,Safari 24,35,2018-09-05
+session,60,5,Firefox 44,115,2016-06-07
+user,61,Lester,Margaret,34
+session,61,0,Internet Explorer 18,98,2018-08-23
+session,61,1,Chrome 5,86,2018-12-03
+user,62,Renna,Sam,59
+session,62,0,Internet Explorer 27,73,2018-12-14
+session,62,1,Internet Explorer 49,73,2018-11-30
+session,62,2,Internet Explorer 5,113,2016-11-14
+user,63,Jacquline,Marth,98
+session,63,0,Firefox 43,77,2018-12-16
+session,63,1,Safari 18,84,2016-12-11
+user,64,Alia,Mary,74
+session,64,0,Internet Explorer 46,37,2016-11-26
+session,64,1,Safari 15,53,2016-12-06
+session,64,2,Internet Explorer 31,18,2017-01-01
+session,64,3,Safari 43,112,2016-10-05
+session,64,4,Firefox 35,76,2017-03-16
+session,64,5,Chrome 17,61,2018-03-25
+session,64,6,Internet Explorer 37,26,2018-07-31
+session,64,7,Chrome 36,55,2016-12-13
+session,64,8,Safari 4,66,2017-05-27
+user,65,Patricia,Winston,65
+session,65,0,Internet Explorer 35,118,2018-09-29
+session,65,1,Firefox 14,27,2017-05-28
+session,65,2,Chrome 18,15,2017-06-10
+session,65,3,Firefox 26,82,2016-11-23
+session,65,4,Safari 32,114,2016-09-05
+session,65,5,Internet Explorer 17,52,2016-11-05
+session,65,6,Chrome 44,107,2018-03-26
+session,65,7,Firefox 4,42,2017-05-15
+session,65,8,Internet Explorer 50,47,2017-10-13
+user,66,Jerry,Nicolasa,83
+session,66,0,Firefox 20,80,2017-07-23
+user,67,Randal,Pamella,16
+session,67,0,Chrome 37,10,2018-01-07
+session,67,1,Chrome 42,6,2017-01-26
+session,67,2,Firefox 34,14,2018-07-21
+user,68,Olen,Leia,88
+session,68,0,Chrome 35,47,2016-08-04
+session,68,1,Firefox 10,3,2018-09-15
+user,69,Jarod,Terence,28
+session,69,0,Internet Explorer 16,100,2016-08-06
+user,70,Jamie,Jeremy,32
+session,70,0,Internet Explorer 41,102,2018-04-24
+session,70,1,Firefox 33,46,2017-11-19
+session,70,2,Firefox 20,106,2018-06-30
+session,70,3,Safari 43,106,2018-05-03
+session,70,4,Internet Explorer 35,29,2018-03-18
+session,70,5,Chrome 34,20,2018-08-31
+session,70,6,Safari 44,74,2017-03-31
+session,70,7,Firefox 23,78,2017-04-20
+session,70,8,Internet Explorer 14,29,2018-07-14
+session,70,9,Internet Explorer 18,34,2018-08-11
+user,71,Hung,Delfina,63
+session,71,0,Chrome 11,0,2018-12-21
+session,71,1,Chrome 13,73,2018-11-11
+session,71,2,Internet Explorer 39,103,2016-11-29
+session,71,3,Chrome 11,74,2017-08-04
+session,71,4,Safari 35,90,2019-02-09
+session,71,5,Chrome 34,67,2019-02-12
+session,71,6,Chrome 13,68,2018-01-23
+session,71,7,Chrome 24,59,2018-01-27
+user,72,Kenisha,Belle,16
+session,72,0,Internet Explorer 42,72,2018-04-25
+session,72,1,Safari 2,75,2018-04-24
+session,72,2,Chrome 10,24,2016-06-14
+session,72,3,Chrome 40,113,2017-03-18
+session,72,4,Safari 37,13,2016-12-11
+session,72,5,Chrome 44,31,2018-12-19
+session,72,6,Internet Explorer 18,83,2018-03-19
+session,72,7,Chrome 45,4,2016-11-07
+session,72,8,Internet Explorer 22,83,2017-12-08
+session,72,9,Firefox 37,25,2018-09-09
+user,73,Tien,Kenyetta,30
+session,73,0,Firefox 38,99,2017-06-25
+session,73,1,Internet Explorer 41,80,2018-06-18
+session,73,2,Firefox 1,6,2017-08-09
+session,73,3,Firefox 15,69,2016-12-27
+session,73,4,Internet Explorer 42,96,2016-09-28
+user,74,Samantha,Tama,72
+session,74,0,Safari 33,12,2016-06-23
+user,75,Tyler,Santa,21
+session,75,0,Internet Explorer 40,102,2018-07-04
+session,75,1,Firefox 13,5,2016-06-05
+session,75,2,Safari 46,0,2016-09-16
+session,75,3,Firefox 37,107,2018-11-24
+session,75,4,Chrome 3,15,2018-12-29
+user,76,Jerome,Corene,46
+session,76,0,Chrome 23,42,2017-05-03
+session,76,1,Internet Explorer 8,44,2017-07-31
+session,76,2,Safari 1,71,2017-03-08
+session,76,3,Chrome 43,3,2018-03-31
+session,76,4,Chrome 35,22,2017-04-26
+session,76,5,Firefox 37,21,2016-11-01
+user,77,Lazaro,Raven,33
+session,77,0,Internet Explorer 33,31,2018-12-24
+session,77,1,Safari 18,8,2018-09-11
+session,77,2,Safari 23,86,2016-06-30
+session,77,3,Safari 9,91,2016-11-03
+session,77,4,Safari 14,22,2017-10-29
+session,77,5,Safari 3,114,2019-01-15
+session,77,6,Chrome 2,9,2017-04-06
+session,77,7,Safari 42,73,2017-03-29
+user,78,Normand,Sergio,14
+session,78,0,Firefox 45,92,2016-05-31
+session,78,1,Internet Explorer 31,109,2018-03-05
+session,78,2,Safari 17,65,2017-10-05
+user,79,Delois,Evelynn,78
+session,79,0,Firefox 19,56,2016-08-05
+user,80,Leota,Iva,68
+session,80,0,Chrome 5,66,2017-07-15
+session,80,1,Chrome 26,113,2017-09-09
+user,81,Pa,Therese,5
+session,81,0,Safari 43,53,2018-11-03
+session,81,1,Internet Explorer 44,27,2016-10-08
+session,81,2,Safari 16,10,2018-10-29
+session,81,3,Safari 20,22,2017-03-25
+session,81,4,Firefox 44,37,2018-07-06
+session,81,5,Safari 14,8,2017-12-14
+user,82,Anastacia,Napoleon,16
+session,82,0,Chrome 23,46,2017-06-19
+session,82,1,Chrome 31,95,2018-07-14
+session,82,2,Safari 21,104,2016-12-14
+session,82,3,Internet Explorer 30,2,2017-04-03
+session,82,4,Chrome 9,29,2017-12-26
+user,83,Deetta,Dahlia,37
+session,83,0,Internet Explorer 32,114,2018-10-17
+session,83,1,Internet Explorer 23,53,2017-02-11
+session,83,2,Safari 7,41,2017-06-30
+session,83,3,Firefox 15,55,2017-12-17
+session,83,4,Safari 17,70,2017-02-26
+session,83,5,Firefox 19,22,2018-04-04
+session,83,6,Firefox 39,57,2018-02-03
+session,83,7,Internet Explorer 38,45,2017-03-18
+user,84,Lorraine,Abram,68
+session,84,0,Firefox 27,32,2018-01-27
+session,84,1,Internet Explorer 1,85,2018-04-14
+session,84,2,Internet Explorer 31,11,2016-08-29
+session,84,3,Firefox 26,115,2017-04-23
+user,85,Millard,Tashia,58
+session,85,0,Safari 13,40,2018-10-01
+session,85,1,Safari 11,21,2018-09-29
+session,85,2,Firefox 39,37,2017-06-01
+session,85,3,Internet Explorer 39,95,2019-01-15
+session,85,4,Safari 40,73,2016-10-18
+session,85,5,Chrome 33,16,2018-01-15
+session,85,6,Firefox 1,13,2018-03-03
+session,85,7,Internet Explorer 46,45,2017-02-28
+session,85,8,Safari 3,96,2018-09-01
+user,86,Floretta,Brandon,28
+session,86,0,Safari 21,20,2017-05-21
+session,86,1,Safari 25,1,2017-08-19
+session,86,2,Safari 49,95,2018-12-27
+session,86,3,Internet Explorer 16,59,2016-11-27
+session,86,4,Firefox 16,18,2016-07-19
+session,86,5,Chrome 34,92,2019-01-16
+session,86,6,Internet Explorer 14,5,2017-08-25
+session,86,7,Firefox 27,79,2018-09-03
+session,86,8,Firefox 20,77,2018-02-18
+user,87,Carlyn,Hyun,21
+session,87,0,Safari 42,11,2018-06-16
+session,87,1,Internet Explorer 50,98,2018-02-11
+session,87,2,Internet Explorer 35,37,2018-12-10
+session,87,3,Internet Explorer 20,51,2016-08-08
+session,87,4,Chrome 7,63,2017-01-10
+session,87,5,Internet Explorer 21,96,2017-07-06
+session,87,6,Safari 32,8,2016-08-03
+session,87,7,Chrome 9,14,2017-10-28
+session,87,8,Firefox 38,114,2017-03-29
+session,87,9,Internet Explorer 13,10,2017-12-21
+user,88,Bradly,Karlene,28
+session,88,0,Internet Explorer 27,118,2018-12-20
+session,88,1,Chrome 18,20,2016-11-10
+session,88,2,Internet Explorer 42,7,2018-06-03
+session,88,3,Chrome 21,69,2017-09-06
+session,88,4,Chrome 38,38,2017-04-27
+session,88,5,Firefox 33,111,2018-07-12
+user,89,Alonso,Angelic,13
+session,89,0,Internet Explorer 9,87,2017-07-07
+session,89,1,Safari 41,61,2018-07-25
+session,89,2,Internet Explorer 39,6,2016-08-06
+session,89,3,Firefox 25,71,2018-05-03
+session,89,4,Safari 13,100,2017-04-22
+session,89,5,Internet Explorer 27,72,2017-02-26
+session,89,6,Safari 16,3,2017-04-27
+session,89,7,Internet Explorer 42,94,2017-03-02
+user,90,Tyrone,Selina,7
+session,90,0,Safari 48,5,2016-09-24
+session,90,1,Internet Explorer 20,48,2019-01-15
+session,90,2,Firefox 18,70,2017-08-22
+session,90,3,Chrome 45,71,2017-12-13
+session,90,4,Safari 46,104,2017-02-06
+session,90,5,Internet Explorer 37,104,2018-07-20
+session,90,6,Internet Explorer 23,75,2018-09-24
+session,90,7,Internet Explorer 25,56,2017-07-26
+session,90,8,Internet Explorer 3,21,2018-09-18
+user,91,Eli,Karyl,81
+session,91,0,Internet Explorer 40,29,2017-02-17
+session,91,1,Internet Explorer 11,92,2018-08-19
+session,91,2,Firefox 8,6,2019-01-20
+user,92,Rosalia,Willie,50
+session,92,0,Firefox 9,47,2018-08-28
+session,92,1,Internet Explorer 37,12,2018-02-24
+session,92,2,Internet Explorer 37,8,2018-03-03
+user,93,Chauncey,Debby,36
+session,93,0,Safari 38,35,2017-06-25
+session,93,1,Safari 15,66,2017-02-19
+session,93,2,Chrome 35,40,2017-07-27
+session,93,3,Safari 30,57,2017-08-12
+session,93,4,Firefox 30,2,2018-04-20
+session,93,5,Safari 46,64,2017-09-16
+session,93,6,Firefox 17,106,2018-10-28
+session,93,7,Chrome 24,119,2018-01-06
+user,94,Malika,Susann,66
+session,94,0,Chrome 47,31,2018-03-15
+session,94,1,Chrome 10,109,2017-06-05
+session,94,2,Safari 9,2,2017-11-06
+session,94,3,Chrome 15,25,2018-01-05
+session,94,4,Internet Explorer 28,51,2018-02-06
+user,95,Jerrold,Janise,18
+session,95,0,Safari 30,105,2016-11-25
+session,95,1,Safari 33,97,2018-01-06
+session,95,2,Internet Explorer 45,86,2016-09-22
+session,95,3,Internet Explorer 35,94,2018-06-04
+session,95,4,Chrome 31,67,2017-08-11
+session,95,5,Internet Explorer 43,16,2018-12-19
+session,95,6,Safari 43,12,2017-04-30
+user,96,Raymond,Stephania,43
+session,96,0,Internet Explorer 3,46,2016-09-08
+user,97,Silvia,Kennith,52
+session,97,0,Safari 17,24,2018-07-23
+session,97,1,Firefox 2,13,2018-05-31
+session,97,2,Firefox 48,108,2018-09-27
+session,97,3,Internet Explorer 49,57,2017-02-01
+session,97,4,Safari 23,42,2016-05-21
+session,97,5,Chrome 40,45,2016-08-05
+session,97,6,Internet Explorer 28,29,2017-10-04
+user,98,Hong,Dorris,59
+session,98,0,Chrome 18,10,2017-03-15
+session,98,1,Chrome 15,67,2017-07-03
+session,98,2,Internet Explorer 47,104,2017-01-08
+session,98,3,Safari 19,108,2017-12-06
+session,98,4,Safari 18,101,2018-12-10
+session,98,5,Chrome 33,47,2018-06-24
+user,99,Iesha,Duane,16
+session,99,0,Chrome 40,46,2016-10-27
+session,99,1,Firefox 14,46,2018-02-11
+session,99,2,Chrome 1,89,2018-08-08
+session,99,3,Internet Explorer 46,17,2018-06-20
+session,99,4,Chrome 35,111,2016-08-02
+user,100,Ignacio,Emmie,0
+session,100,0,Chrome 16,81,2018-06-25
+session,100,1,Internet Explorer 48,22,2016-10-06
+user,101,Ossie,Reginia,77
+session,101,0,Internet Explorer 44,105,2019-01-04
+session,101,1,Chrome 17,70,2018-01-12
+user,102,Gerardo,Sharleen,8
+session,102,0,Safari 28,20,2017-06-30
+user,103,Earline,Shantay,53
+session,103,0,Internet Explorer 3,98,2017-11-11
+session,103,1,Chrome 32,9,2016-06-20
+session,103,2,Internet Explorer 37,12,2017-07-01
+session,103,3,Chrome 42,75,2018-05-09
+session,103,4,Chrome 1,23,2018-02-09
+session,103,5,Safari 32,44,2018-04-20
+session,103,6,Safari 5,29,2018-03-01
+session,103,7,Chrome 44,2,2016-12-09
+session,103,8,Safari 35,36,2016-06-04
+session,103,9,Safari 10,16,2016-07-10
+user,104,Santos,Pamelia,15
+session,104,0,Firefox 1,57,2016-12-25
+session,104,1,Chrome 49,18,2018-05-27
+session,104,2,Firefox 17,36,2018-04-23
+session,104,3,Internet Explorer 32,19,2017-09-21
+session,104,4,Safari 41,97,2018-02-16
+session,104,5,Internet Explorer 31,73,2017-04-06
+session,104,6,Safari 4,57,2017-06-06
+session,104,7,Firefox 10,36,2016-11-10
+user,105,Lola,Florentino,24
+session,105,0,Internet Explorer 14,60,2018-01-20
+session,105,1,Safari 31,105,2017-01-18
+session,105,2,Firefox 29,66,2016-12-14
+user,106,Bert,Orville,11
+session,106,0,Safari 17,89,2018-05-20
+session,106,1,Firefox 15,49,2018-02-15
+user,107,Antonio,Brinda,59
+session,107,0,Internet Explorer 7,35,2018-07-06
+session,107,1,Firefox 19,5,2016-09-23
+session,107,2,Firefox 9,44,2018-02-16
+session,107,3,Chrome 5,18,2016-10-03
+session,107,4,Firefox 38,85,2016-07-30
+user,108,Joaquin,Wilfredo,35
+session,108,0,Firefox 6,13,2016-07-04
+session,108,1,Internet Explorer 20,24,2017-08-28
+session,108,2,Chrome 39,16,2018-09-27
+user,109,Clifton,Allan,5
+session,109,0,Safari 41,63,2018-11-29
+session,109,1,Chrome 17,19,2017-05-30
+session,109,2,Firefox 14,94,2018-02-19
+user,110,Donald,Wenona,56
+session,110,0,Safari 44,14,2016-05-19
+session,110,1,Firefox 22,57,2017-08-11
+user,111,Millard,Mittie,17
+session,111,0,Safari 13,23,2019-01-24
+session,111,1,Firefox 20,96,2016-11-15
+session,111,2,Chrome 48,62,2017-11-08
+session,111,3,Firefox 31,98,2017-10-26
+session,111,4,Safari 38,13,2017-10-03
+session,111,5,Internet Explorer 17,116,2017-12-14
+user,112,Jenette,Bruce,68
+session,112,0,Chrome 18,113,2018-02-25
+session,112,1,Firefox 44,1,2016-09-09
+session,112,2,Firefox 30,66,2017-07-27
+session,112,3,Internet Explorer 46,31,2017-12-06
+user,113,Bryan,Clorinda,86
+session,113,0,Safari 50,61,2016-07-17
+session,113,1,Safari 20,37,2018-04-19
+session,113,2,Safari 37,41,2018-06-10
+session,113,3,Internet Explorer 47,33,2017-10-30
+session,113,4,Firefox 30,5,2017-04-07
+session,113,5,Safari 39,6,2016-07-25
+session,113,6,Internet Explorer 36,48,2018-05-15
+session,113,7,Chrome 50,119,2018-03-26
+session,113,8,Firefox 31,93,2017-12-26
+user,114,Jena,Melony,83
+session,114,0,Internet Explorer 10,52,2016-06-11
+user,115,Jerri,Long,20
+session,115,0,Internet Explorer 20,101,2017-09-03
+session,115,1,Chrome 50,107,2017-04-10
+session,115,2,Firefox 36,85,2018-03-07
+session,115,3,Chrome 22,89,2018-12-15
+session,115,4,Safari 14,26,2018-03-23
+session,115,5,Firefox 24,21,2016-06-23
+user,116,Monte,Angelo,35
+session,116,0,Internet Explorer 14,106,2017-06-28
+user,117,Saran,Nathalie,83
+session,117,0,Chrome 9,92,2016-05-30
+session,117,1,Chrome 3,117,2016-11-02
+session,117,2,Safari 35,94,2016-08-09
+session,117,3,Chrome 3,103,2016-07-20
+session,117,4,Chrome 40,97,2017-08-12
+session,117,5,Firefox 4,6,2018-01-11
+session,117,6,Internet Explorer 19,67,2017-05-13
+user,118,Jonna,Waneta,6
+session,118,0,Chrome 10,101,2017-03-28
+session,118,1,Firefox 24,69,2017-05-06
+session,118,2,Safari 25,97,2018-09-28
+session,118,3,Internet Explorer 16,61,2016-09-24
+session,118,4,Chrome 48,94,2016-06-29
+session,118,5,Internet Explorer 29,13,2016-12-19
+session,118,6,Safari 15,98,2019-01-29
+session,118,7,Chrome 23,18,2017-03-27
+session,118,8,Internet Explorer 25,62,2016-07-29
+session,118,9,Firefox 18,5,2018-05-26
+user,119,Valeria,Gigi,79
+session,119,0,Chrome 36,2,2018-12-02
+user,120,Caron,Hye,64
+session,120,0,Safari 33,103,2016-05-30
+session,120,1,Internet Explorer 4,18,2017-08-12
+session,120,2,Safari 36,114,2017-04-30
+session,120,3,Internet Explorer 30,110,2019-01-26
+session,120,4,Internet Explorer 48,28,2018-10-04
+session,120,5,Safari 13,77,2016-06-16
+session,120,6,Chrome 9,73,2017-03-29
+session,120,7,Chrome 7,33,2016-08-23
+user,121,Wilbur,Lilly,91
+session,121,0,Chrome 5,116,2018-11-20
+session,121,1,Firefox 22,81,2017-03-09
+session,121,2,Internet Explorer 20,86,2017-12-01
+session,121,3,Chrome 7,66,2017-10-30
+user,122,Theresa,Iesha,90
+session,122,0,Internet Explorer 34,21,2017-05-20
+session,122,1,Internet Explorer 16,53,2018-11-25
+session,122,2,Internet Explorer 28,81,2017-03-14
+session,122,3,Firefox 21,79,2018-01-26
+session,122,4,Chrome 10,7,2017-03-07
+user,123,Domingo,Paul,70
+session,123,0,Internet Explorer 3,95,2017-07-31
+session,123,1,Chrome 24,53,2017-02-11
+session,123,2,Safari 3,81,2016-10-22
+user,124,Ahmed,Joshua,99
+session,124,0,Firefox 21,19,2017-03-28
+session,124,1,Internet Explorer 49,54,2017-08-14
+session,124,2,Safari 34,31,2017-04-19
+session,124,3,Internet Explorer 37,98,2018-08-25
+session,124,4,Chrome 1,64,2017-07-19
+session,124,5,Safari 17,25,2017-07-13
+session,124,6,Chrome 23,35,2017-10-30
+session,124,7,Safari 50,84,2018-05-25
+session,124,8,Chrome 14,72,2018-05-10
+session,124,9,Chrome 50,50,2017-01-31
+user,125,Isobel,Elwanda,51
+session,125,0,Firefox 50,111,2017-06-22
+session,125,1,Firefox 29,64,2018-10-17
+session,125,2,Safari 45,113,2017-02-04
+session,125,3,Safari 11,17,2016-09-13
+session,125,4,Chrome 14,93,2017-08-19
+session,125,5,Safari 5,35,2016-11-24
+session,125,6,Internet Explorer 12,66,2017-06-03
+session,125,7,Chrome 47,30,2018-11-04
+user,126,Tuyet,Louie,78
+session,126,0,Chrome 41,3,2018-02-07
+session,126,1,Safari 4,64,2017-07-20
+session,126,2,Safari 10,108,2017-07-11
+session,126,3,Chrome 6,60,2018-04-17
+session,126,4,Safari 23,6,2018-04-04
+session,126,5,Firefox 47,44,2017-05-13
+session,126,6,Firefox 37,37,2018-04-18
+session,126,7,Safari 4,23,2016-06-23
+session,126,8,Firefox 23,1,2016-09-23
+session,126,9,Safari 21,63,2017-04-27
+user,127,Tanika,Rufus,94
+session,127,0,Safari 12,4,2018-01-08
+session,127,1,Firefox 43,35,2017-11-23
+session,127,2,Firefox 48,97,2018-11-30
+user,128,Adriene,Athena,26
+session,128,0,Internet Explorer 9,85,2017-08-10
+user,129,Marlon,Lyla,0
+session,129,0,Chrome 28,95,2017-11-13
+session,129,1,Firefox 23,1,2017-09-01
+session,129,2,Safari 42,26,2018-08-12
+session,129,3,Safari 12,89,2018-01-31
+session,129,4,Safari 11,44,2018-07-09
+session,129,5,Firefox 43,7,2019-01-19
+session,129,6,Safari 37,31,2016-08-03
+session,129,7,Chrome 24,60,2017-10-16
+user,130,Beaulah,Titus,85
+session,130,0,Internet Explorer 28,70,2017-07-04
+session,130,1,Internet Explorer 31,92,2017-07-20
+session,130,2,Firefox 29,64,2018-08-09
+session,130,3,Internet Explorer 30,114,2018-07-20
+session,130,4,Internet Explorer 15,67,2017-05-26
+session,130,5,Safari 35,95,2016-12-23
+session,130,6,Internet Explorer 40,49,2018-12-13
+session,130,7,Safari 46,98,2016-06-18
+session,130,8,Internet Explorer 21,97,2017-05-28
+session,130,9,Safari 10,66,2018-05-16
+user,131,Jerold,Giovanna,17
+session,131,0,Internet Explorer 45,77,2018-08-10
+session,131,1,Firefox 46,66,2019-01-27
+session,131,2,Safari 13,36,2017-02-13
+session,131,3,Chrome 41,8,2017-08-09
+session,131,4,Internet Explorer 48,106,2018-03-17
+session,131,5,Safari 20,39,2018-04-04
+session,131,6,Firefox 4,27,2016-05-24
+session,131,7,Internet Explorer 15,13,2017-02-05
+session,131,8,Internet Explorer 7,23,2018-10-31
+session,131,9,Firefox 11,53,2019-02-11
+user,132,Lesley,Asha,31
+session,132,0,Firefox 12,97,2018-06-18
+session,132,1,Safari 10,94,2018-04-23
+session,132,2,Chrome 37,65,2016-12-20
+session,132,3,Safari 11,103,2016-07-02
+session,132,4,Safari 39,89,2018-04-13
+session,132,5,Chrome 37,36,2019-01-13
+session,132,6,Safari 45,78,2018-06-08
+session,132,7,Firefox 2,55,2016-06-17
+user,133,Lavonne,Cathie,18
+session,133,0,Chrome 23,73,2017-11-24
+session,133,1,Internet Explorer 40,89,2018-02-17
+session,133,2,Chrome 41,50,2016-06-27
+session,133,3,Chrome 30,19,2017-03-22
+session,133,4,Chrome 42,2,2017-11-13
+user,134,Jan,Viki,56
+session,134,0,Internet Explorer 6,49,2018-10-17
+session,134,1,Internet Explorer 21,105,2017-03-08
+user,135,Aron,Fairy,70
+session,135,0,Chrome 10,28,2016-08-06
+session,135,1,Safari 9,77,2018-10-14
+session,135,2,Safari 11,47,2017-09-20
+session,135,3,Firefox 43,35,2016-07-25
+user,136,Ronnie,Sung,0
+session,136,0,Internet Explorer 41,81,2018-12-30
+session,136,1,Chrome 39,100,2017-04-07
+session,136,2,Internet Explorer 42,25,2018-05-14
+session,136,3,Internet Explorer 50,30,2016-10-25
+session,136,4,Chrome 5,62,2017-11-21
+session,136,5,Firefox 17,78,2019-01-08
+session,136,6,Safari 7,84,2016-09-13
+session,136,7,Internet Explorer 1,68,2017-01-08
+session,136,8,Safari 15,2,2016-07-15
+session,136,9,Safari 35,44,2018-04-19
+user,137,Lachelle,Rodrigo,69
+session,137,0,Safari 2,52,2018-01-05
+session,137,1,Chrome 33,108,2017-10-12
+session,137,2,Firefox 44,113,2018-02-17
+session,137,3,Safari 15,67,2018-07-24
+session,137,4,Safari 39,115,2018-03-18
+session,137,5,Safari 25,28,2016-09-07
+session,137,6,Firefox 40,53,2017-11-01
+user,138,Justin,Van,66
+session,138,0,Safari 49,4,2018-09-23
+session,138,1,Internet Explorer 21,56,2019-01-29
+session,138,2,Safari 49,25,2018-11-08
+session,138,3,Internet Explorer 12,7,2017-11-05
+session,138,4,Safari 23,50,2017-05-08
+session,138,5,Safari 2,96,2017-03-28
+session,138,6,Internet Explorer 44,82,2016-08-22
+user,139,Theola,Frederica,78
+session,139,0,Firefox 44,107,2017-06-26
+session,139,1,Firefox 3,14,2017-11-28
+session,139,2,Firefox 15,94,2018-07-13
+session,139,3,Safari 31,51,2017-04-05
+session,139,4,Internet Explorer 25,74,2018-12-22
+user,140,Love,Brandy,35
+session,140,0,Chrome 25,27,2018-04-20
+session,140,1,Safari 6,71,2018-03-02
+session,140,2,Chrome 30,16,2016-09-27
+session,140,3,Internet Explorer 38,112,2016-12-09
+session,140,4,Internet Explorer 38,38,2018-09-27
+session,140,5,Firefox 46,18,2018-07-30
+session,140,6,Internet Explorer 48,0,2018-11-14
+user,141,Eleni,Rusty,55
+session,141,0,Safari 21,46,2017-03-05
+user,142,Roland,Shelby,26
+session,142,0,Firefox 4,43,2017-10-22
+session,142,1,Firefox 24,58,2016-11-19
+session,142,2,Chrome 5,73,2016-10-12
+session,142,3,Internet Explorer 12,19,2016-09-28
+session,142,4,Firefox 35,22,2017-05-22
+session,142,5,Chrome 33,4,2017-11-18
+session,142,6,Safari 20,31,2018-05-04
+session,142,7,Safari 4,25,2016-06-10
+user,143,Margot,Rebecca,46
+session,143,0,Chrome 45,110,2017-08-16
+session,143,1,Chrome 46,30,2018-09-29
+session,143,2,Safari 50,62,2018-06-02
+session,143,3,Firefox 11,45,2016-09-07
+session,143,4,Firefox 23,85,2018-12-05
+session,143,5,Safari 34,38,2016-08-10
+session,143,6,Safari 34,5,2017-06-13
+session,143,7,Safari 18,79,2017-01-02
+session,143,8,Firefox 23,57,2018-02-20
+user,144,Sonny,Lulu,20
+session,144,0,Safari 39,54,2016-08-03
+session,144,1,Chrome 5,77,2018-04-07
+session,144,2,Firefox 43,19,2018-02-03
+session,144,3,Chrome 36,103,2018-03-03
+session,144,4,Safari 15,90,2017-07-03
+session,144,5,Safari 35,22,2018-10-31
+session,144,6,Internet Explorer 48,33,2018-12-27
+session,144,7,Internet Explorer 45,109,2018-05-27
+user,145,Dallas,Amy,61
+session,145,0,Chrome 40,19,2018-06-14
+session,145,1,Firefox 43,5,2019-01-18
+session,145,2,Internet Explorer 8,86,2016-06-27
+session,145,3,Safari 24,103,2016-10-30
+user,146,Jamal,Hanh,16
+session,146,0,Chrome 14,9,2018-04-23
+session,146,1,Internet Explorer 4,67,2017-10-25
+session,146,2,Safari 24,104,2017-12-11
+session,146,3,Firefox 17,104,2017-09-06
+session,146,4,Internet Explorer 15,92,2018-07-30
+session,146,5,Internet Explorer 5,61,2016-08-03
+session,146,6,Firefox 8,86,2018-07-05
+session,146,7,Firefox 25,41,2017-01-12
+user,147,Ervin,Gabriel,82
+session,147,0,Safari 4,6,2016-09-07
+user,148,Patsy,Edwardo,89
+session,148,0,Firefox 13,5,2016-11-22
+session,148,1,Chrome 10,64,2018-07-31
+session,148,2,Chrome 10,57,2016-06-25
+session,148,3,Internet Explorer 39,104,2017-11-11
+session,148,4,Firefox 3,115,2018-11-12
+session,148,5,Chrome 23,67,2016-12-05
+session,148,6,Chrome 50,3,2016-11-16
+session,148,7,Chrome 7,110,2016-12-07
+session,148,8,Firefox 12,46,2016-09-16
+user,149,Clay,Retha,42
+session,149,0,Chrome 28,114,2016-10-24
+session,149,1,Internet Explorer 31,115,2018-08-01
+session,149,2,Firefox 42,91,2018-07-08
+session,149,3,Chrome 4,80,2018-04-06
+session,149,4,Firefox 47,5,2017-03-26
+session,149,5,Firefox 1,71,2016-12-15
+session,149,6,Safari 25,14,2017-04-22
+session,149,7,Firefox 11,91,2018-09-10
+user,150,Lindsay,Gail,48
+session,150,0,Safari 26,109,2017-12-16
+session,150,1,Safari 47,91,2018-03-02
+session,150,2,Safari 18,113,2016-09-25
+user,151,Brian,Stella,65
+session,151,0,Firefox 47,26,2018-11-24
+session,151,1,Chrome 42,70,2018-07-11
+session,151,2,Internet Explorer 15,14,2017-10-16
+session,151,3,Chrome 5,69,2017-08-18
+user,152,Newton,Gilda,22
+session,152,0,Firefox 13,50,2018-08-09
+session,152,1,Firefox 23,114,2018-04-16
+session,152,2,Firefox 50,38,2019-01-20
+session,152,3,Chrome 32,93,2018-02-28
+session,152,4,Firefox 6,55,2018-02-20
+session,152,5,Firefox 43,55,2018-06-15
+user,153,Ignacio,Kira,39
+session,153,0,Internet Explorer 41,17,2017-02-13
+session,153,1,Chrome 49,87,2019-02-08
+user,154,Ned,Robbie,15
+session,154,0,Firefox 35,110,2018-05-31
+session,154,1,Safari 6,24,2018-09-30
+session,154,2,Firefox 26,83,2018-01-30
+user,155,Una,Freddy,22
+session,155,0,Chrome 14,81,2017-01-18
+session,155,1,Chrome 48,66,2018-08-25
+session,155,2,Chrome 39,51,2017-02-01
+session,155,3,Chrome 14,63,2019-02-08
+session,155,4,Internet Explorer 30,15,2016-06-26
+session,155,5,Safari 8,28,2016-07-17
+session,155,6,Internet Explorer 12,80,2018-02-16
+session,155,7,Chrome 3,78,2017-09-05
+user,156,Mabelle,Carylon,62
+session,156,0,Safari 15,33,2017-05-01
+user,157,Bo,Vanetta,7
+session,157,0,Safari 7,37,2017-11-10
+session,157,1,Safari 2,96,2017-01-26
+user,158,Stacey,Man,48
+session,158,0,Safari 35,14,2018-09-26
+user,159,Deloras,Sharron,56
+session,159,0,Chrome 12,54,2017-10-10
+session,159,1,Chrome 22,3,2018-03-30
+session,159,2,Safari 31,12,2016-09-03
+user,160,Kristan,Art,2
+session,160,0,Safari 29,108,2016-09-18
+session,160,1,Safari 26,52,2016-12-26
+session,160,2,Firefox 22,10,2017-03-07
+session,160,3,Internet Explorer 22,35,2016-08-20
+session,160,4,Internet Explorer 18,108,2017-01-31
+user,161,Sergio,Almeda,90
+session,161,0,Chrome 14,104,2017-03-22
+user,162,Vance,Heidy,3
+session,162,0,Firefox 25,25,2017-05-08
+session,162,1,Internet Explorer 27,5,2017-02-07
+session,162,2,Chrome 47,2,2016-05-20
+session,162,3,Firefox 14,67,2018-09-12
+session,162,4,Internet Explorer 23,86,2018-12-08
+session,162,5,Internet Explorer 3,53,2018-09-08
+user,163,Sulema,Georgene,22
+session,163,0,Internet Explorer 49,112,2016-10-16
+session,163,1,Safari 1,106,2018-03-13
+session,163,2,Safari 14,83,2018-12-28
+user,164,Verda,Lili,61
+session,164,0,Safari 16,103,2018-09-26
+session,164,1,Safari 36,78,2018-12-06
+session,164,2,Internet Explorer 26,25,2017-08-20
+session,164,3,Chrome 8,45,2017-08-16
+session,164,4,Firefox 30,118,2018-06-08
+session,164,5,Internet Explorer 38,35,2016-11-15
+user,165,Leonarda,Jame,18
+session,165,0,Safari 30,48,2018-01-19
+session,165,1,Internet Explorer 45,94,2017-07-11
+session,165,2,Safari 22,116,2018-03-06
+session,165,3,Internet Explorer 10,11,2018-07-15
+session,165,4,Firefox 7,88,2018-12-21
+session,165,5,Chrome 18,33,2018-05-08
+user,166,Matt,Adrien,89
+session,166,0,Safari 25,105,2016-07-16
+session,166,1,Internet Explorer 16,103,2018-01-19
+session,166,2,Chrome 12,28,2018-11-03
+session,166,3,Safari 3,65,2016-08-17
+user,167,Zetta,Dara,42
+session,167,0,Safari 3,29,2017-11-17
+user,168,Nova,Ollie,97
+session,168,0,Internet Explorer 50,7,2018-02-07
+session,168,1,Safari 42,41,2017-06-16
+session,168,2,Firefox 17,101,2016-05-21
+session,168,3,Safari 20,20,2017-05-02
+session,168,4,Safari 11,40,2016-07-07
+session,168,5,Firefox 41,17,2016-11-22
+session,168,6,Firefox 49,44,2017-10-13
+session,168,7,Chrome 22,101,2018-09-12
+user,169,Erin,Matt,62
+session,169,0,Safari 31,114,2018-10-01
+session,169,1,Chrome 7,3,2017-04-02
+user,170,Randal,Tiffiny,27
+session,170,0,Firefox 25,114,2017-11-09
+session,170,1,Firefox 19,8,2016-06-19
+session,170,2,Safari 9,73,2018-04-12
+session,170,3,Internet Explorer 34,63,2018-07-31
+user,171,Earnest,Gemma,2
+session,171,0,Chrome 32,76,2018-12-18
+session,171,1,Chrome 19,3,2018-03-04
+session,171,2,Safari 10,101,2017-03-16
+session,171,3,Chrome 16,76,2017-08-03
+user,172,Wei,Sharleen,16
+session,172,0,Chrome 5,9,2018-11-16
+session,172,1,Chrome 17,96,2017-01-16
+session,172,2,Safari 24,37,2018-07-13
+session,172,3,Firefox 34,19,2018-03-07
+user,173,Hector,Marin,56
+session,173,0,Firefox 24,94,2018-07-29
+user,174,Robin,Tyrone,54
+session,174,0,Internet Explorer 16,81,2017-04-12
+session,174,1,Chrome 23,36,2017-04-01
+session,174,2,Chrome 50,54,2017-08-30
+user,175,Rosalyn,Inell,34
+session,175,0,Internet Explorer 29,75,2017-11-01
+session,175,1,Internet Explorer 11,72,2018-05-12
+session,175,2,Chrome 46,42,2018-08-10
+session,175,3,Chrome 13,6,2016-12-21
+session,175,4,Firefox 9,55,2016-08-01
+session,175,5,Chrome 5,103,2018-12-02
+user,176,Cory,Maurine,26
+session,176,0,Chrome 34,16,2018-05-22
+session,176,1,Safari 5,31,2017-09-03
+session,176,2,Internet Explorer 22,55,2017-01-06
+session,176,3,Chrome 41,26,2017-04-14
+session,176,4,Internet Explorer 42,4,2017-07-28
+session,176,5,Chrome 45,115,2017-07-12
+session,176,6,Firefox 26,58,2017-03-04
+session,176,7,Safari 26,7,2018-03-06
+session,176,8,Safari 34,60,2016-11-18
+session,176,9,Chrome 10,12,2018-06-30
+user,177,Roxanna,Sina,42
+session,177,0,Internet Explorer 13,108,2017-03-01
+session,177,1,Firefox 13,15,2018-11-16
+session,177,2,Internet Explorer 37,2,2017-11-24
+session,177,3,Safari 5,108,2017-01-01
+session,177,4,Internet Explorer 20,99,2018-06-02
+session,177,5,Firefox 36,54,2018-12-07
+user,178,Marisha,Tijuana,75
+session,178,0,Safari 38,17,2016-11-06
+session,178,1,Internet Explorer 9,67,2016-11-28
+session,178,2,Safari 45,82,2018-05-14
+session,178,3,Firefox 30,85,2017-08-18
+user,179,Tena,Ena,80
+session,179,0,Safari 10,36,2018-08-18
+user,180,German,Florida,78
+session,180,0,Firefox 21,95,2018-04-28
+session,180,1,Chrome 16,91,2017-08-27
+user,181,Cinthia,Angila,10
+session,181,0,Chrome 8,96,2016-12-26
+session,181,1,Chrome 4,50,2016-12-07
+session,181,2,Firefox 8,88,2019-02-08
+session,181,3,Internet Explorer 41,52,2017-10-13
+session,181,4,Safari 29,113,2017-07-21
+session,181,5,Internet Explorer 24,47,2018-12-17
+session,181,6,Internet Explorer 29,82,2018-09-21
+session,181,7,Firefox 18,56,2018-10-20
+user,182,Libbie,Keiko,20
+session,182,0,Chrome 38,67,2016-10-27
+session,182,1,Firefox 31,44,2016-08-20
+session,182,2,Safari 36,27,2017-10-24
+session,182,3,Internet Explorer 45,53,2018-07-31
+session,182,4,Chrome 14,48,2017-06-08
+session,182,5,Firefox 26,82,2016-07-11
+session,182,6,Internet Explorer 24,38,2017-02-04
+user,183,Isobel,Dave,69
+session,183,0,Firefox 28,40,2017-03-13
+session,183,1,Internet Explorer 17,16,2016-10-06
+session,183,2,Safari 1,38,2017-01-20
+session,183,3,Internet Explorer 44,91,2017-06-03
+session,183,4,Internet Explorer 37,5,2016-12-30
+session,183,5,Firefox 36,20,2017-05-02
+session,183,6,Firefox 26,57,2016-08-17
+session,183,7,Safari 21,37,2017-08-12
+session,183,8,Chrome 28,7,2018-02-22
+user,184,Francesco,Fay,0
+session,184,0,Chrome 27,68,2017-08-03
+session,184,1,Safari 7,40,2017-05-10
+session,184,2,Safari 47,94,2018-03-01
+session,184,3,Safari 3,14,2016-09-02
+user,185,Edgar,Temple,53
+session,185,0,Chrome 22,70,2017-06-25
+session,185,1,Firefox 34,8,2018-05-14
+session,185,2,Safari 16,100,2017-11-02
+session,185,3,Safari 40,84,2017-02-24
+session,185,4,Chrome 5,60,2018-08-16
+session,185,5,Firefox 50,76,2018-03-18
+user,186,Mohammad,Lenny,46
+session,186,0,Chrome 28,116,2017-03-29
+session,186,1,Firefox 17,106,2017-09-19
+user,187,Vincenza,Latoya,37
+session,187,0,Firefox 2,52,2016-10-20
+session,187,1,Firefox 40,17,2016-06-27
+session,187,2,Internet Explorer 11,52,2018-10-05
+session,187,3,Safari 9,87,2018-11-04
+session,187,4,Safari 36,6,2016-10-21
+session,187,5,Chrome 16,110,2017-06-07
+session,187,6,Chrome 47,7,2016-08-26
+session,187,7,Safari 21,105,2016-07-08
+user,188,Brent,Kelly,33
+session,188,0,Firefox 17,88,2018-06-11
+session,188,1,Firefox 16,66,2017-11-04
+session,188,2,Safari 26,15,2016-07-03
+session,188,3,Internet Explorer 43,0,2017-11-17
+session,188,4,Chrome 40,23,2017-02-27
+session,188,5,Internet Explorer 16,50,2018-11-22
+user,189,Lincoln,Jillian,60
+session,189,0,Firefox 12,13,2017-08-01
+session,189,1,Firefox 21,109,2018-04-28
+user,190,Iluminada,Kenda,12
+session,190,0,Internet Explorer 20,0,2017-02-23
+session,190,1,Firefox 18,16,2019-01-02
+session,190,2,Chrome 1,29,2018-10-18
+session,190,3,Internet Explorer 32,117,2016-12-08
+session,190,4,Safari 3,104,2018-04-22
+session,190,5,Safari 5,86,2018-05-08
+session,190,6,Firefox 22,18,2018-06-07
+user,191,Eartha,Augusta,78
+session,191,0,Chrome 30,16,2016-05-28
+session,191,1,Safari 36,81,2018-06-28
+session,191,2,Safari 21,71,2017-05-19
+session,191,3,Chrome 2,62,2018-06-23
+session,191,4,Firefox 18,75,2016-11-12
+user,192,Marcelo,Denae,50
+session,192,0,Chrome 31,48,2018-06-12
+session,192,1,Chrome 3,1,2017-02-28
+session,192,2,Firefox 16,98,2018-01-30
+user,193,Shellie,Napoleon,20
+session,193,0,Safari 14,100,2017-08-03
+session,193,1,Internet Explorer 14,112,2018-04-10
+session,193,2,Internet Explorer 22,55,2017-03-15
+session,193,3,Internet Explorer 48,51,2017-05-30
+user,194,Laurence,Donald,41
+session,194,0,Internet Explorer 31,9,2017-10-19
+session,194,1,Chrome 7,30,2018-05-13
+session,194,2,Firefox 17,95,2018-07-28
+session,194,3,Internet Explorer 6,29,2017-07-06
+session,194,4,Firefox 38,31,2017-05-02
+session,194,5,Internet Explorer 19,10,2017-09-21
+session,194,6,Chrome 12,10,2016-11-16
+user,195,Lonnie,Gayle,55
+session,195,0,Internet Explorer 34,53,2016-06-14
+session,195,1,Internet Explorer 26,116,2018-12-30
+session,195,2,Internet Explorer 40,35,2018-01-09
+session,195,3,Chrome 13,92,2017-06-23
+user,196,Charlie,Somer,65
+session,196,0,Firefox 49,77,2017-12-07
+session,196,1,Firefox 4,78,2017-03-31
+session,196,2,Safari 2,49,2017-07-25
+session,196,3,Chrome 25,24,2018-06-06
+session,196,4,Firefox 35,38,2018-08-11
+session,196,5,Chrome 32,102,2018-02-10
+session,196,6,Firefox 31,26,2018-05-10
+session,196,7,Safari 46,14,2017-02-27
+user,197,Berry,Janeth,44
+session,197,0,Chrome 8,95,2017-07-20
+user,198,Trevor,Jeanett,76
+session,198,0,Chrome 31,45,2018-05-13
+session,198,1,Chrome 18,86,2016-09-18
+user,199,Oren,Kim,7
+session,199,0,Firefox 1,34,2017-06-19
+session,199,1,Chrome 44,112,2016-12-07
+session,199,2,Safari 7,27,2016-06-20
+session,199,3,Firefox 4,29,2017-07-22
+session,199,4,Internet Explorer 4,41,2016-07-08
+session,199,5,Safari 42,1,2017-09-11
+session,199,6,Firefox 4,105,2018-10-21
+session,199,7,Firefox 40,93,2017-08-18
+session,199,8,Firefox 13,84,2018-11-20
+user,200,Freddy,Hiram,94
+session,200,0,Safari 49,43,2018-04-01
+session,200,1,Firefox 36,30,2018-04-12
+session,200,2,Chrome 15,111,2018-11-10
+session,200,3,Safari 2,60,2017-06-08
+user,201,Jules,Lucia,36
+session,201,0,Safari 37,78,2016-06-16
+user,202,Christa,Callie,77
+session,202,0,Internet Explorer 1,70,2017-07-15
+session,202,1,Internet Explorer 27,74,2018-02-07
+user,203,Hyun,Raelene,0
+session,203,0,Chrome 9,40,2016-07-11
+user,204,Britni,Nia,48
+session,204,0,Internet Explorer 40,29,2018-05-27
+session,204,1,Chrome 42,99,2016-10-05
+user,205,Caryn,Celia,19
+session,205,0,Safari 43,12,2016-07-20
+user,206,Georgine,Haley,84
+session,206,0,Safari 38,28,2018-03-04
+session,206,1,Safari 18,35,2018-08-27
+session,206,2,Firefox 29,118,2017-12-21
+session,206,3,Internet Explorer 31,28,2017-11-02
+session,206,4,Chrome 43,47,2018-06-12
+session,206,5,Firefox 5,5,2018-08-03
+session,206,6,Chrome 48,97,2017-05-17
+session,206,7,Safari 6,65,2018-02-26
+session,206,8,Chrome 31,46,2017-10-07
+user,207,Jordon,Amiee,15
+session,207,0,Firefox 48,7,2018-02-06
+session,207,1,Firefox 36,17,2016-09-16
+session,207,2,Internet Explorer 8,52,2018-03-25
+session,207,3,Safari 46,71,2018-11-16
+session,207,4,Safari 34,54,2018-05-15
+user,208,Kacy,Shakita,10
+session,208,0,Firefox 46,38,2018-03-02
+session,208,1,Firefox 47,51,2017-11-26
+session,208,2,Safari 28,92,2019-01-16
+session,208,3,Firefox 42,13,2017-05-31
+session,208,4,Safari 2,13,2017-05-29
+session,208,5,Internet Explorer 24,26,2016-10-02
+session,208,6,Firefox 22,73,2018-06-23
+session,208,7,Chrome 11,23,2017-12-12
+user,209,Donovan,Deane,73
+session,209,0,Internet Explorer 44,6,2017-10-09
+session,209,1,Firefox 14,31,2018-12-24
+session,209,2,Chrome 35,64,2017-05-25
+session,209,3,Chrome 8,88,2016-10-31
+session,209,4,Firefox 26,10,2018-08-05
+session,209,5,Chrome 30,6,2017-05-27
+session,209,6,Safari 10,111,2017-06-25
+session,209,7,Chrome 10,42,2016-07-16
+session,209,8,Internet Explorer 18,9,2017-06-17
+user,210,Brandi,Luann,41
+session,210,0,Safari 23,108,2018-03-27
+session,210,1,Internet Explorer 36,21,2017-06-24
+session,210,2,Chrome 15,29,2016-05-23
+session,210,3,Chrome 26,17,2017-02-19
+user,211,Zachery,Franchesca,32
+session,211,0,Chrome 39,52,2016-08-02
+user,212,Augustine,Lupe,55
+session,212,0,Safari 35,80,2018-08-08
+session,212,1,Chrome 45,59,2017-05-06
+session,212,2,Internet Explorer 4,2,2018-02-16
+session,212,3,Safari 19,0,2017-08-30
+session,212,4,Internet Explorer 47,111,2018-03-06
+session,212,5,Internet Explorer 43,119,2017-11-07
+session,212,6,Chrome 40,39,2017-10-27
+session,212,7,Internet Explorer 33,89,2016-12-21
+session,212,8,Chrome 12,5,2016-07-23
+session,212,9,Internet Explorer 49,9,2017-07-01
+user,213,Gabriel,Aline,80
+session,213,0,Firefox 28,56,2018-12-13
+session,213,1,Safari 26,48,2017-06-25
+session,213,2,Chrome 2,87,2018-07-29
+session,213,3,Safari 22,93,2018-10-10
+session,213,4,Safari 41,65,2017-06-22
+session,213,5,Safari 35,111,2017-04-06
+session,213,6,Safari 40,90,2019-01-05
+session,213,7,Safari 41,75,2018-01-08
+user,214,Isaac,Irina,55
+session,214,0,Internet Explorer 43,9,2018-02-06
+session,214,1,Safari 24,30,2018-10-26
+session,214,2,Firefox 45,50,2016-07-05
+session,214,3,Safari 36,48,2017-08-23
+session,214,4,Internet Explorer 26,6,2018-04-30
+session,214,5,Internet Explorer 28,101,2016-12-15
+user,215,Myron,Lacy,63
+session,215,0,Internet Explorer 6,66,2017-07-13
+session,215,1,Internet Explorer 29,23,2018-07-10
+session,215,2,Chrome 18,15,2016-06-18
+user,216,Yong,Heike,3
+session,216,0,Safari 45,67,2016-05-30
+session,216,1,Chrome 45,10,2019-02-02
+session,216,2,Chrome 27,49,2017-09-12
+session,216,3,Internet Explorer 6,116,2019-01-30
+session,216,4,Safari 14,112,2017-04-24
+session,216,5,Chrome 50,3,2016-10-15
+session,216,6,Safari 45,69,2017-04-25
+session,216,7,Chrome 8,38,2017-04-18
+session,216,8,Chrome 9,48,2017-04-04
+user,217,Wilfredo,Jacinto,3
+session,217,0,Chrome 47,80,2016-09-09
+session,217,1,Safari 28,101,2019-01-11
+session,217,2,Firefox 23,89,2017-12-05
+user,218,Dannie,Twanda,42
+session,218,0,Chrome 28,41,2018-10-30
+session,218,1,Safari 10,82,2018-06-16
+session,218,2,Internet Explorer 7,99,2017-01-11
+session,218,3,Internet Explorer 18,42,2017-09-01
+session,218,4,Safari 42,39,2016-07-26
+user,219,Theo,Lottie,32
+session,219,0,Internet Explorer 48,45,2016-07-27
+session,219,1,Firefox 9,102,2018-01-30
+session,219,2,Chrome 44,28,2018-05-04
+session,219,3,Internet Explorer 28,46,2018-08-20
+user,220,Jesenia,Lai,81
+session,220,0,Internet Explorer 28,107,2018-11-30
+session,220,1,Firefox 49,112,2018-02-07
+user,221,Simon,Pearly,17
+session,221,0,Safari 2,99,2018-11-09
+session,221,1,Firefox 4,116,2016-10-16
+session,221,2,Firefox 46,57,2018-06-19
+session,221,3,Safari 20,53,2018-06-11
+session,221,4,Internet Explorer 38,81,2018-01-13
+session,221,5,Firefox 8,45,2017-05-09
+user,222,Eldon,Florencia,36
+session,222,0,Internet Explorer 2,92,2016-11-13
+session,222,1,Firefox 47,2,2016-11-11
+session,222,2,Chrome 25,116,2016-08-21
+session,222,3,Internet Explorer 9,51,2017-06-24
+session,222,4,Internet Explorer 45,113,2017-05-27
+session,222,5,Safari 35,53,2017-03-14
+user,223,Ben,Leisha,23
+session,223,0,Safari 11,101,2019-01-06
+session,223,1,Safari 41,100,2018-05-30
+session,223,2,Internet Explorer 13,77,2017-01-09
+session,223,3,Safari 38,50,2018-05-26
+session,223,4,Firefox 21,18,2017-09-15
+session,223,5,Safari 30,41,2017-05-05
+session,223,6,Internet Explorer 19,53,2017-09-26
+session,223,7,Firefox 38,56,2016-07-29
+session,223,8,Firefox 50,66,2017-04-27
+user,224,Daron,Marshall,64
+session,224,0,Chrome 11,85,2018-04-09
+session,224,1,Internet Explorer 17,106,2018-03-06
+session,224,2,Safari 9,41,2017-03-05
+session,224,3,Chrome 3,54,2018-08-27
+user,225,Melva,Buena,89
+session,225,0,Firefox 31,86,2017-05-18
+session,225,1,Firefox 11,25,2018-01-23
+session,225,2,Internet Explorer 46,28,2017-02-02
+session,225,3,Safari 12,69,2018-01-13
+session,225,4,Safari 18,89,2019-01-16
+session,225,5,Safari 8,40,2017-07-22
+session,225,6,Internet Explorer 28,76,2019-01-13
+session,225,7,Internet Explorer 37,61,2016-08-20
+session,225,8,Firefox 47,72,2018-04-10
+user,226,Andres,Broderick,68
+session,226,0,Safari 29,96,2016-07-13
+user,227,Ron,Lanora,93
+session,227,0,Chrome 48,106,2017-02-18
+session,227,1,Internet Explorer 15,28,2018-07-31
+user,228,Olen,Donn,31
+session,228,0,Firefox 14,35,2017-12-21
+session,228,1,Safari 16,20,2017-06-11
+session,228,2,Chrome 48,109,2017-03-07
+session,228,3,Firefox 1,32,2017-05-25
+user,229,Caroll,Kate,42
+session,229,0,Internet Explorer 41,32,2018-06-09
+session,229,1,Firefox 47,37,2018-01-22
+session,229,2,Safari 20,75,2018-04-21
+session,229,3,Safari 47,52,2017-10-09
+session,229,4,Firefox 37,96,2017-05-14
+session,229,5,Safari 38,50,2018-08-23
+session,229,6,Chrome 20,27,2018-03-27
+user,230,Shana,Hobert,79
+session,230,0,Chrome 39,33,2016-09-02
+session,230,1,Internet Explorer 23,14,2017-09-30
+session,230,2,Internet Explorer 43,55,2016-12-03
+session,230,3,Internet Explorer 41,22,2019-02-10
+session,230,4,Internet Explorer 30,113,2018-08-18
+session,230,5,Safari 4,3,2016-05-19
+session,230,6,Firefox 9,76,2017-01-09
+user,231,Phil,Moira,64
+session,231,0,Safari 42,85,2017-06-17
+session,231,1,Chrome 47,98,2016-09-28
+session,231,2,Internet Explorer 26,3,2016-12-24
+session,231,3,Firefox 24,10,2017-10-29
+session,231,4,Safari 37,22,2016-11-16
+session,231,5,Chrome 23,38,2017-06-08
+session,231,6,Chrome 7,91,2018-08-22
+session,231,7,Chrome 50,90,2017-08-24
+user,232,Efrain,Daniele,86
+session,232,0,Chrome 31,45,2017-07-24
+session,232,1,Safari 25,24,2019-02-04
+session,232,2,Safari 43,1,2018-04-14
+session,232,3,Internet Explorer 47,23,2017-08-06
+user,233,Ria,Barbera,27
+session,233,0,Internet Explorer 38,28,2017-03-14
+session,233,1,Firefox 19,62,2016-09-11
+session,233,2,Firefox 23,18,2017-11-03
+session,233,3,Firefox 13,29,2016-10-31
+session,233,4,Firefox 3,95,2018-07-09
+session,233,5,Firefox 17,18,2016-09-10
+session,233,6,Safari 26,34,2017-07-18
+session,233,7,Firefox 37,105,2016-09-13
+user,234,Percy,Tess,4
+session,234,0,Safari 2,0,2018-02-18
+session,234,1,Chrome 2,40,2017-02-09
+session,234,2,Chrome 17,65,2018-07-27
+session,234,3,Safari 24,107,2017-12-02
+session,234,4,Safari 2,77,2019-01-27
+session,234,5,Firefox 28,15,2016-08-21
+session,234,6,Safari 23,89,2016-07-13
+session,234,7,Safari 27,94,2018-10-14
+session,234,8,Safari 14,27,2017-05-17
+session,234,9,Chrome 29,11,2017-07-04
+user,235,Curtis,Eleni,16
+session,235,0,Chrome 50,117,2017-01-04
+session,235,1,Chrome 5,103,2018-03-08
+session,235,2,Chrome 2,33,2016-08-05
+session,235,3,Internet Explorer 11,53,2018-08-18
+user,236,Delmar,Chantell,3
+session,236,0,Firefox 23,16,2016-10-22
+session,236,1,Firefox 5,34,2016-11-10
+user,237,Lenora,Lynwood,78
+session,237,0,Firefox 10,63,2018-08-09
+session,237,1,Safari 37,92,2018-09-10
+session,237,2,Chrome 15,62,2018-04-09
+session,237,3,Firefox 5,7,2018-10-20
+user,238,Jamey,Ignacio,93
+session,238,0,Firefox 45,95,2017-06-11
+session,238,1,Safari 9,24,2017-10-03
+session,238,2,Firefox 24,3,2018-11-01
+session,238,3,Internet Explorer 48,99,2018-07-04
+session,238,4,Firefox 37,71,2017-10-03
+session,238,5,Firefox 38,110,2018-12-31
+session,238,6,Safari 40,108,2017-02-08
+user,239,Marvin,Freddie,7
+session,239,0,Safari 3,86,2016-05-26
+session,239,1,Safari 50,62,2018-04-05
+session,239,2,Chrome 31,78,2016-10-04
+user,240,Chance,Willa,48
+session,240,0,Chrome 37,73,2018-05-25
+session,240,1,Safari 5,99,2018-02-19
+session,240,2,Firefox 18,100,2017-12-15
+session,240,3,Firefox 10,112,2017-12-20
+session,240,4,Safari 13,91,2018-11-12
+session,240,5,Chrome 44,98,2016-11-09
+session,240,6,Internet Explorer 22,63,2016-06-21
+session,240,7,Chrome 40,74,2017-05-18
+user,241,Petrina,Carmelita,1
+session,241,0,Safari 32,75,2017-10-24
+session,241,1,Safari 30,1,2017-07-01
+session,241,2,Safari 29,17,2016-06-02
+session,241,3,Chrome 22,107,2018-08-20
+session,241,4,Chrome 24,118,2018-03-08
+session,241,5,Chrome 13,99,2017-09-29
+session,241,6,Internet Explorer 38,65,2016-11-05
+session,241,7,Safari 8,25,2018-11-24
+session,241,8,Internet Explorer 7,5,2016-11-24
+user,242,Kathrin,Clement,29
+session,242,0,Chrome 39,86,2018-01-15
+session,242,1,Firefox 49,73,2017-10-23
+session,242,2,Internet Explorer 17,61,2017-02-10
+user,243,Brooks,Theron,80
+session,243,0,Safari 47,54,2018-12-10
+session,243,1,Firefox 43,110,2016-12-29
+session,243,2,Safari 46,92,2017-05-28
+session,243,3,Internet Explorer 1,54,2017-11-03
+session,243,4,Chrome 2,98,2018-08-04
+user,244,Brain,Dewitt,78
+session,244,0,Safari 44,31,2019-02-04
+session,244,1,Internet Explorer 44,48,2016-07-22
+session,244,2,Firefox 25,70,2018-12-09
+session,244,3,Firefox 43,62,2018-09-29
+session,244,4,Safari 1,10,2016-10-15
+session,244,5,Safari 47,63,2018-03-11
+user,245,Brent,Elia,86
+session,245,0,Internet Explorer 50,116,2018-03-12
+user,246,Philip,Cecelia,17
+session,246,0,Firefox 45,43,2018-07-15
+session,246,1,Chrome 50,64,2017-08-18
+session,246,2,Chrome 8,59,2018-08-22
+user,247,Calvin,Della,90
+session,247,0,Internet Explorer 15,23,2017-01-25
+user,248,Warren,Iris,72
+session,248,0,Chrome 26,62,2017-10-18
+user,249,Isidra,Dorsey,83
+session,249,0,Internet Explorer 3,77,2018-08-10
+session,249,1,Safari 36,87,2018-11-22
+session,249,2,Firefox 9,95,2018-12-26
+session,249,3,Safari 19,39,2017-04-21
+user,250,Yen,Claudia,60
+session,250,0,Chrome 49,41,2018-07-08
+session,250,1,Internet Explorer 6,100,2017-01-28
+session,250,2,Firefox 19,93,2017-08-09
+user,251,Mora,Ha,86
+session,251,0,Internet Explorer 1,1,2018-10-30
+session,251,1,Firefox 15,95,2018-04-13
+session,251,2,Chrome 22,10,2016-05-20
+session,251,3,Safari 33,103,2018-10-02
+session,251,4,Safari 43,67,2019-01-11
+session,251,5,Firefox 24,50,2019-01-05
+session,251,6,Firefox 49,36,2016-09-21
+session,251,7,Internet Explorer 48,19,2018-01-20
+session,251,8,Safari 11,52,2017-08-08
+user,252,Dorian,Deane,15
+session,252,0,Safari 23,86,2017-04-23
+session,252,1,Internet Explorer 40,87,2017-06-14
+session,252,2,Internet Explorer 47,29,2017-07-21
+session,252,3,Chrome 27,4,2018-05-27
+session,252,4,Safari 16,0,2018-10-07
+session,252,5,Internet Explorer 26,54,2018-12-20
+session,252,6,Firefox 14,66,2017-08-05
+session,252,7,Internet Explorer 27,13,2017-01-28
+user,253,Shawn,Jaimee,79
+session,253,0,Internet Explorer 21,68,2017-01-19
+session,253,1,Internet Explorer 35,62,2017-04-29
+session,253,2,Internet Explorer 1,64,2017-12-29
+session,253,3,Chrome 36,2,2019-01-21
+session,253,4,Firefox 19,43,2018-03-10
+user,254,Cori,Divina,16
+session,254,0,Internet Explorer 30,116,2017-07-27
+session,254,1,Internet Explorer 42,74,2018-10-25
+session,254,2,Firefox 30,21,2018-12-20
+session,254,3,Firefox 13,57,2018-12-01
+session,254,4,Chrome 3,14,2018-07-16
+session,254,5,Firefox 34,99,2017-02-28
+user,255,Garret,Georgann,75
+session,255,0,Chrome 8,33,2017-11-14
+session,255,1,Chrome 43,51,2016-08-06
+session,255,2,Internet Explorer 21,20,2019-01-11
+session,255,3,Chrome 37,102,2018-11-16
+session,255,4,Safari 11,66,2016-08-27
+session,255,5,Internet Explorer 23,47,2017-10-17
+session,255,6,Internet Explorer 14,43,2019-01-11
+session,255,7,Firefox 27,60,2016-12-15
+session,255,8,Firefox 33,83,2018-08-23
+user,256,Theo,Tricia,82
+session,256,0,Internet Explorer 32,71,2017-01-25
+user,257,Libby,Lera,12
+session,257,0,Firefox 24,86,2016-12-01
+session,257,1,Safari 38,104,2017-03-21
+session,257,2,Chrome 16,47,2019-01-04
+session,257,3,Safari 14,25,2018-07-27
+session,257,4,Chrome 5,112,2018-03-27
+session,257,5,Firefox 10,43,2018-02-04
+session,257,6,Firefox 15,82,2018-05-25
+session,257,7,Chrome 29,38,2017-05-17
+session,257,8,Firefox 41,4,2018-01-09
+session,257,9,Firefox 8,96,2017-05-15
+user,258,Evalyn,Abe,39
+session,258,0,Safari 47,2,2018-09-21
+session,258,1,Safari 36,117,2017-07-31
+session,258,2,Internet Explorer 14,53,2016-12-06
+session,258,3,Internet Explorer 24,103,2018-10-07
+session,258,4,Safari 42,28,2018-05-24
+session,258,5,Internet Explorer 24,95,2018-10-15
+user,259,Alexandra,Malia,95
+session,259,0,Firefox 41,70,2017-06-13
+session,259,1,Internet Explorer 34,70,2018-12-21
+session,259,2,Firefox 13,81,2018-03-10
+session,259,3,Internet Explorer 28,38,2017-03-21
+session,259,4,Chrome 6,109,2016-05-29
+session,259,5,Internet Explorer 45,102,2018-11-22
+session,259,6,Firefox 21,8,2017-01-13
+session,259,7,Internet Explorer 45,84,2017-01-15
+user,260,Tamisha,Camelia,84
+session,260,0,Safari 25,93,2017-06-10
+session,260,1,Internet Explorer 46,110,2016-09-26
+session,260,2,Firefox 18,107,2018-04-28
+session,260,3,Chrome 28,52,2018-07-07
+session,260,4,Internet Explorer 29,98,2017-10-20
+session,260,5,Safari 14,116,2018-04-22
+session,260,6,Firefox 27,15,2017-05-30
+session,260,7,Firefox 33,111,2018-02-11
+session,260,8,Safari 23,8,2018-11-13
+session,260,9,Chrome 25,117,2017-08-12
+user,261,Walker,Gerry,71
+session,261,0,Chrome 45,61,2018-02-17
+session,261,1,Firefox 11,75,2016-11-05
+session,261,2,Internet Explorer 15,61,2018-04-29
+session,261,3,Safari 17,56,2016-12-19
+user,262,Tuan,Maire,13
+session,262,0,Firefox 15,98,2016-08-08
+session,262,1,Chrome 30,35,2017-09-09
+user,263,Elvin,Ayesha,77
+session,263,0,Firefox 43,16,2019-02-04
+session,263,1,Chrome 5,57,2017-03-26
+session,263,2,Firefox 49,66,2017-08-18
+session,263,3,Chrome 3,103,2017-12-06
+user,264,Stanton,Margareta,11
+session,264,0,Firefox 19,30,2018-12-28
+session,264,1,Internet Explorer 16,91,2018-06-03
+session,264,2,Safari 16,107,2017-08-17
+session,264,3,Firefox 4,6,2016-07-11
+session,264,4,Firefox 12,13,2017-05-22
+session,264,5,Chrome 20,38,2017-02-04
+session,264,6,Chrome 2,41,2016-12-18
+user,265,Delora,Porter,44
+session,265,0,Chrome 18,72,2018-08-27
+session,265,1,Firefox 45,18,2016-11-08
+session,265,2,Chrome 7,25,2018-03-15
+session,265,3,Chrome 27,41,2018-11-19
+session,265,4,Safari 30,15,2018-08-26
+session,265,5,Internet Explorer 7,81,2018-11-05
+session,265,6,Internet Explorer 3,26,2016-06-06
+session,265,7,Chrome 31,66,2018-02-21
+session,265,8,Firefox 6,114,2016-09-21
+session,265,9,Chrome 2,101,2018-03-06
+user,266,Jene,Margart,37
+session,266,0,Chrome 41,33,2017-07-19
+session,266,1,Safari 48,103,2017-09-15
+session,266,2,Safari 11,70,2018-08-23
+session,266,3,Safari 31,28,2017-06-23
+user,267,Vertie,Rob,83
+session,267,0,Safari 50,113,2017-12-05
+session,267,1,Chrome 26,22,2016-07-27
+session,267,2,Firefox 34,114,2017-07-18
+session,267,3,Chrome 18,56,2017-11-09
+user,268,Jude,Rowena,47
+session,268,0,Internet Explorer 20,51,2018-05-05
+session,268,1,Firefox 36,14,2017-05-19
+session,268,2,Firefox 41,87,2018-10-21
+session,268,3,Safari 31,3,2017-08-14
+session,268,4,Safari 29,13,2016-08-06
+session,268,5,Firefox 7,31,2017-07-10
+session,268,6,Firefox 9,77,2017-12-28
+user,269,Sachiko,Marlys,68
+session,269,0,Chrome 28,61,2017-02-20
+session,269,1,Firefox 37,2,2016-08-18
+user,270,Walker,Qiana,23
+session,270,0,Firefox 49,13,2017-04-11
+session,270,1,Safari 42,114,2017-05-15
+session,270,2,Firefox 23,84,2017-05-23
+session,270,3,Chrome 23,67,2018-01-01
+user,271,Matilda,Anastacia,58
+session,271,0,Safari 26,79,2016-06-27
+session,271,1,Safari 8,89,2016-05-30
+session,271,2,Firefox 32,97,2018-10-25
+session,271,3,Firefox 11,87,2017-01-25
+session,271,4,Chrome 27,99,2016-08-27
+session,271,5,Chrome 2,111,2017-11-25
+session,271,6,Safari 37,116,2017-05-04
+user,272,Cory,Freda,87
+session,272,0,Internet Explorer 2,85,2018-01-26
+session,272,1,Safari 10,112,2019-01-11
+session,272,2,Internet Explorer 43,33,2018-10-13
+session,272,3,Internet Explorer 30,89,2019-02-09
+session,272,4,Chrome 25,96,2016-10-14
+session,272,5,Internet Explorer 27,116,2018-07-08
+session,272,6,Chrome 1,37,2019-02-03
+session,272,7,Internet Explorer 41,13,2017-12-19
+session,272,8,Firefox 33,71,2017-03-26
+user,273,Carlene,Alexis,49
+session,273,0,Internet Explorer 11,13,2018-08-30
+user,274,Milagros,Loreta,35
+session,274,0,Internet Explorer 4,40,2018-06-20
+session,274,1,Internet Explorer 12,114,2018-02-04
+session,274,2,Internet Explorer 5,101,2017-12-05
+session,274,3,Firefox 42,89,2016-12-12
+session,274,4,Firefox 4,94,2017-07-04
+user,275,Leonardo,Antonette,95
+session,275,0,Internet Explorer 47,94,2018-02-01
+session,275,1,Firefox 3,53,2016-08-12
+session,275,2,Safari 24,42,2018-08-08
+session,275,3,Safari 9,32,2016-10-11
+session,275,4,Safari 24,80,2016-09-22
+session,275,5,Chrome 33,31,2016-08-02
+session,275,6,Chrome 29,59,2017-11-01
+session,275,7,Firefox 25,65,2016-09-17
+user,276,Alyce,Susana,69
+session,276,0,Chrome 42,119,2016-11-28
+session,276,1,Chrome 1,75,2016-12-04
+session,276,2,Chrome 29,65,2018-10-04
+user,277,Miquel,Tori,99
+session,277,0,Chrome 34,47,2018-04-05
+session,277,1,Firefox 9,85,2017-09-06
+session,277,2,Safari 47,59,2017-02-05
+user,278,Ming,Rachelle,49
+session,278,0,Safari 43,9,2019-01-08
+user,279,Sonya,Rubie,6
+session,279,0,Safari 13,76,2018-03-08
+session,279,1,Firefox 1,32,2016-10-12
+session,279,2,Firefox 11,74,2017-04-02
+session,279,3,Safari 24,79,2016-10-27
+session,279,4,Internet Explorer 42,68,2018-05-02
+session,279,5,Safari 16,42,2016-12-26
+session,279,6,Safari 40,32,2018-12-16
+session,279,7,Safari 24,36,2016-06-13
+user,280,Leticia,Elana,20
+session,280,0,Safari 39,58,2017-11-23
+session,280,1,Internet Explorer 1,17,2016-09-12
+session,280,2,Firefox 48,0,2017-05-19
+session,280,3,Chrome 24,78,2017-03-05
+session,280,4,Internet Explorer 7,9,2016-07-02
+session,280,5,Chrome 19,118,2017-05-21
+session,280,6,Firefox 46,110,2017-12-06
+session,280,7,Chrome 38,93,2018-05-06
+user,281,Geoffrey,Leif,76
+session,281,0,Internet Explorer 19,109,2018-09-11
+session,281,1,Chrome 19,60,2017-12-21
+session,281,2,Internet Explorer 18,60,2018-12-28
+session,281,3,Internet Explorer 29,35,2018-07-24
+session,281,4,Internet Explorer 30,86,2016-08-21
+user,282,Perry,Shila,49
+session,282,0,Safari 44,56,2017-09-23
+session,282,1,Firefox 31,62,2019-01-24
+session,282,2,Chrome 13,1,2018-09-11
+session,282,3,Chrome 38,16,2018-02-28
+session,282,4,Chrome 31,56,2017-03-19
+session,282,5,Firefox 3,70,2018-02-21
+session,282,6,Safari 47,58,2017-05-04
+session,282,7,Safari 45,73,2017-02-06
+session,282,8,Internet Explorer 46,94,2018-03-15
+session,282,9,Safari 50,89,2017-11-25
+user,283,Johnathon,Kimberlee,26
+session,283,0,Firefox 5,19,2017-05-22
+session,283,1,Internet Explorer 47,89,2017-08-27
+session,283,2,Internet Explorer 6,118,2018-11-28
+session,283,3,Internet Explorer 17,44,2017-01-06
+session,283,4,Firefox 24,92,2017-07-16
+session,283,5,Internet Explorer 3,106,2018-11-28
+session,283,6,Internet Explorer 4,45,2018-07-25
+session,283,7,Chrome 29,94,2017-06-18
+session,283,8,Chrome 44,109,2016-12-19
+user,284,Shanti,Derrick,52
+session,284,0,Chrome 43,17,2017-02-01
+session,284,1,Internet Explorer 33,17,2018-07-30
+session,284,2,Firefox 7,22,2018-11-12
+session,284,3,Internet Explorer 36,58,2017-11-08
+session,284,4,Firefox 10,42,2017-02-14
+session,284,5,Internet Explorer 41,73,2018-06-13
+session,284,6,Chrome 5,31,2018-10-25
+session,284,7,Safari 45,70,2019-01-10
+session,284,8,Firefox 12,19,2017-12-11
+user,285,Peggy,Wynona,98
+session,285,0,Safari 2,66,2016-08-24
+session,285,1,Chrome 36,20,2018-07-21
+session,285,2,Chrome 37,1,2017-09-09
+session,285,3,Chrome 17,61,2017-05-04
+session,285,4,Safari 3,28,2018-07-08
+session,285,5,Firefox 31,92,2018-12-25
+session,285,6,Firefox 11,56,2017-04-25
+session,285,7,Safari 6,100,2018-08-24
+user,286,Mable,Nikia,90
+session,286,0,Firefox 36,82,2016-07-07
+session,286,1,Internet Explorer 24,5,2018-01-28
+session,286,2,Firefox 47,115,2017-02-16
+session,286,3,Chrome 30,92,2019-01-16
+session,286,4,Safari 49,106,2018-12-21
+user,287,Gaston,Carter,43
+session,287,0,Safari 33,67,2016-08-16
+session,287,1,Firefox 7,27,2018-05-17
+session,287,2,Chrome 41,54,2018-07-10
+user,288,Anderson,Terri,39
+session,288,0,Firefox 24,0,2017-01-26
+session,288,1,Internet Explorer 50,24,2018-08-09
+session,288,2,Internet Explorer 5,105,2018-06-11
+session,288,3,Safari 41,118,2018-03-16
+session,288,4,Safari 8,106,2017-02-16
+user,289,Mike,Debbie,10
+session,289,0,Chrome 12,3,2016-09-01
+session,289,1,Safari 14,112,2017-10-25
+session,289,2,Safari 12,107,2018-09-29
+session,289,3,Safari 22,84,2017-08-11
+session,289,4,Firefox 15,84,2016-07-17
+session,289,5,Safari 43,11,2017-05-25
+session,289,6,Chrome 18,104,2017-04-24
+session,289,7,Internet Explorer 12,62,2018-07-17
+session,289,8,Internet Explorer 13,33,2016-07-23
+session,289,9,Firefox 29,50,2017-04-17
+user,290,Arron,Carlotta,45
+session,290,0,Safari 10,3,2016-08-20
+session,290,1,Internet Explorer 1,108,2018-03-18
+session,290,2,Internet Explorer 29,105,2016-09-13
+user,291,Marcel,Abdul,51
+session,291,0,Internet Explorer 44,34,2018-11-17
+session,291,1,Internet Explorer 9,35,2016-09-30
+session,291,2,Chrome 27,73,2017-05-24
+session,291,3,Chrome 31,37,2018-02-06
+session,291,4,Firefox 38,85,2016-11-06
+session,291,5,Chrome 23,43,2019-01-17
+session,291,6,Firefox 13,103,2017-01-13
+user,292,Vickie,Lakendra,93
+session,292,0,Chrome 37,32,2018-10-14
+session,292,1,Safari 29,115,2017-04-22
+session,292,2,Safari 18,119,2018-09-23
+user,293,Dino,Shemika,16
+session,293,0,Internet Explorer 23,92,2016-12-27
+session,293,1,Safari 29,101,2018-06-25
+session,293,2,Internet Explorer 4,8,2016-12-17
+session,293,3,Firefox 36,10,2016-10-14
+user,294,Cornelius,Tisa,20
+session,294,0,Safari 41,82,2016-09-08
+session,294,1,Safari 21,22,2017-01-24
+user,295,Naoma,Harrison,83
+session,295,0,Internet Explorer 21,91,2016-07-15
+session,295,1,Internet Explorer 30,87,2016-07-16
+session,295,2,Internet Explorer 26,47,2017-10-30
+session,295,3,Firefox 28,36,2017-01-29
+session,295,4,Safari 45,80,2017-03-24
+session,295,5,Chrome 35,96,2018-04-26
+user,296,Crysta,Gwen,52
+session,296,0,Internet Explorer 47,92,2017-01-02
+session,296,1,Safari 9,72,2017-12-31
+session,296,2,Firefox 40,35,2017-03-24
+session,296,3,Chrome 24,77,2017-12-26
+session,296,4,Firefox 42,101,2018-06-22
+session,296,5,Safari 39,45,2018-02-19
+session,296,6,Firefox 36,61,2018-06-05
+session,296,7,Internet Explorer 1,70,2017-11-03
+session,296,8,Safari 25,60,2016-11-03
+session,296,9,Chrome 40,36,2018-08-07
+user,297,Liberty,Billie,74
+session,297,0,Internet Explorer 39,103,2016-12-31
+session,297,1,Firefox 28,0,2018-12-25
+session,297,2,Chrome 37,77,2017-07-08
+session,297,3,Firefox 16,48,2017-12-14
+session,297,4,Safari 23,22,2018-06-25
+session,297,5,Safari 44,21,2018-09-19
+session,297,6,Internet Explorer 12,52,2017-04-24
+session,297,7,Firefox 6,46,2017-05-25
+session,297,8,Firefox 12,57,2016-11-24
+user,298,Demetria,Daysi,42
+session,298,0,Chrome 44,27,2016-07-20
+session,298,1,Chrome 50,58,2017-04-13
+session,298,2,Safari 40,90,2019-01-17
+session,298,3,Internet Explorer 44,96,2018-05-27
+user,299,Lady,Gricelda,8
+session,299,0,Firefox 28,88,2017-08-16
+session,299,1,Chrome 11,14,2017-11-17
+session,299,2,Chrome 25,10,2018-09-25
+session,299,3,Safari 17,83,2017-10-21
+session,299,4,Safari 16,81,2017-07-05
+session,299,5,Chrome 26,40,2016-10-17
+session,299,6,Chrome 3,103,2018-03-04
+session,299,7,Chrome 24,70,2017-08-06
+user,300,Sulema,Daryl,99
+session,300,0,Internet Explorer 39,35,2018-01-16
+session,300,1,Safari 1,5,2016-10-22
+session,300,2,Firefox 10,61,2017-04-03
+session,300,3,Safari 37,71,2017-08-03
+user,301,Rachael,Lauryn,78
+session,301,0,Safari 7,51,2017-12-17
+user,302,Margarito,Arden,36
+session,302,0,Internet Explorer 33,23,2018-04-26
+session,302,1,Firefox 40,83,2018-10-06
+session,302,2,Chrome 5,118,2018-10-22
+session,302,3,Safari 25,17,2019-01-30
+session,302,4,Internet Explorer 34,95,2017-03-20
+session,302,5,Chrome 4,31,2018-11-06
+session,302,6,Internet Explorer 9,34,2017-04-24
+session,302,7,Firefox 49,68,2018-08-22
+session,302,8,Internet Explorer 35,83,2017-08-28
+user,303,Cletus,Jamel,28
+session,303,0,Chrome 18,37,2017-05-01
+session,303,1,Safari 38,30,2017-08-05
+session,303,2,Chrome 29,62,2016-08-08
+session,303,3,Safari 7,84,2016-11-14
+session,303,4,Internet Explorer 31,113,2016-07-24
+session,303,5,Firefox 6,90,2016-10-14
+session,303,6,Firefox 22,47,2018-12-25
+session,303,7,Firefox 41,15,2016-06-10
+session,303,8,Internet Explorer 50,3,2017-08-07
+user,304,Roscoe,Greg,28
+session,304,0,Firefox 28,99,2019-02-09
+session,304,1,Safari 29,49,2018-01-27
+session,304,2,Safari 9,61,2018-06-22
+session,304,3,Chrome 45,86,2018-05-20
+session,304,4,Safari 28,66,2017-07-06
+session,304,5,Chrome 32,92,2017-07-07
+session,304,6,Safari 26,25,2017-07-24
+user,305,Cody,Henry,36
+session,305,0,Safari 10,21,2016-11-05
+session,305,1,Internet Explorer 2,11,2016-05-23
+session,305,2,Chrome 5,1,2016-10-02
+user,306,Reba,Delena,33
+session,306,0,Chrome 36,37,2017-06-03
+session,306,1,Firefox 39,56,2018-10-26
+session,306,2,Chrome 34,108,2017-07-24
+session,306,3,Firefox 21,67,2018-07-11
+session,306,4,Internet Explorer 5,59,2018-01-29
+session,306,5,Firefox 43,102,2017-08-04
+session,306,6,Chrome 45,74,2017-03-20
+session,306,7,Internet Explorer 39,77,2017-07-04
+session,306,8,Internet Explorer 33,79,2017-05-31
+user,307,Moshe,Nora,80
+session,307,0,Safari 4,32,2016-06-10
+session,307,1,Safari 19,11,2018-05-18
+user,308,Lai,Christie,98
+session,308,0,Chrome 47,38,2017-11-10
+session,308,1,Chrome 10,81,2016-09-12
+session,308,2,Firefox 28,87,2018-08-18
+user,309,Anabel,Shera,99
+session,309,0,Internet Explorer 16,34,2017-02-25
+session,309,1,Firefox 23,57,2016-07-06
+session,309,2,Firefox 34,37,2018-03-03
+session,309,3,Internet Explorer 12,107,2017-09-20
+session,309,4,Internet Explorer 36,22,2017-10-28
+user,310,Willie,Heidi,90
+session,310,0,Chrome 42,76,2017-08-25
+session,310,1,Internet Explorer 20,112,2018-12-01
+session,310,2,Safari 36,117,2018-11-15
+session,310,3,Firefox 24,59,2016-09-13
+user,311,Romeo,Alison,37
+session,311,0,Safari 33,92,2017-02-25
+session,311,1,Firefox 25,109,2017-09-04
+session,311,2,Chrome 37,77,2016-12-05
+session,311,3,Firefox 35,31,2017-05-23
+session,311,4,Internet Explorer 46,1,2017-11-11
+session,311,5,Safari 19,27,2017-05-24
+user,312,Cary,Kasey,64
+session,312,0,Internet Explorer 13,11,2017-01-05
+session,312,1,Firefox 27,3,2016-11-22
+session,312,2,Safari 38,107,2017-08-13
+session,312,3,Firefox 12,37,2016-06-16
+session,312,4,Internet Explorer 50,51,2016-06-26
+user,313,Whitney,Yolando,50
+session,313,0,Safari 49,80,2018-04-23
+session,313,1,Safari 48,86,2018-07-23
+session,313,2,Safari 8,57,2018-10-03
+session,313,3,Internet Explorer 20,72,2016-09-03
+user,314,Juan,Kelli,56
+session,314,0,Safari 50,30,2016-11-04
+session,314,1,Firefox 2,43,2018-06-16
+session,314,2,Internet Explorer 33,8,2017-06-21
+user,315,Brandy,Beryl,9
+session,315,0,Internet Explorer 47,14,2017-07-30
+session,315,1,Safari 42,87,2017-07-31
+session,315,2,Firefox 25,42,2017-10-17
+session,315,3,Internet Explorer 50,1,2018-04-06
+user,316,Walker,Susanna,58
+session,316,0,Firefox 4,14,2017-04-09
+session,316,1,Firefox 35,75,2018-11-14
+session,316,2,Chrome 34,51,2018-02-11
+session,316,3,Safari 20,20,2019-01-25
+session,316,4,Chrome 50,5,2016-12-15
+session,316,5,Internet Explorer 9,37,2017-07-24
+session,316,6,Internet Explorer 30,39,2018-02-05
+user,317,Guy,Bette,96
+session,317,0,Chrome 11,23,2017-04-26
+user,318,Loyce,Barb,49
+session,318,0,Internet Explorer 2,81,2018-10-16
+session,318,1,Safari 34,51,2018-05-01

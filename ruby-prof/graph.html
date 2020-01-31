@@ -1,0 +1,2061 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style media="all" type="text/css">
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      background-color: #F5F7FB;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+
+    table {
+      border-collapse: collapse;
+      /* border: 1px solid #E1E3E7; */
+      border: 1px solid #F3F9FE;
+      font-size: 14px;
+      line-height: normal;
+      width: 100%;
+    }
+
+    table:empty {
+      display: none;
+    }
+
+    th:first-child {
+      border-left: 0;
+    }
+
+    th {
+      text-align: center;
+      background: #F3F9FE;
+      padding: 1rem;
+      /* border-left: 1px solid #E1E3E7; */
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    tr.break td {
+      border: 0;
+      border-top: 1px solid #BDC3DD;
+      padding: 0;
+      margin: 0;
+    }
+
+    tr.method td {
+      font-weight: bold;
+    }
+
+    td {
+      padding: 0.5em;
+    }
+
+    td:first-child {
+      width: 190px;
+    }
+
+    tr > td > table {
+      box-shadow: 0px -2px 1px #F9FAFB, 0px 1px 1px #E4EEEE, 0px 1px 2px #EEF3F8;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    tr.break + tr > td.method_name {
+      font-weight: bold;
+    }
+
+    td {
+      /* I'm removing this border because I think it looks way cleaner without it but feel free to add it if you feel it's necessary */
+      /* border-left: 1px solid #E1E3E7; */
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .method_name {
+      text-align: left;
+    }
+
+    tfoot td {
+      text-align: left;
+    }
+
+    .report-header {
+      background-color: #0D2483;
+      color: white;
+      padding: 1.5rem 2rem;
+    }
+
+    .report-header > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .report-header h1 {
+      margin-bottom: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    h6 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .table-header {
+      padding: 3rem 0 1rem;
+    }
+
+    .table-wrapper {
+      margin: 1rem auto;
+      max-width: 1440px;
+      padding: 4rem 5rem;
+      background: white;
+      border-radius: 0.5rem;
+    }
+
+    .center {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .layout-right {
+      margin-left: auto;
+    }
+
+    .text-right {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+
+    .timestamp {
+      font-size: 12px;
+      margin-bottom: 1rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .logo {
+      width: 140px;
+      height: 30px;
+      opacity: 0.5;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 190 41'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M63.49 16.74c0-1.37-.91-2-2.26-2h-3.38v3.93h3.58c1.24.01 2.06-.56 2.06-1.93zM110.43 14.75h-3.6v5h3.6a2.32 2.32 0 0 0 2.5-2.49 2.34 2.34 0 0 0-2.5-2.51zM128.77 14.75h-3.53v4.94h3.53a2.28 2.28 0 0 0 2.47-2.45 2.3 2.3 0 0 0-2.47-2.49zM61.81 21.83h-4v4.32h3.91c1.44 0 2.45-.62 2.45-2.14s-.99-2.18-2.36-2.18zM21 14.75h-3.57v4.94H21a2.28 2.28 0 0 0 2.47-2.45A2.3 2.3 0 0 0 21 14.75z'/%3E%3Cpath class='cls-1' d='M184 .44H5.87A4.93 4.93 0 0 0 .94 5.37V35.5a4.94 4.94 0 0 0 4.93 4.94H184a4.94 4.94 0 0 0 4.94-4.94V5.37A4.94 4.94 0 0 0 184 .44zm-34.38 10.78c4.79 0 8.46 2.89 9.18 7.54h-3.86a5.48 5.48 0 0 0-10.68 0h-3.83c.71-4.65 4.36-7.54 9.19-7.54zM24 29.44L20.46 23h-3v6.46h-3.72v-18h7.68c3.41 0 5.78 2.07 5.78 5.76a5.34 5.34 0 0 1-2.88 5.14l3.82 7.06zm24.31-7.3c0 4.8-2.92 7.56-7.63 7.56S33 26.94 33 22.14V11.48h3.69v10.61c0 2.81 1.37 4.32 4 4.32s3.94-1.51 3.94-4.32V11.48h3.69zm13.92 7.3h-8v-18h7.52c3.24 0 5.59 1.61 5.59 5A4 4 0 0 1 65.51 20 4.22 4.22 0 0 1 68 24.21c0 3.43-2.4 5.23-5.81 5.23zm19.66-6.92v6.92h-3.7v-6.92l-6.81-11h4.29L80 18.85l4.34-7.37h4.32zm16-.5h-7.62v-3.26h7.59zm13 1h-4v6.39h-3.72v-18h7.77c3.41 0 5.79 2.09 5.79 5.79s-2.41 5.85-5.82 5.85zm20.86 6.39L128.26 23h-3v6.46h-3.72v-18h7.69c3.4 0 5.78 2.07 5.78 5.76a5.34 5.34 0 0 1-2.88 5.14l3.87 7.08zm17.85.26c-4.88 0-8.55-2.95-9.21-7.68h3.81A5.49 5.49 0 0 0 155 22h3.84c-.69 4.75-4.38 7.7-9.22 7.7zm18.4-.23h-3.72v-3.7H168zm6.36-7.54h-10.05v-3.26h10.08zm1.44-7.16h-11.49v-3.26h11.52z'/%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+<body>
+<div class="report-header">
+  <div class="center">
+    <div class="layout-left">
+      <h6>Profile Report</h6>
+      <h1>Wall_time</h1>
+    </div>
+    <div class="layout-right text-right">
+      <div class="timestamp">Friday, January 31 at  9:23:21 PM (MSK)</div>
+      <div class="logo"></div>
+    </div>
+  </div>
+</div>
+<div class="table-wrapper">
+  <table>
+    <tr>
+      <th>Thread ID</th>
+      <th>Fiber ID</th>
+      <th>Total</th>
+    </tr>
+    
+      <tr>
+        <td>70182433390660</td>
+        <td><a href="#70182429236000">70182429236000</a></td>
+        <td>47.333892687001935</td>
+      </tr>
+    
+  </table>
+
+  <!-- Methods Tables -->
+  
+    <h2><a name="70182429236000">Thread 70182433390660, Fiber: 70182429236000</a></h2>
+    <table>
+      <thead>
+      <tr>
+        <th>%Total</th>
+        <th>%Self</th>
+        <th>Total</th>
+        <th>Self</th>
+        <th>Wait</th>
+        <th>Child</th>
+        <th>Calls</th>
+        <th class="method_name">Name</th>
+        
+        <th>Line</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+
+        <!-- Parents -->
+        
+        <tr class="method">
+          <td>100.00%</td>
+          <td>0.00%</td>
+          <td>47.33</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>47.33</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="[global]__70182429236000">
+               [global]#
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/test_ruby_prof_graph.rb#7" title="/Users/k.bludov/work/teach/rails-optimization-task1/test_ruby_prof_graph.rb:7">7</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>47.33</td>
+            <td>1.06</td>
+            <td>0.00</td>
+            <td>46.28</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/test_ruby_prof_graph.rb#7" title="/Users/k.bludov/work/teach/rails-optimization-task1/test_ruby_prof_graph.rb:7">7</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>47.33</td>
+            <td>1.06</td>
+            <td>0.00</td>
+            <td>46.28</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#[global]__70182429236000">[global]#</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/test_ruby_prof_graph.rb#7" title="/Users/k.bludov/work/teach/rails-optimization-task1/test_ruby_prof_graph.rb:7">7</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>100.00%</td>
+          <td>2.24%</td>
+          <td>47.33</td>
+          <td>1.06</td>
+          <td>0.00</td>
+          <td>46.28</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Object_work_70182429236000">
+               Object#work
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#97" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:97">97</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>40.63</td>
+            <td>6.94</td>
+            <td>0.00</td>
+            <td>33.69</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#IO_each_70182429236000">IO#each</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#100" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:100">100</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2.73</td>
+            <td>2.73</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Array_sort!_70182429236000">Array#sort!</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#109" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1.37</td>
+            <td>1.37</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#_Module__Oj__dump_70182429236000">&lt;Module::Oj&gt;#dump</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#203" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:203">203</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1.30</td>
+            <td>1.30</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Array_uniq!_70182429236000">Array#uniq!</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#109" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.19</td>
+            <td>0.19</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#_Class__IO__write_70182429236000">&lt;Class::IO&gt;#write</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#203" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:203">203</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.05</td>
+            <td>0.05</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/500001</td>
+            <td class="method_name"><a href="#Array_map_70182429236000">Array#map</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#112" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:112">112</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/500000</td>
+            <td class="method_name"><a href="#Object_send_to_report_70182429236000">Object#send_to_report</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#114" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:114">114</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#_Class__IO__open_70182429236000">&lt;Class::IO&gt;#open</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#100" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:100">100</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/500001</td>
+            <td class="method_name"><a href="#Array_join_70182429236000">Array#join</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#112" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:112">112</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_default_settings_70182429236000">Object#default_settings</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#98" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:98">98</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Array_count_70182429236000">Array#count</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#110" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:110">110</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>40.63</td>
+            <td>6.94</td>
+            <td>0.00</td>
+            <td>33.69</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#100" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:100">100</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>85.85%</td>
+          <td>14.67%</td>
+          <td>40.63</td>
+          <td>6.94</td>
+          <td>0.00</td>
+          <td>33.69</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="IO_each_70182429236000">
+               IO#each
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>15.93</td>
+            <td>10.74</td>
+            <td>0.00</td>
+            <td>5.19</td>
+            <td>2750940/2750940</td>
+            <td class="method_name"><a href="#Object_sessions_action_70182429236000">Object#sessions_action</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#105" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:105">105</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>9.80</td>
+            <td>0.94</td>
+            <td>0.00</td>
+            <td>8.87</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Object_user_action_70182429236000">Object#user_action</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#103" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:103">103</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>7.96</td>
+            <td>7.96</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>3250940/3250940</td>
+            <td class="method_name"><a href="#String_split_70182429236000">String#split</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#101" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:101">101</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>15.93</td>
+            <td>10.74</td>
+            <td>0.00</td>
+            <td>5.19</td>
+            <td>2750940/2750940</td>
+            <td class="method_name"><a href="#IO_each_70182429236000">IO#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>33.66%</td>
+          <td>22.68%</td>
+          <td>15.93</td>
+          <td>10.74</td>
+          <td>0.00</td>
+          <td>5.19</td>
+          <td>2750940</td>
+          <td class="method_name">
+            <a name="Object_sessions_action_70182429236000">
+               Object#sessions_action
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#60" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:60">60</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>5.19</td>
+            <td>3.50</td>
+            <td>0.00</td>
+            <td>1.69</td>
+            <td>2750940/2750940</td>
+            <td class="method_name"><a href="#Object_parse_session_70182429236000">Object#parse_session</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#61" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:61">61</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>9.80</td>
+            <td>0.94</td>
+            <td>0.00</td>
+            <td>8.87</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#IO_each_70182429236000">IO#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>20.71%</td>
+          <td>1.98%</td>
+          <td>9.80</td>
+          <td>0.94</td>
+          <td>0.00</td>
+          <td>8.87</td>
+          <td>500000</td>
+          <td class="method_name">
+            <a name="Object_user_action_70182429236000">
+               Object#user_action
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#52" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:52">52</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>6.82</td>
+            <td>0.34</td>
+            <td>0.00</td>
+            <td>6.48</td>
+            <td>499999/500000</td>
+            <td class="method_name"><a href="#Object_send_to_report_70182429236000">Object#send_to_report</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#53" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:53">53</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1.41</td>
+            <td>0.47</td>
+            <td>0.00</td>
+            <td>0.94</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Class_new_70182429236000">Class#new</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#56" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:56">56</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.63</td>
+            <td>0.63</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Object_parse_user_70182429236000">Object#parse_user</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#55" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:55">55</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>7.96</td>
+            <td>7.96</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>3250940/3250940</td>
+            <td class="method_name"><a href="#IO_each_70182429236000">IO#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>16.81%</td>
+          <td>16.81%</td>
+          <td>7.96</td>
+          <td>7.96</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>3250940</td>
+          <td class="method_name">
+            <a name="String_split_70182429236000">
+               String#split
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/500000</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#114" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:114">114</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>6.82</td>
+            <td>0.34</td>
+            <td>0.00</td>
+            <td>6.48</td>
+            <td>499999/500000</td>
+            <td class="method_name"><a href="#Object_user_action_70182429236000">Object#user_action</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#53" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:53">53</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>14.41%</td>
+          <td>0.73%</td>
+          <td>6.82</td>
+          <td>0.34</td>
+          <td>0.00</td>
+          <td>6.48</td>
+          <td>500000</td>
+          <td class="method_name">
+            <a name="Object_send_to_report_70182429236000">
+               Object#send_to_report
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#80" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:80">80</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>6.19</td>
+            <td>1.63</td>
+            <td>0.00</td>
+            <td>4.56</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Object_serialized_to_report_70182429236000">Object#serialized_to_report</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#81" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:81">81</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.29</td>
+            <td>0.29</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Hash_merge!_70182429236000">Hash#merge!</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#81" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:81">81</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>6.19</td>
+            <td>1.63</td>
+            <td>0.00</td>
+            <td>4.56</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Object_send_to_report_70182429236000">Object#send_to_report</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#81" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:81">81</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>13.08%</td>
+          <td>3.45%</td>
+          <td>6.19</td>
+          <td>1.63</td>
+          <td>0.00</td>
+          <td>4.56</td>
+          <td>500000</td>
+          <td class="method_name">
+            <a name="Object_serialized_to_report_70182429236000">
+               Object#serialized_to_report
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#84" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:84">84</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2.00</td>
+            <td>1.02</td>
+            <td>0.00</td>
+            <td>0.98</td>
+            <td>500000/500001</td>
+            <td class="method_name"><a href="#Array_map_70182429236000">Array#map</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#86" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:86">86</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1.11</td>
+            <td>0.30</td>
+            <td>0.00</td>
+            <td>0.81</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#User_formated_dates_70182429236000">User#formated_dates</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#86" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:86">86</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.63</td>
+            <td>0.63</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/1000000</td>
+            <td class="method_name"><a href="#Array_sort_70182429236000">Array#sort</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#86" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:86">86</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.50</td>
+            <td>0.50</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/500001</td>
+            <td class="method_name"><a href="#Array_join_70182429236000">Array#join</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#86" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:86">86</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.32</td>
+            <td>0.32</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1000000/1000000</td>
+            <td class="method_name"><a href="#Integer_to_s_70182429236000">Integer#to_s</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#86" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:86">86</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>5.19</td>
+            <td>3.50</td>
+            <td>0.00</td>
+            <td>1.69</td>
+            <td>2750940/2750940</td>
+            <td class="method_name"><a href="#Object_sessions_action_70182429236000">Object#sessions_action</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#61" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:61">61</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>10.97%</td>
+          <td>7.40%</td>
+          <td>5.19</td>
+          <td>3.50</td>
+          <td>0.00</td>
+          <td>1.69</td>
+          <td>2750940</td>
+          <td class="method_name">
+            <a name="Object_parse_session_70182429236000">
+               Object#parse_session
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#33" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:33">33</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1.11</td>
+            <td>1.11</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>2750940/2750940</td>
+            <td class="method_name"><a href="#String_delete!_70182429236000">String#delete!</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#35" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:35">35</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.58</td>
+            <td>0.58</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>2750940/2750940</td>
+            <td class="method_name"><a href="#String_to_i_70182429236000">String#to_i</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#35" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:35">35</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2.73</td>
+            <td>2.73</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#109" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:109">109</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>5.76%</td>
+          <td>5.76%</td>
+          <td>2.73</td>
+          <td>2.73</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Array_sort!_70182429236000">
+               Array#sort!
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.05</td>
+            <td>0.05</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/500001</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#112" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:112">112</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>2.00</td>
+            <td>1.02</td>
+            <td>0.00</td>
+            <td>0.98</td>
+            <td>500000/500001</td>
+            <td class="method_name"><a href="#Object_serialized_to_report_70182429236000">Object#serialized_to_report</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#86" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:86">86</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>4.33%</td>
+          <td>2.27%</td>
+          <td>2.05</td>
+          <td>1.07</td>
+          <td>0.00</td>
+          <td>0.98</td>
+          <td>500001</td>
+          <td class="method_name">
+            <a name="Array_map_70182429236000">
+               Array#map
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.98</td>
+            <td>0.98</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>2751140/2751140</td>
+            <td class="method_name"><a href="#String_upcase_70182429236000">String#upcase</a></td>
+            
+            <td>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1.41</td>
+            <td>0.47</td>
+            <td>0.00</td>
+            <td>0.94</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Object_user_action_70182429236000">Object#user_action</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#56" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:56">56</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>2.98%</td>
+          <td>0.99%</td>
+          <td>1.41</td>
+          <td>0.47</td>
+          <td>0.00</td>
+          <td>0.94</td>
+          <td>500000</td>
+          <td class="method_name">
+            <a name="Class_new_70182429236000">
+               Class#new
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.94</td>
+            <td>0.94</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#User_initialize_70182429236000">User#initialize</a></td>
+            
+            <td>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1.37</td>
+            <td>1.37</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#203" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:203">203</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>2.90%</td>
+          <td>2.90%</td>
+          <td>1.37</td>
+          <td>1.37</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="_Module__Oj__dump_70182429236000">
+               &lt;Module::Oj&gt;#dump
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1.30</td>
+            <td>1.30</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#109" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:109">109</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>2.75%</td>
+          <td>2.75%</td>
+          <td>1.30</td>
+          <td>1.30</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Array_uniq!_70182429236000">
+               Array#uniq!
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.49</td>
+            <td>0.49</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/1000000</td>
+            <td class="method_name"><a href="#User_formated_dates_70182429236000">User#formated_dates</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#22" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:22">22</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.63</td>
+            <td>0.63</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/1000000</td>
+            <td class="method_name"><a href="#Object_serialized_to_report_70182429236000">Object#serialized_to_report</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#86" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:86">86</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>2.36%</td>
+          <td>2.36%</td>
+          <td>1.12</td>
+          <td>1.12</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1000000</td>
+          <td class="method_name">
+            <a name="Array_sort_70182429236000">
+               Array#sort
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1.11</td>
+            <td>0.30</td>
+            <td>0.00</td>
+            <td>0.81</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Object_serialized_to_report_70182429236000">Object#serialized_to_report</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#86" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:86">86</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>2.35%</td>
+          <td>0.64%</td>
+          <td>1.11</td>
+          <td>0.30</td>
+          <td>0.00</td>
+          <td>0.81</td>
+          <td>500000</td>
+          <td class="method_name">
+            <a name="User_formated_dates_70182429236000">
+               User#formated_dates
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#21" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:21">21</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.49</td>
+            <td>0.49</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/1000000</td>
+            <td class="method_name"><a href="#Array_sort_70182429236000">Array#sort</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#22" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:22">22</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.32</td>
+            <td>0.32</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Array_reverse_70182429236000">Array#reverse</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#22" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:22">22</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1.11</td>
+            <td>1.11</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>2750940/2750940</td>
+            <td class="method_name"><a href="#Object_parse_session_70182429236000">Object#parse_session</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#35" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:35">35</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>2.35%</td>
+          <td>2.35%</td>
+          <td>1.11</td>
+          <td>1.11</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>2750940</td>
+          <td class="method_name">
+            <a name="String_delete!_70182429236000">
+               String#delete!
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.98</td>
+            <td>0.98</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>2751140/2751140</td>
+            <td class="method_name"><a href="#Array_map_70182429236000">Array#map</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>2.06%</td>
+          <td>2.06%</td>
+          <td>0.98</td>
+          <td>0.98</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>2751140</td>
+          <td class="method_name">
+            <a name="String_upcase_70182429236000">
+               String#upcase
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.94</td>
+            <td>0.94</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Class_new_70182429236000">Class#new</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>1.99%</td>
+          <td>1.99%</td>
+          <td>0.94</td>
+          <td>0.94</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>500000</td>
+          <td class="method_name">
+            <a name="User_initialize_70182429236000">
+               User#initialize
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#9" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:9">9</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.63</td>
+            <td>0.63</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Object_user_action_70182429236000">Object#user_action</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#55" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:55">55</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>1.34%</td>
+          <td>1.34%</td>
+          <td>0.63</td>
+          <td>0.63</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>500000</td>
+          <td class="method_name">
+            <a name="Object_parse_user_70182429236000">
+               Object#parse_user
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#26" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:26">26</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.58</td>
+            <td>0.58</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>2750940/2750940</td>
+            <td class="method_name"><a href="#Object_parse_session_70182429236000">Object#parse_session</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#35" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:35">35</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>1.23%</td>
+          <td>1.23%</td>
+          <td>0.58</td>
+          <td>0.58</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>2750940</td>
+          <td class="method_name">
+            <a name="String_to_i_70182429236000">
+               String#to_i
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/500001</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#112" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:112">112</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.50</td>
+            <td>0.50</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/500001</td>
+            <td class="method_name"><a href="#Object_serialized_to_report_70182429236000">Object#serialized_to_report</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#86" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:86">86</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>1.06%</td>
+          <td>1.06%</td>
+          <td>0.50</td>
+          <td>0.50</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>500001</td>
+          <td class="method_name">
+            <a name="Array_join_70182429236000">
+               Array#join
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.32</td>
+            <td>0.32</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#User_formated_dates_70182429236000">User#formated_dates</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#22" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:22">22</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.68%</td>
+          <td>0.68%</td>
+          <td>0.32</td>
+          <td>0.32</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>500000</td>
+          <td class="method_name">
+            <a name="Array_reverse_70182429236000">
+               Array#reverse
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.32</td>
+            <td>0.32</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1000000/1000000</td>
+            <td class="method_name"><a href="#Object_serialized_to_report_70182429236000">Object#serialized_to_report</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#86" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:86">86</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.67%</td>
+          <td>0.67%</td>
+          <td>0.32</td>
+          <td>0.32</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1000000</td>
+          <td class="method_name">
+            <a name="Integer_to_s_70182429236000">
+               Integer#to_s
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.29</td>
+            <td>0.29</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>500000/500000</td>
+            <td class="method_name"><a href="#Object_send_to_report_70182429236000">Object#send_to_report</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#81" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:81">81</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.61%</td>
+          <td>0.61%</td>
+          <td>0.29</td>
+          <td>0.29</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>500000</td>
+          <td class="method_name">
+            <a name="Hash_merge!_70182429236000">
+               Hash#merge!
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.19</td>
+            <td>0.19</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#203" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:203">203</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.40%</td>
+          <td>0.40%</td>
+          <td>0.19</td>
+          <td>0.19</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="_Class__IO__write_70182429236000">
+               &lt;Class::IO&gt;#write
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#100" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:100">100</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.00%</td>
+          <td>0.00%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="_Class__IO__open_70182429236000">
+               &lt;Class::IO&gt;#open
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#File_initialize_70182429236000">File#initialize</a></td>
+            
+            <td>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#_Class__IO__open_70182429236000">&lt;Class::IO&gt;#open</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.00%</td>
+          <td>0.00%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="File_initialize_70182429236000">
+               File#initialize
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#98" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:98">98</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.00%</td>
+          <td>0.00%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Object_default_settings_70182429236000">
+               Object#default_settings
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#41" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:41">41</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_70182429236000">Object#work</a></td>
+            
+            <td><a href="file:///Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb#110" title="/Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:110">110</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.00%</td>
+          <td>0.00%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Array_count_70182429236000">
+               Array#count
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="9">* indicates recursively called methods</td>
+      </tr>
+      </tfoot>
+    </table>
+  
+</div>
+
+<script type="application/javascript">
+  function toggleAllocations(element)
+  {
+    if (element.style.display == 'none')
+      element.style.display = 'block'
+    else
+      element.style.display = 'none'
+  }
+
+  function onClick(event)
+  {
+    if (event.target.tagName == 'A' && event.target.classList.contains('allocations'))
+    {
+      var url = new URL(event.target.href)
+      var element = document.querySelector(url.hash)
+      toggleAllocations(element)
+      event.preventDefault()
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', function(event)
+  {
+    document.addEventListener('click', onClick)
+  })
+
+</script>
+</body>
+</html>

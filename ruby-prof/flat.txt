@@ -1,0 +1,55 @@
+Measure Mode: wall_time
+Thread ID: 70189077184580
+Fiber ID: 70189089733320
+Total: 48.357980
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 22.99     16.940    11.117     0.000     5.822  2750940   Object#sessions_action         /Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:60
+ 15.88     41.875     7.677     0.000    34.198        1   IO#each                        
+ 14.49      7.009     7.009     0.000     0.000  3250940   String#split                   
+  8.43      5.822     4.079     0.000     1.743  2750940   Object#parse_session           /Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:33
+  5.82      2.812     2.812     0.000     0.000        1   Array#sort!                    
+  3.57      6.208     1.728     0.000     4.480   500000   Object#serialized_to_report    /Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:84
+  2.83      1.368     1.368     0.000     0.000        1   Array#uniq!                    
+  2.70      1.303     1.303     0.000     0.000  1000000   Array#sort                     
+  2.56      1.239     1.239     0.000     0.000        1   <Module::Oj>#dump              
+  2.40      1.160     1.160     0.000     0.000  2750940   String#delete!                 
+  2.16      1.046     1.046     0.000     0.000   500000   User#initialize                /Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:9
+  2.06      1.974     0.995     0.000     0.980   500001   Array#map                      
+  2.03      0.980     0.980     0.000     0.000  2751140   String#upcase                  
+  1.82     10.250     0.881     0.000     9.368   500000   Object#user_action             /Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:52
+  1.80     48.358     0.872     0.000    47.486        1   Object#work                    /Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:97
+  1.46      1.751     0.705     0.000     1.046   500000   Class#new                      
+  1.21      0.583     0.583     0.000     0.000  2750940   String#to_i                    
+  1.16      0.560     0.560     0.000     0.000   500000   Object#parse_user              /Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:26
+  1.12      7.058     0.541     0.000     6.517   500000   Object#send_to_report          /Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:80
+  1.01      0.491     0.491     0.000     0.000   500001   Array#join                     
+  0.64      0.308     0.308     0.000     0.000   500000   Hash#merge!                    
+  0.63      1.163     0.303     0.000     0.860   500000   User#formated_dates            /Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:21
+  0.62      0.300     0.300     0.000     0.000  1000000   Integer#to_s                   
+  0.32      0.157     0.157     0.000     0.000   500000   Array#reverse                  
+  0.30      0.145     0.145     0.000     0.000        1   <Class::IO>#write              
+  0.00     48.358     0.000     0.000    48.358        1   [global]#                      test_ruby_prof_flat.rb:7
+  0.00      0.000     0.000     0.000     0.000        1   File#initialize                
+  0.00      0.000     0.000     0.000     0.000        1   Array#count                    
+  0.00      0.000     0.000     0.000     0.000        1   <Class::IO>#open               
+  0.00      0.000     0.000     0.000     0.000        1   Object#default_settings        /Users/k.bludov/work/teach/rails-optimization-task1/task-1.rb:41
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
