@@ -1,0 +1,48 @@
+require:
+  - rubocop-performance
+
+AllCops:
+  # Include common Ruby source files.
+  Exclude:
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+    - 'backup/**/*'
+    - 'bundler_stubs/**/*'
+    - "node_modules/**/*"
+    - 'log/**/*'
+    - '.bundle/**/*'
+
+Style/Documentation:
+  Enabled: false
+Layout/LineLength:
+  Max: 120
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/BarePercentLiterals:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  Enabled: false
+Style/RedundantPercentQ:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Style/OptionalArguments:
+  Enabled: false
+Style/AsciiComments:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false

@@ -1,0 +1,56 @@
+Measure Mode: wall_time
+Thread ID: 47216373365100
+Fiber ID: 47216376898260
+Total: 0.067543
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 20.40      0.060     0.014     0.000     0.046     1539  *Array#each                     
+ 13.60      0.009     0.009     0.000     0.000    10000   String#split                   
+ 11.23      0.011     0.008     0.000     0.004     8464   Optimization::TaskOne#parse_session /home/btg/ruby_app/tinknetica/optimization/rails-optimization-task1/lib/optimization.rb:84
+ 11.08      0.009     0.007     0.000     0.002     3073   Array#map                      
+  9.81      0.025     0.007     0.000     0.018     1536   Optimization::TaskOne#collect_stats_from_user /home/btg/ruby_app/tinknetica/optimization/rails-optimization-task1/lib/optimization.rb:94
+  3.84      0.003     0.003     0.000     0.000     3073   Array#sort                     
+  3.66      0.002     0.002     0.000     0.000        1   <Module::Oj>#dump              
+  2.98      0.002     0.002     0.000     0.000     8464   String#[]                      
+  2.96      0.002     0.002     0.000     0.000     1536   Array#any?                     
+  2.77      0.002     0.002     0.000     0.000        1   <Class::IO>#readlines          
+  2.73      0.002     0.002     0.000     0.000     8464   String#upcase                  
+  2.35      0.002     0.002     0.000     0.000     8464   String#to_i                    
+  2.04      0.001     0.001     0.000     0.000     1537   Array#join                     
+  1.93      0.002     0.001     0.000     0.001     1536   Class#new                      
+  1.48      0.001     0.001     0.000     0.000     1536   Array#all?                     
+  1.43      0.001     0.001     0.000     0.000     1536   Optimization::TaskOne#parse_user /home/btg/ruby_app/tinknetica/optimization/rails-optimization-task1/lib/optimization.rb:75
+  1.00      0.001     0.001     0.000     0.000     3072   Integer#to_s                   
+  0.99      0.001     0.001     0.000     0.000        1   Array#uniq                     
+  0.96      0.001     0.001     0.000     0.000     1536   Optimization::User#initialize  /home/btg/ruby_app/tinknetica/optimization/rails-optimization-task1/lib/optimization.rb:35
+  0.63      0.000     0.000     0.000     0.000        1   <Class::IO>#write              
+  0.51      0.000     0.000     0.000     0.000     1536   Array#reverse                  
+  0.48      0.000     0.000     0.000     0.000     1536   Array#max                      
+  0.48      0.000     0.000     0.000     0.000     1536   Array#sum                      
+  0.36      0.000     0.000     0.000     0.000     1538   Array#count                    
+  0.21      0.003     0.000     0.000     0.003        1   Optimization::TaskOne#write_file /home/btg/ruby_app/tinknetica/optimization/rails-optimization-task1/lib/optimization.rb:139
+  0.04      0.068     0.000     0.000     0.068        1   [global]#                      profilers/task1/prof_flat.rb:7
+  0.03      0.068     0.000     0.000     0.067        1   Optimization::TaskOne#work     /home/btg/ruby_app/tinknetica/optimization/rails-optimization-task1/lib/optimization.rb:44
+  0.01      0.031     0.000     0.000     0.031        1   Optimization::TaskOne#load_file /home/btg/ruby_app/tinknetica/optimization/rails-optimization-task1/lib/optimization.rb:123
+  0.01      0.003     0.000     0.000     0.003        1   Enumerable#group_by            
+  0.00      0.000     0.000     0.000     0.000        1   NilClass#to_s                  
+  0.00      0.000     0.000     0.000     0.000        1   <Module::GC>#disable           
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
