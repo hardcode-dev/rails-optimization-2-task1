@@ -1,0 +1,310 @@
+events: wall_time
+
+fl=
+fn=IO::write^
+0 563
+
+fl=
+fn=String::to_s
+0 13
+
+fl=
+fn=String::encode
+0 40
+
+fl=
+fn=Symbol::to_s
+0 3
+
+fl=
+fn=Hash::keys
+0 5
+
+fl=
+fn=JSON/Ext/Generator/State::initialize_copy
+0 2
+
+fl=
+fn=Kernel::initialize_dup
+0 3
+cfl=
+cfn=JSON/Ext/Generator/State::initialize_copy
+calls=1 0
+0 2
+
+fl=
+fn=Kernel::dup
+0 9
+cfl=
+cfn=Kernel::initialize_dup
+calls=1 0
+0 5
+
+fl=
+fn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+0 77
+cfl=
+cfn=Kernel::dup
+calls=1 0
+0 14
+cfl=
+cfn=Hash::keys
+calls=5 0
+0 5
+cfl=
+cfn=Symbol::to_s
+calls=1 0
+0 3
+cfl=
+cfn=String::encode
+calls=54 0
+0 40
+cfl=
+cfn=String::to_s
+calls=28 0
+0 13
+
+fl=
+fn=Array::reverse
+0 4
+
+fl=
+fn=Array::any?
+0 23
+cfl=
+cfn=String::upcase
+calls=11 135
+135 7
+
+fl=
+fn=Array::max
+0 6
+
+fl=
+fn=Integer::to_s
+0 17
+
+fl=
+fn=Array::sum
+0 4
+
+fl=
+fn=String::to_i
+0 15
+
+fl=
+fn=Hash::merge
+0 18
+
+fl=/Users/ruslan/thinknetica/rails-optimization-task1/task-1.rb
+fn=Object::collect_stats_from_users
+39 10
+cfl=
+cfn=Array::each
+calls=7 40
+40 1444
+
+fl=/Users/ruslan/thinknetica/rails-optimization-task1/task-1.rb
+fn=User::initialize
+12 7
+
+fl=
+fn=Class::new
+0 13
+cfl=/Users/ruslan/thinknetica/rails-optimization-task1/task-1.rb
+cfn=User::initialize
+calls=3 0
+0 7
+
+fl=
+fn=Array::select
+0 23
+
+fl=
+fn=Array::join
+0 13
+
+fl=
+fn=Array::uniq
+0 7
+
+fl=
+fn=Array::sort
+0 22
+
+fl=
+fn=String::upcase
+0 24
+
+fl=
+fn=Array::map
+0 1204
+cfl=
+cfn=String::upcase
+calls=30 96
+96 15
+cfl=
+cfn=String::to_i
+calls=30 120
+120 15
+
+fl=
+fn=Array::all?
+0 48
+cfl=
+cfn=String::upcase
+calls=4 140
+140 2
+
+fl=
+fn=Array::count
+0 6
+
+fl=/Users/ruslan/thinknetica/rails-optimization-task1/task-1.rb
+fn=Object::parse_session
+28 33
+cfl=
+cfn=String::split
+calls=15 29
+29 24
+
+fl=/Users/ruslan/thinknetica/rails-optimization-task1/task-1.rb
+fn=Object::parse_user
+18 9
+cfl=
+cfn=String::split
+calls=3 19
+19 9
+
+fl=
+fn=Array::each
+0 217
+cfl=
+cfn=String::split
+calls=18 58
+58 64
+cfl=/Users/ruslan/thinknetica/rails-optimization-task1/task-1.rb
+cfn=Object::parse_user
+calls=3 59
+59 18
+cfl=/Users/ruslan/thinknetica/rails-optimization-task1/task-1.rb
+cfn=Object::parse_session
+calls=15 60
+60 57
+cfl=
+cfn=Array::all?
+calls=18 86
+86 50
+cfl=
+cfn=Array::select
+calls=3 106
+106 23
+cfl=
+cfn=Class::new
+calls=3 107
+107 21
+cfl=
+cfn=Array::count
+calls=3 115
+115 2
+cfl=
+cfn=Hash::merge
+calls=21 115
+115 18
+cfl=
+cfn=Array::map
+calls=27 120
+120 1198
+cfl=
+cfn=Array::sum
+calls=3 120
+120 4
+cfl=
+cfn=Integer::to_s
+calls=6 120
+120 17
+cfl=
+cfn=Array::max
+calls=3 125
+125 6
+cfl=
+cfn=Array::sort
+calls=6 130
+130 13
+cfl=
+cfn=Array::join
+calls=3 130
+130 6
+cfl=
+cfn=Array::any?
+calls=3 135
+135 30
+cfl=
+cfn=Array::reverse
+calls=3 145
+145 4
+
+fl=
+fn=String::split
+0 113
+
+fl=
+fn=IO::read^
+0 408
+
+fl=/Users/ruslan/thinknetica/rails-optimization-task1/task-1.rb
+fn=Object::work
+47 40
+cfl=
+cfn=IO::read^
+calls=1 51
+51 408
+cfl=
+cfn=String::split
+calls=1 51
+51 15
+cfl=
+cfn=Array::each
+calls=3 57
+57 304
+cfl=
+cfn=Array::count
+calls=3 80
+80 4
+cfl=
+cfn=Array::map
+calls=2 93
+93 36
+cfl=
+cfn=Array::sort
+calls=1 93
+93 8
+cfl=
+cfn=Array::uniq
+calls=1 93
+93 7
+cfl=
+cfn=Array::join
+calls=1 93
+93 7
+cfl=/Users/ruslan/thinknetica/rails-optimization-task1/task-1.rb
+cfn=Object::collect_stats_from_users
+calls=7 114
+114 1453
+cfl=
+cfn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+calls=1 148
+148 151
+cfl=
+cfn=IO::write^
+calls=1 148
+148 563
+
+fl=/Users/ruslan/thinknetica/rails-optimization-task1/callgrind_profilizer.rb
+fn=[global]::
+11 31
+cfl=/Users/ruslan/thinknetica/rails-optimization-task1/task-1.rb
+cfn=Object::work
+calls=1 11
+11 2998
+
