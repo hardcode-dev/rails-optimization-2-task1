@@ -1,0 +1,21 @@
+AllCops:
+  DisplayCopNames: true
+  StyleGuideCopsOnly: false
+  Exclude:
+    - '**/config/**/*'
+    - '**/log/**/*'
+    - '**/tmp/**/*'
+    - 'Gemfile'
+    - 'config.ru'
+
+Metrics/LineLength:
+  Max: 120
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false

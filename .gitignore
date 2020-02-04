@@ -1,0 +1,10 @@
+# Ignore mac-related system files
+.DS_Store
+
+# Local RubyMine settings
+.idea/
+
+# Gemset version and ruby version are not needed in repository in my opninion
+# Ruby version used for the project will be placed in REAMDE.md
+.ruby-gemset
+.ruby-version
