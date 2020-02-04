@@ -1,0 +1,22 @@
+       user     system      total        real
+small_samples/data_2.txt  0.000432   0.001296   0.001728 (  0.001727)
+small_samples/data_4.txt  0.000544   0.000205   0.000749 (  0.000779)
+small_samples/data_8.txt  0.000963   0.000182   0.001145 (  0.001145)
+small_samples/data_16.txt  0.001839   0.000309   0.002148 (  0.002178)
+small_samples/data_32.txt  0.003655   0.000399   0.004054 (  0.004056)
+small_samples/data_64.txt  0.009825   0.000515   0.010340 (  0.010357)
+small_samples/data_128.txt  0.025518   0.000760   0.026278 (  0.026295)
+small_samples/data_256.txt  0.071404   0.003607   0.075011 (  0.075064)
+small_samples/data_512.txt  0.249105   0.009216   0.258321 (  0.260187)
+small_samples/data_1024.txt  0.998073   0.041505   1.039578 (  1.042970)
+small_samples/data_2048.txt  6.179154   0.189467   6.368621 (  6.389978)
+small_samples/data_4096.txt 24.425242   0.688822  25.114064 ( 25.192903)
+Run options: --seed 13690
+
+# Running:
+
+
+
+Finished in 0.000455s, 0.0000 runs/s, 0.0000 assertions/s.
+
+0 runs, 0 assertions, 0 failures, 0 errors, 0 skips
