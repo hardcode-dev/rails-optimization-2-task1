@@ -1,0 +1,8 @@
+.rbenv-gemsets
+.ruby-version
+*.txt
+1*.rb
+.byebug_history
+result.json
+stackprof_reports/*
+ruby_prof_reports/*
