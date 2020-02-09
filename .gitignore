@@ -1,0 +1,6 @@
+.idea/
+data*.txt
+result.json
+ruby_prof_reports/
+.ruby-version
+.rubocop.yml
