@@ -1,0 +1,48 @@
+Measure Mode: wall_time
+Thread ID: 9274800
+Fiber ID: 11431720
+Total: 127.241343
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 31.88     53.364    40.559     0.000    12.805    24938   Array#each                     
+ 22.92     29.160    29.160     0.000     0.000 83737210   Hash#keys                      
+ 19.17     53.535    24.392     0.000    29.143    30447   Array#map                      
+ 14.63     18.611    18.611     0.000     0.000    30447   Array#flatten                  
+ 10.06     12.798    12.798     0.000     0.000 68502958   NilClass#nil?                  
+  0.74      0.936     0.936     0.000     0.000    30447   Array#include?                 
+  0.28    127.224     0.354     0.000   126.870        1   Object#get_report              /home/evgen/rails_optimization/rails-optimization-task1/task-1.rb:51
+  0.18      0.229     0.229     0.000     0.000    71916   String#split                   
+  0.09      0.205     0.113     0.000     0.092    30448   Object#parse_session           /home/evgen/rails_optimization/rails-optimization-task1/task-1.rb:31
+  0.03      0.034     0.034     0.000     0.000    35958   String#to_i                    
+  0.02      0.037     0.021     0.000     0.016     5510   Object#parse_user              /home/evgen/rails_optimization/rails-optimization-task1/task-1.rb:21
+  0.01      0.016     0.016     0.000     0.000        1   <Class::IO>#readlines          
+  0.01      0.009     0.009     0.000     0.000    30448   Array#first                    
+  0.01      0.007     0.007     0.000     0.000    24937   Kernel#nil?                    
+  0.00    127.241     0.001     0.000   127.241        1   [global]#                      ruby_prof_flat.rb:9
+  0.00    127.241     0.000     0.000   127.241        1   Object#work                    /home/evgen/rails_optimization/rails-optimization-task1/task-1.rb:171
+  0.00      0.000     0.000     0.000     0.000        1   <Module::GC>#disable           
+  0.00      0.000     0.000     0.000     0.000        1   Class#new                      
+  0.00      0.000     0.000     0.000     0.000        1   Interrupt#initialize           
+  0.00      0.000     0.000     0.000     0.000        1   Exception#initialize           
+  0.00      0.000     0.000     0.000     0.000        1   Exception#backtrace            
+  0.00      0.000     0.000     0.000     0.000        1   SignalException#initialize     
+  0.00      0.000     0.000     0.000     0.000        1   Exception#exception            
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
