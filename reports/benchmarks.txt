@@ -1,0 +1,20 @@
+Warming up --------------------------------------
+             Work 1x   635.000  i/100ms
+             Work 2x   428.000  i/100ms
+             Work 4x   240.000  i/100ms
+             Work 8x   155.000  i/100ms
+Calculating -------------------------------------
+             Work 1x      7.581k (± 4.1%) i/s -     36.830k in   5.063849s
+             Work 2x      5.448k (± 1.5%) i/s -     27.392k in   5.047912s
+             Work 4x      3.190k (± 2.0%) i/s -     15.840k in   5.010069s
+             Work 8x      1.706k (± 3.1%) i/s -      8.370k in   5.031155s
+                   with 95.0% confidence
+
+Comparison:
+             Work 1x:     7581.4 i/s
+             Work 2x:     5447.7 i/s - 1.39x  (± 0.06) slower
+             Work 4x:     3190.0 i/s - 2.38x  (± 0.11) slower
+             Work 8x:     1705.7 i/s - 4.45x  (± 0.23) slower
+                   with 95.0% confidence
+
+finish in 0.00028
