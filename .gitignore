@@ -1,0 +1,9 @@
+.byebug_history
+ruby_prof_reports/*
+
+ruby-prof-callgrind.rb
+ruby-prof-callstack.rb
+ruby-prof-flat.rb
+ruby-prof-graph.rb
+
+.idea
