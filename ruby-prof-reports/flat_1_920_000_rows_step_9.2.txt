@@ -1,0 +1,56 @@
+Measure Mode: wall_time
+Thread ID: 70341473037840
+Fiber ID: 70341468923200
+Total: 22.709382
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 23.85     19.219     5.415     0.000    13.803        2   Array#each                     
+ 21.92      7.000     4.977     0.000     2.023  1771507   Array#map                      
+ 12.19      2.769     2.769     0.000     0.000  1920001   String#split                   
+  7.26      1.649     1.649     0.000     0.000  1624749   Object#parse_session           /Users/omn/projects/rails-optimization/rails-optimization-task1/task-1.rb:17
+  7.23      1.642     1.642     0.000     0.000  5719891   String#upcase                  
+  3.65      0.829     0.829     0.000     0.000        1   JSON::Ext::Generator::GeneratorMethods::Hash#to_json 
+  3.54      1.048     0.804     0.000     0.243   295251   Array#any?                     
+  3.19      0.724     0.724     0.000     0.000   590503   Array#sort                     
+  2.81      0.638     0.638     0.000     0.000   295252   Array#uniq                     
+  2.75      0.624     0.624     0.000     0.000  3249498   String#to_i                    
+  2.72      0.618     0.618     0.000     0.000        2   Array#flatten                  
+  2.17      0.493     0.493     0.000     0.000   295251   Hash#merge                     
+  1.40      0.317     0.317     0.000     0.000   295252   Array#join                     
+  1.26      0.287     0.287     0.000     0.000   295251   Object#parse_user              /Users/omn/projects/rails-optimization/rails-optimization-task1/task-1.rb:8
+  1.23      1.979     0.280     0.000     1.699   295251   Object#user_use_only_chrome?   /Users/omn/projects/rails-optimization/rails-optimization-task1/task-1.rb:35
+  0.82      0.185     0.185     0.000     0.000   590502   Integer#to_s                   
+  0.46      0.104     0.104     0.000     0.000   295251   Array#reverse                  
+  0.35      0.079     0.079     0.000     0.000   295251   Array#max                      
+  0.34      0.077     0.077     0.000     0.000   295251   Array#sum                      
+  0.26      0.058     0.058     0.000     0.000   295254   Array#count                    
+  0.25     22.709     0.056     0.000    22.653        1   Object#work                    /Users/omn/projects/rails-optimization/rails-optimization-task1/task-1.rb:40
+  0.18      0.042     0.042     0.000     0.000        1   <Class::IO>#read               
+  0.13      0.030     0.030     0.000     0.000        1   <Class::IO>#write              
+  0.03      0.007     0.007     0.000     0.000    29850   Array#first                    
+  0.02      0.004     0.004     0.000     0.000        2   Hash#values                    
+  0.00     22.709     0.000     0.000    22.709        1   [global]#                      ruby_prof_flat.rb:7
+  0.00     11.763     0.000     0.000    11.763        1   Object#collect_stats_from_users /Users/omn/projects/rails-optimization/rails-optimization-task1/task-1.rb:27
+  0.00      0.000     0.000     0.000     0.000        1   <Module::GC>#disable           
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#dup                     
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#initialize_dup          
+  0.00      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::State#initialize_copy 
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.

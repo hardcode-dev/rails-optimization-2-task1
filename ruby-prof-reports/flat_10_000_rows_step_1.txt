@@ -1,0 +1,65 @@
+Measure Mode: wall_time
+Thread ID: 70275983175200
+Fiber ID: 70275984045440
+Total: 6.220967
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 90.79      5.648     5.648     0.000     0.000     1536   Array#select                   
+  6.07      6.205     0.378     0.000     5.827    10010  *Array#each                     
+  0.70      0.115     0.044     0.000     0.071    16898   Array#map                      
+  0.45      0.060     0.028     0.000     0.032     8464   <Class::Date>#parse            
+  0.40      0.025     0.025     0.000     0.000    20001   String#split                   
+  0.23      0.014     0.014     0.000     0.000    16928   Regexp#match                   
+  0.18      0.020     0.011     0.000     0.009     8464   Object#parse_session           /Users/omn/projects/rails-optimization/rails-optimization-task1/task-1.rb:27
+  0.13      0.008     0.008     0.000     0.000    10752   Hash#merge                     
+  0.11      0.007     0.007     0.000     0.000     8464   String#gsub!                   
+  0.11      0.010     0.007     0.000     0.003     3073   Array#sort                     
+  0.10      0.008     0.006     0.000     0.002     1536   Class#new                      
+  0.09      0.006     0.006     0.000     0.000     8464   MatchData#begin                
+  0.08      0.005     0.005     0.000     0.000    23399   String#upcase                  
+  0.07      0.148     0.004     0.000     0.144    10000   Enumerable#all?                
+  0.07      0.004     0.004     0.000     0.000     8464   Date#iso8601                   
+  0.06      0.005     0.004     0.000     0.001     1536   Array#any?                     
+  0.05      0.003     0.003     0.000     0.000        1   JSON::Ext::Generator::GeneratorMethods::Hash#to_json 
+  0.05      0.003     0.003     0.000     0.000    16928   String#to_i                    
+  0.05      0.003     0.003     0.000     0.000    17169   Date#<=>                       
+  0.04      0.002     0.002     0.000     0.000     8464   String#[]=                     
+  0.03      0.003     0.002     0.000     0.001     1536   Object#parse_user              /Users/omn/projects/rails-optimization/rails-optimization-task1/task-1.rb:17
+  0.03      0.002     0.002     0.000     0.000     1536   User#initialize                /Users/omn/projects/rails-optimization/rails-optimization-task1/task-1.rb:11
+  0.02      0.001     0.001     0.000     0.000     8464   Integer#div                    
+  0.02      0.001     0.001     0.000     0.000     8464   MatchData#end                  
+  0.02      0.001     0.001     0.000     0.000     1537   Array#join                     
+  0.01      0.001     0.001     0.000     0.000     3072   Integer#to_s                   
+  0.01      0.001     0.001     0.000     0.000        1   Array#uniq                     
+  0.01      0.000     0.000     0.000     0.000     1536   Array#reverse                  
+  0.01      0.000     0.000     0.000     0.000        1   <Class::IO>#write              
+  0.01      0.000     0.000     0.000     0.000     1536   Array#max                      
+  0.01      0.000     0.000     0.000     0.000     1536   Array#sum                      
+  0.00      0.000     0.000     0.000     0.000     1539   Array#count                    
+  0.00      0.000     0.000     0.000     0.000        1   <Class::IO>#read               
+  0.00      6.221     0.000     0.000     6.221        1   Object#work                    /Users/omn/projects/rails-optimization/rails-optimization-task1/task-1.rb:46
+  0.00      6.221     0.000     0.000     6.221        1   [global]#                      ruby_prof_flat.rb:7
+  0.00      0.167     0.000     0.000     0.167        7   Object#collect_stats_from_users /Users/omn/projects/rails-optimization/rails-optimization-task1/task-1.rb:38
+  0.00      0.000     0.000     0.000     0.000        1   <Module::GC>#disable           
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#dup                     
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#initialize_dup          
+  0.00      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::State#initialize_copy 
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
