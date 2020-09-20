@@ -1,0 +1,58 @@
+Measure Mode: wall_time
+Thread ID: 46996832450920
+Fiber ID: 46996837621940
+Total: 39.307129
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 31.13     36.940    12.236     0.000    24.705        3   Array#each                     
+ 22.44      8.820     8.820     0.000     0.000  3250941   String#split                   
+ 10.55      5.087     4.148     0.000     0.939  2500000   Array#map                      
+  8.34      3.827     3.277     0.000     0.550  2750940   Object#parse_session           /home/difry/projects/thinknetica/rails-optimization-task1/task-1kk.rb:41
+  4.11      1.617     1.617     0.000     0.000  4826678   String#upcase                  
+  3.07      1.206     1.206     0.000     0.000  1000000   Array#sort                     
+  2.97      1.169     1.169     0.000     0.000  2750940   Set#<<                         /home/difry/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/set.rb:348
+  2.75      1.321     1.082     0.000     0.239   500002  *Class#new                      
+  2.62      1.028     1.028     0.000     0.000        1   <Module::Oj>#dump              
+  2.47      1.433     0.970     0.000     0.463   500000   Array#any?                     
+  1.40      0.550     0.550     0.000     0.000  2750940   String#to_i                    
+  1.32      0.518     0.518     0.000     0.000   500001   Array#join                     
+  1.30      0.511     0.511     0.000     0.000   500000   Hash#merge                     
+  1.09      0.644     0.428     0.000     0.216   500000   Array#all?                     
+  0.92      0.361     0.361     0.000     0.000        1   <Class::IO>#write              
+  0.87      0.342     0.342     0.000     0.000  1000000   Integer#to_s                   
+  0.85      0.336     0.336     0.000     0.000   500000   Object#parse_user              /home/difry/projects/thinknetica/rails-optimization-task1/task-1kk.rb:32
+  0.61      0.239     0.239     0.000     0.000   500000   User#initialize                /home/difry/projects/thinknetica/rails-optimization-task1/task-1kk.rb:26
+  0.43      0.169     0.169     0.000     0.000   500000   Array#reverse                  
+  0.29      0.115     0.115     0.000     0.000   500000   Array#max                      
+  0.29      0.115     0.115     0.000     0.000   500000   Array#sum                      
+  0.18      0.070     0.070     0.000     0.000        1   <Class::IO>#read               
+  0.00     39.307     0.000     0.000    39.307        1   Object#work                    /home/difry/projects/thinknetica/rails-optimization-task1/task-1kk.rb:51
+  0.00      0.000     0.000     0.000     0.000        1   Array#sort!                    
+  0.00     39.307     0.000     0.000    39.307        1   [global]#                      ruby-prof-flat.rb:10
+  0.00      0.000     0.000     0.000     0.000        1   Set#initialize                 /home/difry/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/set.rb:93
+  0.00      1.222     0.000     0.000     1.222        1   Enumerable#group_by            
+  0.00      0.000     0.000     0.000     0.000        1   Array#count                    
+  0.00      0.000     0.000     0.000     0.000        1   Hash#keys                      
+  0.00      0.000     0.000     0.000     0.000        1   Set#to_a                       /home/difry/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/set.rb:202
+  0.00      0.000     0.000     0.000     0.000        1   Set#size                       /home/difry/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/set.rb:161
+  0.00      0.000     0.000     0.000     0.000        1   Hash#initialize                
+  0.00      0.000     0.000     0.000     0.000        1   NilClass#nil?                  
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.

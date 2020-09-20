@@ -1,0 +1,2475 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style media="all" type="text/css">
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      background-color: #F5F7FB;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+
+    table {
+      border-collapse: collapse;
+      /* border: 1px solid #E1E3E7; */
+      border: 1px solid #F3F9FE;
+      font-size: 14px;
+      line-height: normal;
+      width: 100%;
+    }
+
+    table:empty {
+      display: none;
+    }
+
+    th:first-child {
+      border-left: 0;
+    }
+
+    th {
+      text-align: center;
+      background: #F3F9FE;
+      padding: 1rem;
+      /* border-left: 1px solid #E1E3E7; */
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    tr.break td {
+      border: 0;
+      border-top: 1px solid #BDC3DD;
+      padding: 0;
+      margin: 0;
+    }
+
+    tr.method td {
+      font-weight: bold;
+    }
+
+    td {
+      padding: 0.5em;
+    }
+
+    td:first-child {
+      width: 190px;
+    }
+
+    tr > td > table {
+      box-shadow: 0px -2px 1px #F9FAFB, 0px 1px 1px #E4EEEE, 0px 1px 2px #EEF3F8;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    tr.break + tr > td.method_name {
+      font-weight: bold;
+    }
+
+    td {
+      /* I'm removing this border because I think it looks way cleaner without it but feel free to add it if you feel it's necessary */
+      /* border-left: 1px solid #E1E3E7; */
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .method_name {
+      text-align: left;
+    }
+
+    tfoot td {
+      text-align: left;
+    }
+
+    .report-header {
+      background-color: #0D2483;
+      color: white;
+      padding: 1.5rem 2rem;
+    }
+
+    .report-header > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .report-header h1 {
+      margin-bottom: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    h6 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .table-header {
+      padding: 3rem 0 1rem;
+    }
+
+    .table-wrapper {
+      margin: 1rem auto;
+      max-width: 1440px;
+      padding: 4rem 5rem;
+      background: white;
+      border-radius: 0.5rem;
+    }
+
+    .center {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .layout-right {
+      margin-left: auto;
+    }
+
+    .text-right {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+
+    .timestamp {
+      font-size: 12px;
+      margin-bottom: 1rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .logo {
+      width: 140px;
+      height: 30px;
+      opacity: 0.5;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 190 41'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M63.49 16.74c0-1.37-.91-2-2.26-2h-3.38v3.93h3.58c1.24.01 2.06-.56 2.06-1.93zM110.43 14.75h-3.6v5h3.6a2.32 2.32 0 0 0 2.5-2.49 2.34 2.34 0 0 0-2.5-2.51zM128.77 14.75h-3.53v4.94h3.53a2.28 2.28 0 0 0 2.47-2.45 2.3 2.3 0 0 0-2.47-2.49zM61.81 21.83h-4v4.32h3.91c1.44 0 2.45-.62 2.45-2.14s-.99-2.18-2.36-2.18zM21 14.75h-3.57v4.94H21a2.28 2.28 0 0 0 2.47-2.45A2.3 2.3 0 0 0 21 14.75z'/%3E%3Cpath class='cls-1' d='M184 .44H5.87A4.93 4.93 0 0 0 .94 5.37V35.5a4.94 4.94 0 0 0 4.93 4.94H184a4.94 4.94 0 0 0 4.94-4.94V5.37A4.94 4.94 0 0 0 184 .44zm-34.38 10.78c4.79 0 8.46 2.89 9.18 7.54h-3.86a5.48 5.48 0 0 0-10.68 0h-3.83c.71-4.65 4.36-7.54 9.19-7.54zM24 29.44L20.46 23h-3v6.46h-3.72v-18h7.68c3.41 0 5.78 2.07 5.78 5.76a5.34 5.34 0 0 1-2.88 5.14l3.82 7.06zm24.31-7.3c0 4.8-2.92 7.56-7.63 7.56S33 26.94 33 22.14V11.48h3.69v10.61c0 2.81 1.37 4.32 4 4.32s3.94-1.51 3.94-4.32V11.48h3.69zm13.92 7.3h-8v-18h7.52c3.24 0 5.59 1.61 5.59 5A4 4 0 0 1 65.51 20 4.22 4.22 0 0 1 68 24.21c0 3.43-2.4 5.23-5.81 5.23zm19.66-6.92v6.92h-3.7v-6.92l-6.81-11h4.29L80 18.85l4.34-7.37h4.32zm16-.5h-7.62v-3.26h7.59zm13 1h-4v6.39h-3.72v-18h7.77c3.41 0 5.79 2.09 5.79 5.79s-2.41 5.85-5.82 5.85zm20.86 6.39L128.26 23h-3v6.46h-3.72v-18h7.69c3.4 0 5.78 2.07 5.78 5.76a5.34 5.34 0 0 1-2.88 5.14l3.87 7.08zm17.85.26c-4.88 0-8.55-2.95-9.21-7.68h3.81A5.49 5.49 0 0 0 155 22h3.84c-.69 4.75-4.38 7.7-9.22 7.7zm18.4-.23h-3.72v-3.7H168zm6.36-7.54h-10.05v-3.26h10.08zm1.44-7.16h-11.49v-3.26h11.52z'/%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+<body>
+<div class="report-header">
+  <div class="center">
+    <div class="layout-left">
+      <h6>Profile Report</h6>
+      <h1>Wall_time</h1>
+    </div>
+    <div class="layout-right text-right">
+      <div class="timestamp">Sunday, September 20 at  9:53:21 AM (MSK)</div>
+      <div class="logo"></div>
+    </div>
+  </div>
+</div>
+<div class="table-wrapper">
+  <table>
+    <tr>
+      <th>Thread ID</th>
+      <th>Fiber ID</th>
+      <th>Total</th>
+    </tr>
+    
+      <tr>
+        <td>47170155141500</td>
+        <td><a href="#47170161769020">47170161769020</a></td>
+        <td>19.896183912000197</td>
+      </tr>
+    
+  </table>
+
+  <!-- Methods Tables -->
+  
+    <h2><a name="47170161769020">Thread 47170155141500, Fiber: 47170161769020</a></h2>
+    <table>
+      <thead>
+      <tr>
+        <th>%Total</th>
+        <th>%Self</th>
+        <th>Total</th>
+        <th>Self</th>
+        <th>Wait</th>
+        <th>Child</th>
+        <th>Calls</th>
+        <th class="method_name">Name</th>
+        
+        <th>Line</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+
+        <!-- Parents -->
+        
+        <tr class="method">
+          <td>100.00%</td>
+          <td>0.00%</td>
+          <td>19.90</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>19.90</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="[global]__47170161769020">
+               [global]#
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/ruby-prof-graph.rb#10" title="/home/difry/projects/thinknetica/rails-optimization-task1/ruby-prof-graph.rb:10">10</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>19.90</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>19.89</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/ruby-prof-graph.rb#10" title="/home/difry/projects/thinknetica/rails-optimization-task1/ruby-prof-graph.rb:10">10</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>19.90</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>19.89</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#[global]__47170161769020">[global]#</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/ruby-prof-graph.rb#10" title="/home/difry/projects/thinknetica/rails-optimization-task1/ruby-prof-graph.rb:10">10</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>100.00%</td>
+          <td>0.01%</td>
+          <td>19.90</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>19.89</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Object_work_47170161769020">
+               Object#work
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#46" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:46">46</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>18.67</td>
+            <td>17.79</td>
+            <td>0.00</td>
+            <td>0.88</td>
+            <td>3/5</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#52" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:52">52</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.72</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.72</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_collect_stats_from_users_47170161769020">Object#collect_stats_from_users</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#107" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:107">107</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.26</td>
+            <td>0.14</td>
+            <td>0.00</td>
+            <td>0.12</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#JSON__Ext__Generator__GeneratorMethods__Hash_to_json_47170161769020">JSON::Ext::Generator::GeneratorMethods::Hash#to_json</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#124" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:124">124</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.09</td>
+            <td>0.07</td>
+            <td>0.00</td>
+            <td>0.02</td>
+            <td>2/207551</td>
+            <td class="method_name"><a href="#Array_map_47170161769020">Array#map</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#88" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:88">88</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.04</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/46123</td>
+            <td class="method_name"><a href="#Array_sort_47170161769020">Array#sort</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#88" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:88">88</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.04</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Enumerable_group_by_47170161769020">Enumerable#group_by</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#98" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:98">98</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.03</td>
+            <td>0.03</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/300001</td>
+            <td class="method_name"><a href="#String_split_47170161769020">String#split</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#47" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:47">47</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.02</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>2/2</td>
+            <td class="method_name"><a href="#Array_uniq_47170161769020">Array#uniq</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#84" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:84">84</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#_Class__IO__write_47170161769020">&lt;Class::IO&gt;#write</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#124" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:124">124</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#_Class__IO__read_47170161769020">&lt;Class::IO&gt;#read</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#47" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:47">47</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/23062</td>
+            <td class="method_name"><a href="#Array_join_47170161769020">Array#join</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#88" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:88">88</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>3/23064</td>
+            <td class="method_name"><a href="#Array_count_47170161769020">Array#count</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#75" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:75">75</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.04</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/5</td>
+            <td class="method_name"><a href="#Enumerable_group_by_47170161769020">Enumerable#group_by</a></td>
+            
+            <td></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.72</td>
+            <td>0.13</td>
+            <td>0.00</td>
+            <td>0.59</td>
+            <td>1/5</td>
+            <td class="method_name"><a href="#Object_collect_stats_from_users_47170161769020">Object#collect_stats_from_users</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#39" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:39">39</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>18.67</td>
+            <td>17.79</td>
+            <td>0.00</td>
+            <td>0.88</td>
+            <td>3/5</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#52" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:52">52</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>97.67%</td>
+          <td>90.27%</td>
+          <td>19.43</td>
+          <td>17.96</td>
+          <td>0.00</td>
+          <td>1.47</td>
+          <td>5</td>
+          <td class="method_name">
+            <a name="Array_each_47170161769020">
+               Array#each
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.40</td>
+            <td>0.40</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>150000/300001</td>
+            <td class="method_name"><a href="#String_split_47170161769020">String#split</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#53" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:53">53</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.40</td>
+            <td>0.33</td>
+            <td>0.00</td>
+            <td>0.07</td>
+            <td>207549/207551</td>
+            <td class="method_name"><a href="#Array_map_47170161769020">Array#map</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.39</td>
+            <td>0.17</td>
+            <td>0.00</td>
+            <td>0.21</td>
+            <td>126939/126939</td>
+            <td class="method_name"><a href="#Object_parse_session_47170161769020">Object#parse_session</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#55" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:55">55</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.07</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.02</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_any__47170161769020">Array#any?</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.06</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.04</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Object_parse_user_47170161769020">Object#parse_user</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#54" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:54">54</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.03</td>
+            <td>0.03</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>46122/46123</td>
+            <td class="method_name"><a href="#Array_sort_47170161769020">Array#sort</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.03</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.01</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Class_new_47170161769020">Class#new</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#101" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:101">101</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.02</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.01</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_all__47170161769020">Array#all?</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.02</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23062</td>
+            <td class="method_name"><a href="#Array_join_47170161769020">Array#join</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Hash_merge_47170161769020">Hash#merge</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>46122/46122</td>
+            <td class="method_name"><a href="#Integer_to_s_47170161769020">Integer#to_s</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_reverse_47170161769020">Array#reverse</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_max_47170161769020">Array#max</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_sum_47170161769020">Array#sum</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23064</td>
+            <td class="method_name"><a href="#Array_count_47170161769020">Array#count</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#109" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:109">109</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.72</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.72</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#107" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:107">107</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>3.64%</td>
+          <td>0.00%</td>
+          <td>0.72</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.72</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Object_collect_stats_from_users_47170161769020">
+               Object#collect_stats_from_users
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#38" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:38">38</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.72</td>
+            <td>0.13</td>
+            <td>0.00</td>
+            <td>0.59</td>
+            <td>1/5</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#39" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:39">39</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.03</td>
+            <td>0.03</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/300001</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#47" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:47">47</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.04</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/300001</td>
+            <td class="method_name"><a href="#Object_parse_user_47170161769020">Object#parse_user</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#18" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:18">18</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.21</td>
+            <td>0.21</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>126939/300001</td>
+            <td class="method_name"><a href="#Object_parse_session_47170161769020">Object#parse_session</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#28" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:28">28</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.40</td>
+            <td>0.40</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>150000/300001</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>3.46%</td>
+          <td>3.46%</td>
+          <td>0.69</td>
+          <td>0.69</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>300001</td>
+          <td class="method_name">
+            <a name="String_split_47170161769020">
+               String#split
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.09</td>
+            <td>0.07</td>
+            <td>0.00</td>
+            <td>0.02</td>
+            <td>2/207551</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#88" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:88">88</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.40</td>
+            <td>0.33</td>
+            <td>0.00</td>
+            <td>0.07</td>
+            <td>207549/207551</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>2.46%</td>
+          <td>2.00%</td>
+          <td>0.49</td>
+          <td>0.40</td>
+          <td>0.00</td>
+          <td>0.09</td>
+          <td>207551</td>
+          <td class="method_name">
+            <a name="Array_map_47170161769020">
+               Array#map
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.05</td>
+            <td>0.05</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>253878/349750</td>
+            <td class="method_name"><a href="#String_upcase_47170161769020">String#upcase</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#91" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:91">91</a>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.04</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>253878/253878</td>
+            <td class="method_name"><a href="#String_to_i_47170161769020">String#to_i</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#111" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:111">111</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.39</td>
+            <td>0.17</td>
+            <td>0.00</td>
+            <td>0.21</td>
+            <td>126939/126939</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>1.94%</td>
+          <td>0.87%</td>
+          <td>0.39</td>
+          <td>0.17</td>
+          <td>0.00</td>
+          <td>0.21</td>
+          <td>126939</td>
+          <td class="method_name">
+            <a name="Object_parse_session_47170161769020">
+               Object#parse_session
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#27" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:27">27</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.21</td>
+            <td>0.21</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>126939/300001</td>
+            <td class="method_name"><a href="#String_split_47170161769020">String#split</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#28" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:28">28</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.26</td>
+            <td>0.14</td>
+            <td>0.00</td>
+            <td>0.12</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#124" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:124">124</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>1.30%</td>
+          <td>0.71%</td>
+          <td>0.26</td>
+          <td>0.14</td>
+          <td>0.00</td>
+          <td>0.12</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="JSON__Ext__Generator__GeneratorMethods__Hash_to_json_47170161769020">
+               JSON::Ext::Generator::GeneratorMethods::Hash#to_json
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.08</td>
+            <td>0.08</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>380412/380412</td>
+            <td class="method_name"><a href="#String_encode_47170161769020">String#encode</a></td>
+            
+            <td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.03</td>
+            <td>0.03</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>184396/184396</td>
+            <td class="method_name"><a href="#String_to_s_47170161769020">String#to_s</a></td>
+            
+            <td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23051/23051</td>
+            <td class="method_name"><a href="#Hash_keys_47170161769020">Hash#keys</a></td>
+            
+            <td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Kernel_dup_47170161769020">Kernel#dup</a></td>
+            
+            <td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Symbol_to_s_47170161769020">Symbol#to_s</a></td>
+            
+            <td>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.08</td>
+            <td>0.08</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>380412/380412</td>
+            <td class="method_name"><a href="#JSON__Ext__Generator__GeneratorMethods__Hash_to_json_47170161769020">JSON::Ext::Generator::GeneratorMethods::Hash#to_json</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.42%</td>
+          <td>0.42%</td>
+          <td>0.08</td>
+          <td>0.08</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>380412</td>
+          <td class="method_name">
+            <a name="String_encode_47170161769020">
+               String#encode
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>29616/349750</td>
+            <td class="method_name"><a href="#Array_all__47170161769020">Array#all?</a></td>
+            
+            <td></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.02</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>66256/349750</td>
+            <td class="method_name"><a href="#Array_any__47170161769020">Array#any?</a></td>
+            
+            <td></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.05</td>
+            <td>0.05</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>253878/349750</td>
+            <td class="method_name"><a href="#Array_map_47170161769020">Array#map</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.40%</td>
+          <td>0.40%</td>
+          <td>0.08</td>
+          <td>0.08</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>349750</td>
+          <td class="method_name">
+            <a name="String_upcase_47170161769020">
+               String#upcase
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.03</td>
+            <td>0.03</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>46122/46123</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.04</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/46123</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#88" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:88">88</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.40%</td>
+          <td>0.40%</td>
+          <td>0.08</td>
+          <td>0.08</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>46123</td>
+          <td class="method_name">
+            <a name="Array_sort_47170161769020">
+               Array#sort
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.07</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.02</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.33%</td>
+          <td>0.22%</td>
+          <td>0.07</td>
+          <td>0.04</td>
+          <td>0.00</td>
+          <td>0.02</td>
+          <td>23061</td>
+          <td class="method_name">
+            <a name="Array_any__47170161769020">
+               Array#any?
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.02</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>66256/349750</td>
+            <td class="method_name"><a href="#String_upcase_47170161769020">String#upcase</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#117" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:117">117</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.06</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.04</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.32%</td>
+          <td>0.12%</td>
+          <td>0.06</td>
+          <td>0.02</td>
+          <td>0.00</td>
+          <td>0.04</td>
+          <td>23061</td>
+          <td class="method_name">
+            <a name="Object_parse_user_47170161769020">
+               Object#parse_user
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#17" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:17">17</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.04</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/300001</td>
+            <td class="method_name"><a href="#String_split_47170161769020">String#split</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#18" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:18">18</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.04</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>253878/253878</td>
+            <td class="method_name"><a href="#Array_map_47170161769020">Array#map</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.21%</td>
+          <td>0.21%</td>
+          <td>0.04</td>
+          <td>0.04</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>253878</td>
+          <td class="method_name">
+            <a name="String_to_i_47170161769020">
+               String#to_i
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.04</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#98" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:98">98</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.21%</td>
+          <td>0.00%</td>
+          <td>0.04</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.04</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Enumerable_group_by_47170161769020">
+               Enumerable#group_by
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.04</td>
+            <td>0.04</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/5</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.03</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.01</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.14%</td>
+          <td>0.09%</td>
+          <td>0.03</td>
+          <td>0.02</td>
+          <td>0.00</td>
+          <td>0.01</td>
+          <td>23061</td>
+          <td class="method_name">
+            <a name="Class_new_47170161769020">
+               Class#new
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#User_initialize_47170161769020">User#initialize</a></td>
+            
+            <td>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.03</td>
+            <td>0.03</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>184396/184396</td>
+            <td class="method_name"><a href="#JSON__Ext__Generator__GeneratorMethods__Hash_to_json_47170161769020">JSON::Ext::Generator::GeneratorMethods::Hash#to_json</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.13%</td>
+          <td>0.13%</td>
+          <td>0.03</td>
+          <td>0.03</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>184396</td>
+          <td class="method_name">
+            <a name="String_to_s_47170161769020">
+               String#to_s
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.02</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.01</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.12%</td>
+          <td>0.09%</td>
+          <td>0.02</td>
+          <td>0.02</td>
+          <td>0.00</td>
+          <td>0.01</td>
+          <td>23061</td>
+          <td class="method_name">
+            <a name="Array_all__47170161769020">
+               Array#all?
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>29616/349750</td>
+            <td class="method_name"><a href="#String_upcase_47170161769020">String#upcase</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#119" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:119">119</a>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.02</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>2/2</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#84" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:84">84</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.10%</td>
+          <td>0.10%</td>
+          <td>0.02</td>
+          <td>0.02</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>2</td>
+          <td class="method_name">
+            <a name="Array_uniq_47170161769020">
+               Array#uniq
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/23062</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#88" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:88">88</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.02</td>
+            <td>0.02</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23062</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.10%</td>
+          <td>0.10%</td>
+          <td>0.02</td>
+          <td>0.02</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>23062</td>
+          <td class="method_name">
+            <a name="Array_join_47170161769020">
+               Array#join
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.07%</td>
+          <td>0.07%</td>
+          <td>0.01</td>
+          <td>0.01</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>23061</td>
+          <td class="method_name">
+            <a name="Hash_merge_47170161769020">
+               Hash#merge
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#124" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:124">124</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.07%</td>
+          <td>0.07%</td>
+          <td>0.01</td>
+          <td>0.01</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="_Class__IO__write_47170161769020">
+               &lt;Class::IO&gt;#write
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>46122/46122</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.07%</td>
+          <td>0.07%</td>
+          <td>0.01</td>
+          <td>0.01</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>46122</td>
+          <td class="method_name">
+            <a name="Integer_to_s_47170161769020">
+               Integer#to_s
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Class_new_47170161769020">Class#new</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.05%</td>
+          <td>0.05%</td>
+          <td>0.01</td>
+          <td>0.01</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>23061</td>
+          <td class="method_name">
+            <a name="User_initialize_47170161769020">
+               User#initialize
+            </a>
+          </td>
+
+          
+
+          <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#11" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:11">11</a></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23051/23051</td>
+            <td class="method_name"><a href="#JSON__Ext__Generator__GeneratorMethods__Hash_to_json_47170161769020">JSON::Ext::Generator::GeneratorMethods::Hash#to_json</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.03%</td>
+          <td>0.03%</td>
+          <td>0.01</td>
+          <td>0.01</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>23051</td>
+          <td class="method_name">
+            <a name="Hash_keys_47170161769020">
+               Hash#keys
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.03%</td>
+          <td>0.03%</td>
+          <td>0.01</td>
+          <td>0.01</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>23061</td>
+          <td class="method_name">
+            <a name="Array_reverse_47170161769020">
+               Array#reverse
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.03%</td>
+          <td>0.03%</td>
+          <td>0.01</td>
+          <td>0.01</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>23061</td>
+          <td class="method_name">
+            <a name="Array_max_47170161769020">
+               Array#max
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23061</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.02%</td>
+          <td>0.02%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>23061</td>
+          <td class="method_name">
+            <a name="Array_sum_47170161769020">
+               Array#sum
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>3/23064</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#75" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:75">75</a></td>
+          </tr>
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>23061/23064</td>
+            <td class="method_name"><a href="#Array_each_47170161769020">Array#each</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.02%</td>
+          <td>0.02%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>23064</td>
+          <td class="method_name">
+            <a name="Array_count_47170161769020">
+               Array#count
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Object_work_47170161769020">Object#work</a></td>
+            
+            <td><a href="file:///home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb#47" title="/home/difry/projects/thinknetica/rails-optimization-task1/task-1.rb:47">47</a></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.02%</td>
+          <td>0.02%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="_Class__IO__read_47170161769020">
+               &lt;Class::IO&gt;#read
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#JSON__Ext__Generator__GeneratorMethods__Hash_to_json_47170161769020">JSON::Ext::Generator::GeneratorMethods::Hash#to_json</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.00%</td>
+          <td>0.00%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Kernel_dup_47170161769020">
+               Kernel#dup
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Kernel_initialize_dup_47170161769020">Kernel#initialize_dup</a></td>
+            
+            <td>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#JSON__Ext__Generator__GeneratorMethods__Hash_to_json_47170161769020">JSON::Ext::Generator::GeneratorMethods::Hash#to_json</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.00%</td>
+          <td>0.00%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Symbol_to_s_47170161769020">
+               Symbol#to_s
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Kernel_dup_47170161769020">Kernel#dup</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.00%</td>
+          <td>0.00%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="Kernel_initialize_dup_47170161769020">
+               Kernel#initialize_dup
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#JSON__Ext__Generator__State_initialize_copy_47170161769020">JSON::Ext::Generator::State#initialize_copy</a></td>
+            
+            <td>
+          </tr>
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+
+        <!-- Parents -->
+        
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1/1</td>
+            <td class="method_name"><a href="#Kernel_initialize_dup_47170161769020">Kernel#initialize_dup</a></td>
+            
+            <td></td>
+          </tr>
+        
+        <tr class="method">
+          <td>0.00%</td>
+          <td>0.00%</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>0.00</td>
+          <td>1</td>
+          <td class="method_name">
+            <a name="JSON__Ext__Generator__State_initialize_copy_47170161769020">
+               JSON::Ext::Generator::State#initialize_copy
+            </a>
+          </td>
+
+          
+
+          <td></td>
+        </tr>
+
+        
+
+        <!-- Children -->
+        
+
+        <!-- Create divider row -->
+        <tr class="break">
+          <td colspan="10"></td>
+        </tr>
+      
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="9">* indicates recursively called methods</td>
+      </tr>
+      </tfoot>
+    </table>
+  
+</div>
+
+<script type="application/javascript">
+  function toggleAllocations(element)
+  {
+    if (element.style.display == 'none')
+      element.style.display = 'block'
+    else
+      element.style.display = 'none'
+  }
+
+  function onClick(event)
+  {
+    if (event.target.tagName == 'A' && event.target.classList.contains('allocations'))
+    {
+      var url = new URL(event.target.href)
+      var element = document.querySelector(url.hash)
+      toggleAllocations(element)
+      event.preventDefault()
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', function(event)
+  {
+    document.addEventListener('click', onClick)
+  })
+
+</script>
+</body>
+</html>
