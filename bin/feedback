@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+bundle exec rspec --tag ~@benchmark
+
+bin/bench "${1:?specify sample size}"

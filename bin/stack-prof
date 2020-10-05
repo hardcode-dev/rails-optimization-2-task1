@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../boot'
+
+require 'stackprof'
+require 'tempfile'
+
+require_relative '../samples'
+
+REPORTS_ROOT = Pathname(__dir__).dirname / 'tmp'
+
+abort("Usage: bin/stack-prof SAMPLE_SIZE") if ARGV.size != 1
+
+GC.disable
+
+sample = Sample.new(ARGV.first)
+
+report = StackProf.run(mode: :wall, raw: true) do
+  Tempfile.create do |result|
+    work(src: sample.path, dest: result.path)
+  end
+end
+
+File.write(REPORTS_ROOT / 'stack-prof.json', report.to_json)

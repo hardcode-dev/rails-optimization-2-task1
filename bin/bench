@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'benchmark'
+require 'fileutils'
+require 'tempfile'
+
+require_relative '../boot'
+require_relative '../samples'
+
+PIDFILE = Pathname(Dir.tmpdir) / 'bench.pid'
+
+File.write(PIDFILE, Process.pid)
+
+at_exit do
+  FileUtils.rm_f(PIDFILE)
+end
+
+sizes = ARGV.dup
+sizes.unshift('large') if sizes.empty?
+
+samples = sizes.map { Sample.new(_1) }
+
+samples.each do |sample|
+  Tempfile.create do |result|
+    time = Benchmark.realtime do
+      work(src: sample.path, dest: result)
+    end
+
+    printf("%10s %10.4f\n", sample.size, time)
+  end
+end

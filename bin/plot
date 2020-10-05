@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'gnuplot'
+
+sizes = []
+times = []
+
+$stdin.each_line do |line|
+  size, time = line.split(' ')
+
+  sizes << Integer(size, 10)
+  times << Float(time)
+end
+
+Gnuplot.open do |gp|
+  Gnuplot::Plot.new(gp) do |plot|
+    plot.xlabel 'Sample size'
+    plot.ylabel 'Execution time'
+
+    plot.data << Gnuplot::DataSet.new([sizes, times]) do |ds|
+      ds.with = 'linespoints'
+    end
+  end
+end
