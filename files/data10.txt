@@ -1,0 +1,10 @@
+user,0,Hazel,Margarete,19
+session,0,0,Internet Explorer 50,81,2018-02-01
+session,0,1,Safari 27,88,2017-10-28
+session,0,2,Firefox 13,92,2016-11-02
+session,0,3,Internet Explorer 40,37,2017-05-31
+session,0,4,Internet Explorer 16,37,2017-11-21
+session,0,5,Safari 19,22,2017-11-30
+session,0,6,Chrome 31,74,2016-08-22
+session,0,7,Firefox 46,76,2019-02-04
+user,1,Wilfredo,Louetta,40
