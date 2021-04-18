@@ -1,0 +1,338 @@
+events: wall_time
+
+fl=
+fn=IO::write^
+0 94191
+
+fl=
+fn=JSON/Ext/Generator/State::initialize
+0 2
+
+fl=
+fn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+0 372253
+cfl=
+cfn=JSON/Ext/Generator/State::initialize
+calls=1 0
+0 2
+
+fl=
+fn=Hash::merge!
+0 92477
+
+fl=
+fn=Array::reverse
+0 42794
+
+fl=
+fn=Array::all?
+0 95992
+
+fl=
+fn=Array::any?
+0 230676
+
+fl=
+fn=Array::max
+0 34020
+
+fl=
+fn=String::+
+0 83788
+
+fl=
+fn=Integer::to_s
+0 97628
+
+fl=
+fn=Array::sum
+0 29401
+
+fl=
+fn=Date::iso8601
+0 555319
+
+fl=
+fn=Integer::div
+0 155235
+
+fl=
+fn=String::[]=
+0 228069
+
+fl=
+fn=MatchData::end
+0 127533
+
+fl=
+fn=MatchData::begin
+0 424352
+
+fl=
+fn=Regexp::match
+0 972899
+
+fl=
+fn=String::gsub!
+0 527581
+
+fl=
+fn=Date::parse^
+0 3130744
+cfl=
+cfn=String::gsub!
+calls=846230 0
+0 527581
+cfl=
+cfn=Regexp::match
+calls=1692460 0
+0 972899
+cfl=
+cfn=MatchData::begin
+calls=846230 0
+0 424352
+cfl=
+cfn=MatchData::end
+calls=846230 0
+0 127533
+cfl=
+cfn=String::[]=
+calls=846230 0
+0 228069
+cfl=
+cfn=Integer::div
+calls=846230 0
+0 155235
+
+fl=/home/filonov/optim/rails-optimization-task1/task-1.rb
+fn=Object::collect_stats_from_users
+37 747
+cfl=
+cfn=Array::each
+calls=1 38
+38 9793594
+
+fl=/home/filonov/optim/rails-optimization-task1/task-1.rb
+fn=User::initialize
+12 50476
+
+fl=
+fn=Class::new
+0 67465
+cfl=/home/filonov/optim/rails-optimization-task1/task-1.rb
+cfn=User::initialize
+calls=153770 0
+0 50476
+
+fl=
+fn=Array::push
+0 162915
+
+fl=
+fn=String::to_i
+0 368438
+
+fl=
+fn=Array::join
+0 163346
+
+fl=
+fn=Array::sort
+0 251007
+
+fl=
+fn=Array::uniq
+0 139885
+
+fl=
+fn=String::upcase
+0 398525
+
+fl=
+fn=Array::map
+0 281504
+cfl=
+cfn=String::upcase
+calls=846230 96
+96 149104
+
+fl=
+fn=Array::include?
+0 1157598
+
+fl=
+fn=Array::count
+0 31720
+
+fl=/home/filonov/optim/rails-optimization-task1/task-1.rb
+fn=Object::parse_session
+27 615715
+
+fl=/home/filonov/optim/rails-optimization-task1/task-1.rb
+fn=Object::parse_user
+18 63650
+
+fl=
+fn=String::===
+0 224126
+
+fl=
+fn=Array::each
+0 4031750
+cfl=
+cfn=String::split
+calls=1000000 55
+55 1788640
+cfl=
+cfn=String::===
+calls=1846230 56
+56 224126
+cfl=/home/filonov/optim/rails-optimization-task1/task-1.rb
+cfn=Object::parse_user
+calls=153770 58
+58 63650
+cfl=/home/filonov/optim/rails-optimization-task1/task-1.rb
+cfn=Object::parse_session
+calls=846230 60
+60 615715
+cfl=
+cfn=Array::include?
+calls=846230 87
+87 1157598
+cfl=
+cfn=String::to_i
+calls=1846230 106
+106 368438
+cfl=
+cfn=Array::push
+calls=1000000 108
+108 162915
+cfl=
+cfn=Class::new
+calls=153770 112
+112 117942
+cfl=
+cfn=Array::each
+calls=153770 122
+122 7697589
+cfl=
+cfn=Array::count
+calls=153770 129
+129 31714
+cfl=
+cfn=Array::sum
+calls=153770 129
+129 29401
+cfl=
+cfn=Integer::to_s
+calls=307540 129
+129 97628
+cfl=
+cfn=String::+
+calls=307540 129
+129 83788
+cfl=
+cfn=Array::max
+calls=153770 129
+129 34020
+cfl=
+cfn=Array::sort
+calls=307540 129
+129 250966
+cfl=
+cfn=Array::join
+calls=153770 129
+129 163329
+cfl=
+cfn=Array::any?
+calls=153770 129
+129 230676
+cfl=
+cfn=Array::all?
+calls=153770 129
+129 95992
+cfl=
+cfn=Array::reverse
+calls=153770 129
+129 42794
+cfl=
+cfn=Hash::merge!
+calls=153770 129
+129 92477
+cfl=
+cfn=String::upcase
+calls=846230 124
+124 249421
+cfl=
+cfn=Date::parse^
+calls=846230 125
+125 5566412
+cfl=
+cfn=Date::iso8601
+calls=846230 125
+125 555319
+
+fl=
+fn=String::split
+0 1957581
+
+fl=
+fn=IO::read^
+0 16581
+
+fl=/home/filonov/optim/rails-optimization-task1/task-1.rb
+fn=Object::work
+48 116796
+cfl=
+cfn=IO::read^
+calls=1 49
+49 16581
+cfl=
+cfn=String::split
+calls=1 49
+49 168941
+cfl=
+cfn=Array::each
+calls=4 54
+54 6261118
+cfl=
+cfn=Array::count
+calls=3 81
+81 6
+cfl=
+cfn=Array::map
+calls=1 94
+94 430608
+cfl=
+cfn=Array::uniq
+calls=1 94
+94 139885
+cfl=
+cfn=Array::sort
+calls=1 94
+94 41
+cfl=
+cfn=Array::join
+calls=1 94
+94 16
+cfl=/home/filonov/optim/rails-optimization-task1/task-1.rb
+cfn=Object::collect_stats_from_users
+calls=1 118
+118 9794341
+cfl=
+cfn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+calls=1 138
+138 372255
+cfl=
+cfn=IO::write^
+calls=1 138
+138 94191
+
+fl=/home/filonov/optim/rails-optimization-task1/5-ruby-prof-callgrind/ruby-prof-callgrind.rb
+fn=[global]::
+11 25
+cfl=/home/filonov/optim/rails-optimization-task1/task-1.rb
+cfn=Object::work
+calls=1 11
+11 17394780
+

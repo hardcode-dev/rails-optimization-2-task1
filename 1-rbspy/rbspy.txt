@@ -1,0 +1,45 @@
+% self  % total  name
+ 83.30    83.30  block (2 levels) in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:105
+ 14.06    97.27  select [c function] - (unknown):0
+  1.55     1.64  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:60
+  0.24    97.63  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:108
+  0.15     0.22  parse [c function] - (unknown):0
+  0.11     0.20  all? [c function] - (unknown):0
+  0.07     0.51  block in collect_stats_from_users - /home/filonov/optim/rails-optimization-task1/task-1.rb:44
+  0.06     0.06  block (2 levels) in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:85
+  0.05     0.07  parse_session - /home/filonov/optim/rails-optimization-task1/task-1.rb:37
+  0.05     0.05  split [c function] - (unknown):0
+  0.04     0.06  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:130
+  0.04     0.04  gsub! [c function] - (unknown):0
+  0.03     0.30  map [c function] - (unknown):0
+  0.03     0.03  block (2 levels) in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:139
+  0.03     0.03  []= [c function] - (unknown):0
+  0.02     0.21  block (2 levels) in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:144
+  0.02     0.02  to_json [c function] - (unknown):0
+  0.02     0.02  block (2 levels) in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:134
+  0.01     0.27  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:145
+  0.01     0.18  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:86
+  0.01     0.03  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:120
+  0.01     0.01  upcase [c function] - (unknown):0
+  0.01     0.01  to_s [c function] - (unknown):0
+  0.01     0.01  sort [c function] - (unknown):0
+  0.01     0.01  reverse [c function] - (unknown):0
+  0.01     0.01  new [c function] - (unknown):0
+  0.01     0.01  merge [c function] - (unknown):0
+  0.01     0.01  join [c function] - (unknown):0
+  0.01     0.01  initialize - /home/filonov/optim/rails-optimization-task1/task-1.rb:15
+  0.01     0.01  div [c function] - (unknown):0
+  0.01     0.01  count [c function] - (unknown):0
+  0.01     0.01  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:94
+  0.01     0.01  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:125
+  0.01     0.01  block (2 levels) in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:119
+  0.00   100.00  work - /home/filonov/optim/rails-optimization-task1/task-1.rb:148
+  0.00   100.00  each [c function] - (unknown):0
+  0.00   100.00  block in <main> - /home/filonov/optim/rails-optimization-task1/assimptotics.rb:17
+  0.00   100.00  <main> - /home/filonov/optim/rails-optimization-task1/assimptotics.rb:19
+  0.00     0.51  collect_stats_from_users - /home/filonov/optim/rails-optimization-task1/task-1.rb:45
+  0.00     0.02  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:140
+  0.00     0.02  any? [c function] - (unknown):0
+  0.00     0.01  iso8601 [c function] - (unknown):0
+  0.00     0.01  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:135
+  0.00     0.01  block in work - /home/filonov/optim/rails-optimization-task1/task-1.rb:115

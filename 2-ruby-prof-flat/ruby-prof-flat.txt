@@ -1,0 +1,32 @@
+Measure Mode: wall_time
+Thread ID: 80
+Fiber ID: 60
+Total: 0.000052
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 37.03      0.000     0.000     0.000     0.000        1   <Class::IO>#read               
+ 30.11      0.000     0.000     0.000     0.000        1   [global]#                      ruby-prof-flat.rb:10
+ 20.20      0.000     0.000     0.000     0.000        1   SystemCallError#initialize     
+  7.34      0.000     0.000     0.000     0.000        1   Object#work                    /home/filonov/optim/rails-optimization-task1/task-1.rb:48
+  2.24      0.000     0.000     0.000     0.000        1   Exception#initialize           
+  1.72      0.000     0.000     0.000     0.000        1   Exception#backtrace            
+  1.36      0.000     0.000     0.000     0.000        1   Exception#exception            
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
