@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'pry'
+gem 'rspec-benchmark'
+gem 'ruby-prof'
+gem 'stackprof'
+gem 'stackprof-webnav'
+gem 'kalibera'
+gem 'rubocop-performance'
+gem 'benchmark-ips'
+gem 'fasterer'

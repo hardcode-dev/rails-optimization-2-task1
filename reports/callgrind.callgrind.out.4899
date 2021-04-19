@@ -1,0 +1,222 @@
+events: wall_time
+
+fl=
+fn=IO::write^
+0 1591
+
+fl=
+fn=JSON/Ext/Generator/State::initialize_copy
+0 6
+
+fl=
+fn=Kernel::initialize_dup
+0 9
+cfl=
+cfn=JSON/Ext/Generator/State::initialize_copy
+calls=1 0
+0 6
+
+fl=
+fn=Kernel::dup
+0 11
+cfl=
+cfn=Kernel::initialize_dup
+calls=1 0
+0 14
+
+fl=
+fn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+0 27536
+cfl=
+cfn=Kernel::dup
+calls=1 0
+0 26
+
+fl=
+fn=Array::reverse!
+0 8929
+
+fl=
+fn=Array::sort!
+0 15848
+
+fl=
+fn=Array::sum
+0 10124
+
+fl=
+fn=Integer::to_s
+0 18395
+
+fl=
+fn=Array::max
+0 9346
+
+fl=
+fn=Hash::each_value
+0 110910
+cfl=
+cfn=Array::max
+calls=2436 92
+92 9346
+cfl=
+cfn=Integer::to_s
+calls=4872 92
+92 18395
+cfl=
+cfn=Array::sum
+calls=2436 93
+93 10124
+cfl=
+cfn=Array::sort
+calls=2436 94
+94 15769
+cfl=
+cfn=Array::join
+calls=2436 94
+94 16351
+cfl=
+cfn=Array::sort!
+calls=2436 95
+95 15848
+cfl=
+cfn=Array::reverse!
+calls=2436 95
+95 8929
+
+fl=
+fn=Array::join
+0 16449
+
+fl=
+fn=Array::sort
+0 15920
+
+fl=
+fn=Array::count
+0 7
+
+fl=
+fn=Array::uniq
+0 8613
+
+fl=
+fn=Regexp::match?
+0 42575
+
+fl=
+fn=Array::last
+0 49011
+
+fl=
+fn=String::chomp
+0 56070
+
+fl=
+fn=String::to_i
+0 53221
+
+fl=
+fn=String::upcase
+0 55324
+
+fl=/home/dmi3/RubymineProjects/rails-optimization-task1/task-1.rb
+fn=Object::parse_session
+15 255059
+cfl=
+cfn=String::upcase
+calls=13564 17
+17 55324
+cfl=
+cfn=String::to_i
+calls=13564 17
+17 53221
+cfl=
+cfn=String::chomp
+calls=13564 17
+17 56070
+
+fl=
+fn=Array::pop
+0 9017
+
+fl=/home/dmi3/RubymineProjects/rails-optimization-task1/task-1.rb
+fn=Object::parse_user
+6 19687
+
+fl=
+fn=String::split
+0 122137
+
+fl=
+fn=IO::foreach^
+0 1057403
+cfl=
+cfn=String::split
+calls=16000 51
+51 122137
+cfl=/home/dmi3/RubymineProjects/rails-optimization-task1/task-1.rb
+cfn=Object::parse_user
+calls=2436 53
+53 19687
+cfl=
+cfn=Array::pop
+calls=2436 56
+56 9017
+cfl=/home/dmi3/RubymineProjects/rails-optimization-task1/task-1.rb
+cfn=Object::parse_session
+calls=13564 70
+70 419673
+cfl=
+cfn=Array::last
+calls=13564 74
+74 49011
+cfl=
+cfn=Regexp::match?
+calls=10197 80
+80 42575
+
+fl=/home/dmi3/RubymineProjects/rails-optimization-task1/task-1.rb
+fn=Object::work
+40 773
+cfl=
+cfn=IO::foreach^
+calls=1 50
+50 1719504
+cfl=
+cfn=Array::uniq
+calls=2 88
+88 8613
+cfl=
+cfn=Array::count
+calls=1 88
+88 7
+cfl=
+cfn=Array::sort
+calls=1 89
+89 151
+cfl=
+cfn=Array::join
+calls=1 89
+89 98
+cfl=
+cfn=Hash::each_value
+calls=1 91
+91 205673
+cfl=
+cfn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+calls=1 98
+98 27562
+cfl=
+cfn=IO::write^
+calls=1 98
+98 1591
+
+fl=/home/dmi3/RubymineProjects/rails-optimization-task1/rubyprof.rb
+fn=[global]::
+8 48
+cfl=/home/dmi3/RubymineProjects/rails-optimization-task1/task-1.rb
+cfn=Object::work
+calls=1 8
+8 1963972
+
