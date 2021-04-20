@@ -1,0 +1,63 @@
+Measure Mode: wall_time
+Thread ID: 280
+Fiber ID: 260
+Total: 0.719541
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 45.98      0.462     0.331     0.000     0.132     2342   Array#map                      
+ 20.31      0.146     0.146     0.000     0.000      390   Array#select                   
+ 10.93      0.079     0.079     0.000     0.000   507000   String#to_i                    
+  7.37      0.053     0.053     0.000     0.000   255970   String#upcase                  
+  3.15      0.023     0.023     0.000     0.000      781   Array#sort                     
+  2.79      0.716     0.020     0.000     0.696       10   Array#each                     
+  2.43      0.026     0.018     0.000     0.009      390   Array#any?                     
+  2.26      0.016     0.016     0.000     0.000      391   Array#join                     
+  1.81      0.013     0.013     0.000     0.000     4681   String#split                   
+  1.23      0.009     0.009     0.000     0.000    68510   String#start_with?             
+  0.43      0.003     0.003     0.000     0.000     2340   Array#all?                     
+  0.24      0.006     0.002     0.000     0.005     1950   Object#parse_session           /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:27
+  0.15      0.001     0.001     0.000     0.000     2730   Hash#merge                     
+  0.09      0.001     0.001     0.000     0.000      390   Array#max                      
+  0.08      0.001     0.001     0.000     0.000      390   Object#parse_user              /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:17
+  0.07      0.000     0.000     0.000     0.000      390   Array#sum                      
+  0.06      0.000     0.000     0.000     0.000        1   <Class::IO>#read               
+  0.06      0.114     0.000     0.000     0.114      390   Object#collect_1               /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:146
+  0.06      0.053     0.000     0.000     0.052      390   Object#collect_6               /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:166
+  0.06      0.149     0.000     0.000     0.149      390   Object#collect_3               /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:154
+  0.06      0.110     0.000     0.000     0.110      390   Object#collect_2               /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:150
+  0.05      0.001     0.000     0.000     0.000      390   Class#new                      
+  0.05      0.000     0.000     0.000     0.000        1   <Class::IO>#write              
+  0.05      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::GeneratorMethods::Hash#to_json 
+  0.04      0.065     0.000     0.000     0.064      390   Object#collect_4               /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:158
+  0.03      0.039     0.000     0.000     0.039      390   Object#collect_5               /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:162
+  0.03      0.000     0.000     0.000     0.000      780   String#+                       
+  0.03      0.000     0.000     0.000     0.000      390   User#initialize                /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:11
+  0.03      0.000     0.000     0.000     0.000      780   Integer#to_s                   
+  0.02      0.000     0.000     0.000     0.000      390   Array#reverse                  
+  0.02      0.720     0.000     0.000     0.719        1   Object#work                    /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:46
+  0.02      0.000     0.000     0.000     0.000        1   Array#uniq                     
+  0.01      0.000     0.000     0.000     0.000      393   Array#count                    
+  0.00      0.720     0.000     0.000     0.720        1   [global]#                      profilers/flat_profiling.rb:8
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#initialize_dup          
+  0.00      0.537     0.000     0.000     0.537        7   Object#collect_stats_from_users /Users/vitaliy.arnaut/Projects/ruby/profiling/homeworks/rails-optimization-task1/task-1.rb:38
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#dup                     
+  0.00      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::State#initialize_copy 
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
