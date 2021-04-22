@@ -1,0 +1,5 @@
+analyzers/demo_data/*.txt
+analyzers/reports/*.html
+analyzers/reports/callgrind.callgrind.out.*
+result.json
+.idea

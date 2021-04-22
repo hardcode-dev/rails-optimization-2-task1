@@ -1,0 +1,46 @@
+Measure Mode: wall_time
+Thread ID: 80
+Fiber ID: 60
+Total: 0.169559
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 44.23      0.154     0.075     0.000     0.079     4594  *Array#each                     
+ 21.10      0.036     0.036     0.000     0.000    30001   String#split                   
+ 10.07      0.024     0.017     0.000     0.007    25408   Object#parse_session           /Users/kgoryachev/projects/ruby/hardcode/rails-optimization-task1/task-1.rb:12
+  5.22      0.009     0.009     0.000     0.000        1   <Module::Oj>#dump              
+  3.35      0.006     0.006     0.000     0.000     9185   Array#sort!                    
+  2.42      0.006     0.004     0.000     0.002     4592   Array#any?                     
+  2.17      0.004     0.004     0.000     0.000    25408   String#upcase!                 
+  2.02      0.003     0.003     0.000     0.000    25408   String#to_i                    
+  1.82      0.003     0.003     0.000     0.000     4593   Array#join                     
+  1.78      0.003     0.003     0.000     0.000    28198   String#start_with?             
+  1.70      0.003     0.003     0.000     0.000     4592   Object#parse_user              /Users/kgoryachev/projects/ruby/hardcode/rails-optimization-task1/task-1.rb:5
+  1.54      0.004     0.003     0.000     0.001     4592   Array#all?                     
+  1.09      0.002     0.002     0.000     0.000     9184   Integer#to_s                   
+  0.36      0.001     0.001     0.000     0.000        1   <Class::IO>#write              
+  0.36      0.001     0.001     0.000     0.000     4593   Array#count                    
+  0.32      0.001     0.001     0.000     0.000     4592   Array#reverse!                 
+  0.29      0.170     0.000     0.000     0.169        1   Object#work                    /Users/kgoryachev/projects/ruby/hardcode/rails-optimization-task1/task-1.rb:20
+  0.15      0.000     0.000     0.000     0.000        1   <Class::IO>#read               
+  0.00      0.170     0.000     0.000     0.170        1   [global]#                      analyzers/ruby_prof_flat.rb:12
+  0.00      0.000     0.000     0.000     0.000       31   Hash#has_key?                  
+  0.00      0.000     0.000     0.000     0.000        1   Hash#keys                      
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
