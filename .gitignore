@@ -1,0 +1,10 @@
+.bundle/
+.idea/
+.ruby-gemset
+Gemfile.lock
+data.txt
+data_large.txt
+result.json
+/report/*
+!/report/.keep
+
