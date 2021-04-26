@@ -1,0 +1,13 @@
+require 'rspec-benchmark'
+require 'rspec'
+require_relative 'task-1'
+
+RSpec.configure do |config|
+  config.include RSpec::Benchmark::Matchers
+end
+
+describe '#work' do
+  it 'works under 1 ms' do
+    expect { work('data.txt') }.to perform_under(0.7).ms.warmup(2).times.sample(10).times
+  end
+end
