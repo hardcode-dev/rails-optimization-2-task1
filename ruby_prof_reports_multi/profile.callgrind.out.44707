@@ -1,0 +1,354 @@
+events: wall_time
+
+fl=
+fn=IO::write^
+0 1337
+
+fl=
+fn=JSON/Ext/Generator/State::initialize_copy
+0 3
+
+fl=
+fn=Kernel::initialize_dup
+0 1
+cfl=
+cfn=JSON/Ext/Generator/State::initialize_copy
+calls=1 0
+0 3
+
+fl=
+fn=Kernel::dup
+0 3
+cfl=
+cfn=Kernel::initialize_dup
+calls=1 0
+0 5
+
+fl=
+fn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+0 27576
+cfl=
+cfn=Kernel::dup
+calls=1 0
+0 7
+
+fl=
+fn=Array::reverse
+0 3675
+
+fl=
+fn=Array::all?
+0 7358
+cfl=
+cfn=String::match?
+calls=19788 85
+85 4088
+
+fl=
+fn=String::match?
+0 13062
+
+fl=
+fn=Array::any?
+0 14470
+cfl=
+cfn=String::match?
+calls=44327 84
+84 8974
+
+fl=
+fn=Array::max
+0 3043
+
+fl=
+fn=String::+
+0 5955
+
+fl=
+fn=Integer::to_s
+0 6002
+
+fl=
+fn=Array::sum
+0 2728
+
+fl=
+fn=Array::count
+0 2649
+
+fl=
+fn=Date::iso8601
+0 38883
+
+fl=
+fn=Integer::div
+0 143
+
+fl=
+fn=Date::strptime^
+0 1340
+cfl=
+cfn=Integer::div
+calls=1000 0
+0 143
+
+fl=
+fn=String::to_i
+0 15011
+
+fl=
+fn=Array::join
+0 12020
+
+fl=
+fn=Array::sort
+0 25607
+
+fl=
+fn=String::upcase
+0 18164
+
+fl=
+fn=Enumerable::map
+0 3
+cfl=/Users/rkirpichnikov/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/set.rb
+cfn=Set::each
+calls=1 0
+0 76
+
+fl=
+fn=Hash::each_key
+0 78073
+cfl=
+cfn=String::upcase
+calls=200 0
+0 32
+cfl=
+cfn=Array::each
+calls=15431 72
+72 219719
+cfl=
+cfn=Array::count
+calls=15431 79
+79 2649
+cfl=
+cfn=Array::sum
+calls=15431 79
+79 2728
+cfl=
+cfn=Integer::to_s
+calls=30862 79
+79 6002
+cfl=
+cfn=String::+
+calls=30862 79
+79 5955
+cfl=
+cfn=Array::max
+calls=15431 79
+79 3043
+cfl=
+cfn=Array::sort
+calls=30862 79
+79 25569
+cfl=
+cfn=Array::join
+calls=15431 79
+79 12004
+cfl=
+cfn=Array::any?
+calls=15431 79
+79 23443
+cfl=
+cfn=Array::all?
+calls=15431 79
+79 11446
+cfl=
+cfn=Array::reverse
+calls=15431 79
+79 3675
+
+fl=/Users/rkirpichnikov/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/set.rb
+fn=Set::each
+326 7
+cfl=
+cfn=Hash::each_key
+calls=2 328
+328 82
+
+fl=
+fn=Hash::each
+0 768
+
+fl=
+fn=Enumerable::count
+0 7
+cfl=
+cfn=Hash::each
+calls=1 0
+0 768
+cfl=/Users/rkirpichnikov/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/set.rb
+cfn=Set::each
+calls=1 0
+0 12
+
+fl=/Users/rkirpichnikov/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/set.rb
+fn=Set::<<
+338 33984
+
+fl=/Users/rkirpichnikov/opensource/optimization/rails-optimization-task1/task-1.rb
+fn=Object::parse_session
+18 45893
+
+fl=
+fn=String::chomp
+0 20633
+
+fl=/Users/rkirpichnikov/opensource/optimization/rails-optimization-task1/task-1.rb
+fn=Object::parse_user
+9 10262
+cfl=
+cfn=String::chomp
+calls=15431 11
+11 3384
+
+fl=
+fn=String::start_with?
+0 15691
+
+fl=
+fn=String::split
+0 80663
+
+fl=
+fn=Array::each
+0 287338
+cfl=
+cfn=String::split
+calls=100000 42
+42 80663
+cfl=
+cfn=String::start_with?
+calls=100000 44
+44 15691
+cfl=/Users/rkirpichnikov/opensource/optimization/rails-optimization-task1/task-1.rb
+cfn=Object::parse_user
+calls=15431 45
+45 13646
+cfl=/Users/rkirpichnikov/opensource/optimization/rails-optimization-task1/task-1.rb
+cfn=Object::parse_session
+calls=84569 50
+50 45893
+cfl=/Users/rkirpichnikov/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/set.rb
+cfn=Set::<<
+calls=84569 52
+52 33984
+cfl=
+cfn=String::to_i
+calls=84569 73
+73 15011
+cfl=
+cfn=String::upcase
+calls=84569 75
+75 18132
+cfl=
+cfn=String::chomp
+calls=84569 76
+76 17249
+cfl=
+cfn=Date::strptime^
+calls=1000 39
+39 1483
+cfl=
+cfn=Date::iso8601
+calls=84569 39
+39 38883
+
+fl=
+fn=Hash::initialize
+0 3
+
+fl=/Users/rkirpichnikov/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/set.rb
+fn=Set::initialize
+93 5
+cfl=
+cfn=Class::new
+calls=1 94
+94 3
+
+fl=
+fn=Class::new
+0 13
+cfl=/Users/rkirpichnikov/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/set.rb
+cfn=Set::initialize
+calls=1 0
+0 7
+cfl=
+cfn=Hash::initialize
+calls=2 0
+0 3
+
+fl=
+fn=IO::readlines^
+0 23800
+
+fl=/Users/rkirpichnikov/opensource/optimization/rails-optimization-task1/<internal:gc>
+fn=GC::disable^
+63 2574
+cfl=
+cfn=IO::readlines^
+calls=1 34
+34 23800
+cfl=
+cfn=Class::new
+calls=2 38
+38 20
+cfl=
+cfn=Array::each
+calls=1 41
+41 348252
+cfl=
+cfn=Enumerable::count
+calls=2 58
+58 787
+cfl=
+cfn=Enumerable::map
+calls=1 61
+61 79
+cfl=
+cfn=Array::sort
+calls=1 61
+61 38
+cfl=
+cfn=Array::join
+calls=1 61
+61 16
+cfl=
+cfn=Hash::each_key
+calls=1 64
+64 394257
+cfl=
+cfn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+calls=1 91
+91 27584
+cfl=
+cfn=IO::write^
+calls=1 91
+91 1337
+
+fl=/Users/rkirpichnikov/opensource/optimization/rails-optimization-task1/task-1.rb
+fn=Object::work
+29 12
+cfl=/Users/rkirpichnikov/opensource/optimization/rails-optimization-task1/<internal:gc>
+cfn=GC::disable^
+calls=1 30
+30 798743
+
+fl=/Users/rkirpichnikov/opensource/optimization/rails-optimization-task1/ruby-prof.rb
+fn=[global]::
+7 10
+cfl=/Users/rkirpichnikov/opensource/optimization/rails-optimization-task1/task-1.rb
+cfn=Object::work
+calls=1 7
+7 798755
+
